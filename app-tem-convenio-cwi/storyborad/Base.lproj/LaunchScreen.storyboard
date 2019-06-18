@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0WF-Ft-tte">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="0WF-Ft-tte">
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0WF-Ft-tte" secondAttribute="height" multiplier="1:1" id="0d8-2Y-fIo"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_logo" width="391" height="391"/>
+        <image name="ic_logo_splash" width="391" height="391"/>
     </resources>
 </document>

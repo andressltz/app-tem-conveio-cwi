@@ -11,8 +11,8 @@
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
-		D296EC8A22B877F100E52DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8922B877F100E52DF9 /* Assets.xcassets */; };
 		D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */; };
+		D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8922B877F100E52DF9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 				F9D3F4EA7596D3A4D1C73B60 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
 				9B4345CEAAB41F849A8F5F60 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */,
-				D296EC8A22B877F100E52DF9 /* Assets.xcassets in Resources */,
+				D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */,
 				D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

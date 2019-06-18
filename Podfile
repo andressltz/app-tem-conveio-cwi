@@ -6,5 +6,6 @@ target 'app-tem-convenio-cwi' do
   use_frameworks!
 
   # Pods for app-tem-convenio-cwi
+  pod 'Firebase/Core'
 
 end

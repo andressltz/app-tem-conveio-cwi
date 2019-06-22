@@ -51,6 +51,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A027C7E322BE589800445DCD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A027C7E522BE58EE00445DCD /* API */,
+				A027C7E422BE58CD00445DCD /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A027C7E422BE58CD00445DCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A027C7E522BE58EE00445DCD /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A027C7E722BE594200445DCD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A027C7E822BE594A00445DCD /* CustomViews */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A027C7E822BE594A00445DCD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A027C7E922BE596200445DCD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BAF0BE330009A4CAB32991B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +125,14 @@
 		D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */ = {
 			isa = PBXGroup;
 			children = (
+				A027C7E322BE589800445DCD /* Data */,
+				A027C7E922BE596200445DCD /* Extensions */,
+				D296EC9522B87A2400E52DF9 /* Storyboards */,
+				A027C7E722BE594200445DCD /* UI */,
+				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				41AC254822B923130004B0EF /* GoogleService-Info.plist */,
 				D296EC8222B877F000E52DF9 /* AppDelegate.swift */,
 				D296EC8422B877F000E52DF9 /* ViewController.swift */,
-				D296EC9522B87A2400E52DF9 /* Storyboards */,
-				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				D296EC8E22B877F100E52DF9 /* Info.plist */,
 			);
 			path = "app-tem-convenio-cwi";

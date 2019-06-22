@@ -7,5 +7,7 @@ target 'app-tem-convenio-cwi' do
 
   # Pods for app-tem-convenio-cwi
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end

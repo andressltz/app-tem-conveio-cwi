@@ -83,20 +83,20 @@
 				41AC254822B923130004B0EF /* GoogleService-Info.plist */,
 				D296EC8222B877F000E52DF9 /* AppDelegate.swift */,
 				D296EC8422B877F000E52DF9 /* ViewController.swift */,
-				D296EC9522B87A2400E52DF9 /* storyborad */,
+				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				D296EC8E22B877F100E52DF9 /* Info.plist */,
 			);
 			path = "app-tem-convenio-cwi";
 			sourceTree = "<group>";
 		};
-		D296EC9522B87A2400E52DF9 /* storyborad */ = {
+		D296EC9522B87A2400E52DF9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				D296EC8622B877F000E52DF9 /* Main.storyboard */,
 				D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */,
 			);
-			path = storyborad;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

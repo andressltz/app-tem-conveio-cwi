@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,12 +38,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="drD-ev-qWP" kind="relationship" relationship="rootViewController" id="c8t-Gw-CCo"/>
+                        <segue destination="dqw-sD-VN6" kind="relationship" relationship="rootViewController" id="c8t-Gw-CCo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxH-Gd-p0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1343" y="1049"/>
+        </scene>
+        <!--Indicações-->
+        <scene sceneID="hUa-5p-OJD">
+            <objects>
+                <viewController id="dqw-sD-VN6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C8z-GQ-llu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="primary-color"/>
+                        <viewLayoutGuide key="safeArea" id="0Gz-EM-W8f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Indicações" id="2e4-8S-Zjf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gac-LQ-dmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1343" y="1955"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="8jd-HW-omm">
@@ -54,12 +71,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yV8-4A-HsB" kind="relationship" relationship="rootViewController" id="5Cg-28-mOo"/>
+                        <segue destination="hLL-c6-33D" kind="relationship" relationship="rootViewController" id="5Cg-28-mOo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAT-EN-ovL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-450" y="1049"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="kkT-YG-eU2">
+            <objects>
+                <viewController id="hLL-c6-33D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1fg-C1-c0y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="teaching"/>
+                        <viewLayoutGuide key="safeArea" id="1OC-cZ-c4n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="dmJ-rZ-HeD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRD-oX-tpp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="1954"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lMg-v0-oMU">
@@ -91,31 +124,17 @@
             </objects>
             <point key="canvasLocation" x="-2195" y="1491"/>
         </scene>
-        <!--Indications-->
-        <scene sceneID="jkT-co-hrM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Indications" id="drD-ev-qWP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="B2f-aX-Kdv"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n13-ES-5LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1343" y="1491"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="uQI-HV-yd8">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="yV8-4A-HsB" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="fPD-ad-wMG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MoJ-5p-DLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-451" y="1491"/>
-        </scene>
     </scenes>
     <resources>
         <image name="ic_establishment" width="24" height="24"/>
         <image name="ic_new_establishment" width="24" height="23"/>
         <image name="ic_profile" width="26" height="24"/>
+        <namedColor name="primary-color">
+            <color red="0.12156862745098039" green="0.63137254901960782" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="teaching">
+            <color red="0.34509803921568627" green="0.75686274509803919" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="text-default">
             <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

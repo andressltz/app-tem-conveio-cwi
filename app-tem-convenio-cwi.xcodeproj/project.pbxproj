@@ -98,6 +98,7 @@
 		A027C7E722BE594200445DCD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				A027C7E822BE594A00445DCD /* CustomViews */,
 			);
 			path = UI;
@@ -143,7 +144,6 @@
 			children = (
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
-				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				A027C7E722BE594200445DCD /* UI */,
 				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				41AC254822B923130004B0EF /* GoogleService-Info.plist */,

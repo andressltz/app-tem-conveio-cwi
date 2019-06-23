@@ -13,7 +13,6 @@
         <!--Estabelecimento-->
         <scene sceneID="Nbs-CU-cNC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eCl-P2-aEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="zfH-ea-yzP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Estabelecimento" image="ic_establishment" id="7B7-TD-QFu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Hw-VL-FfL">
@@ -24,6 +23,7 @@
                         <segue destination="VFG-YW-2NP" kind="relationship" relationship="rootViewController" id="rGQ-dn-FQx"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCl-P2-aEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2194" y="1048"/>
         </scene>
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="drD-ev-qWP" kind="relationship" relationship="rootViewController" id="c8t-Gw-CCo"/>
+                        <segue destination="drD-ev-qWP" kind="relationship" relationship="rootViewController" id="1aL-01-IQc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxH-Gd-p0d" userLabel="First Responder" sceneMemberID="firstResponder"/>

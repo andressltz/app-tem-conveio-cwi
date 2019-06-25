@@ -18,7 +18,7 @@
                     <view key="view" contentMode="scaleToFill" id="FV5-8A-1KR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="backgroud-list"/>
+                        <color key="backgroundColor" name="disable"/>
                         <viewLayoutGuide key="safeArea" id="YIh-Nf-7TN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Estabelecimentos" id="L0g-a5-VIl"/>
@@ -29,7 +29,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="backgroud-list">
+        <namedColor name="disable">
             <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

@@ -18,7 +18,7 @@
                     <view key="view" contentMode="scaleToFill" id="C8z-GQ-llu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="backgroud-list"/>
+                        <color key="backgroundColor" name="disable"/>
                         <viewLayoutGuide key="safeArea" id="0Gz-EM-W8f"/>
                     </view>
                     <navigationItem key="navigationItem" title="Indicações" id="2e4-8S-Zjf"/>
@@ -29,7 +29,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="backgroud-list">
+        <namedColor name="disable">
             <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

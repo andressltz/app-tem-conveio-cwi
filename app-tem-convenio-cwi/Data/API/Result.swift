@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 #if swift(>=5.0)
 #else
@@ -19,3 +20,6 @@ enum Result<Success, Failure> where Failure : Error {
     case failure(Failure)
 }
 #endif
+
+typealias RequestResult = Result<JSON?, APIError>
+typealias CompletionCallback = (RequestResult) -> Void

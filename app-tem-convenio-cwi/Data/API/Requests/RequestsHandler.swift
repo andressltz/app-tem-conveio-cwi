@@ -10,16 +10,13 @@ import Foundation
 import FirebaseDatabase
 import SwiftyJSON
 
-class APIHandler {
+class RequestsHandler {
     
     var ref: DatabaseReference!
     
     init() {
         ref = Database.database().reference()
     }
-    
-    typealias RequestResult = Result<JSON?, APIError>
-    typealias CompletionCallback = (RequestResult) -> Void
     
     func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any]? = nil, completion: @escaping CompletionCallback) {
         let databaseRef = self.ref.child(endpoint.url)

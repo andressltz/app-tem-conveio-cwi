@@ -8,11 +8,11 @@
 
 import Foundation
 
-extension APIHandler {
+extension RequestsHandler {
     
     enum Endpoint {
         
-        case createUser
+        case createUser(userUID: String)
         case establishments
         case saveFavorite(userUID: String, establishmentUID: String)
         case removeFavorite(userUID: String, establishmentUID: String)
@@ -24,8 +24,8 @@ extension APIHandler {
         
         var url: String {
             switch self {
-            case .createUser:
-                return "users"
+            case let .createUser(userUID):
+                return "users/\(userUID)"
             case .establishments:
                 return "establishments"
             case let .saveFavorite(userUID):
@@ -45,11 +45,11 @@ extension APIHandler {
         
         var httpMethod: HttpMethods {
             switch self {
-            case .createUser, .saveFavorite, .recommendEstablishment, .sendFeedback:
+            case .saveFavorite, .recommendEstablishment, .sendFeedback:
                 return .post
             case .removeFavorite:
                 return .delete
-            case .editProfile:
+            case .createUser, .editProfile:
                 return .patch
             default:
                 return .get

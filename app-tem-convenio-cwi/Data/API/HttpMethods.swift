@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum HttpMethods: String {
-    case get = "GET"
-    case post = "POST"
-    case delete = "DELETE"
+enum HttpMethods {
+    case get
+    case post
+    case delete
+    case patch
 }

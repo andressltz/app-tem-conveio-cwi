@@ -10,8 +10,9 @@ import UIKit
 
 extension UIViewController {
     
-    func showFailureAlert(withError error: RequestMakerError) {
+    func showFailureAlert(withError error: APIError) {
         //TODO: OPEN FAILURE ALERT PASSING ERROR
+        print(error.localizedDescription)
     }
     
 }

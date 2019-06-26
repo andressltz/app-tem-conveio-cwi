@@ -8,9 +8,8 @@
 
 import Foundation
 
-enum RequestMakerError: Error {
-    case malformedURL
-    case postBodyNotInformed
+enum APIError: Error {
+    case missingParams
     case requestFailed
     case invalidData
     case decodingFailed

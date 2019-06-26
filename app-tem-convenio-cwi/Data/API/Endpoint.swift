@@ -8,54 +8,51 @@
 
 import Foundation
 
-extension RequestMaker {
+extension APIHandler {
     
     enum Endpoint {
         
-        case login
-        case createAccount
-        case categories(categoryId: Int)
-        case saveFavorite(userId: Int, establishmentId: Int)
-        case removeFavorite(userId: Int, establishmentId: Int)
+        case createUser
+        case establishments
+        case saveFavorite(userUID: String, establishmentUID: String)
+        case removeFavorite(userUID: String, establishmentUID: String)
         case recommendEstablishment
-        case profile
-        case editProfile
-        case establishmentDetails(establishmentId: Int)
-        case sendFeedback
+        case profile(userUID: String)
+        case editProfile(userUID: String)
+        case establishmentDetails(establishmentUID: String)
+        case sendFeedback(establishmentUID: Int)
         
         var url: String {
             switch self {
-            case .login:
-                return "login"
-            case .createAccount:
-                return ""
-            case .categories(let categoryId):
-                return "categories/\(categoryId)"
-            case let .saveFavorite(userId, establishmentId):
-                return "users/\(userId)/favorites/\(establishmentId)"
-            case let .removeFavorite(userId, establishmentId):
-                return "users/\(userId)/favorites/\(establishmentId)"
+            case .createUser:
+                return "users"
+            case .establishments:
+                return "establishments"
+            case let .saveFavorite(userUID):
+                return "users/\(userUID)/favorites"
+            case let .removeFavorite(userUID, establishmentUID):
+                return "users/\(userUID)/favorites/\(establishmentUID)"
             case .recommendEstablishment:
-                return ""
-            case .profile:
-                return ""
-            case .editProfile:
-                return ""
-            case .establishmentDetails(let establishmentId):
-                return "establishments/\(establishmentId)"
-            case .sendFeedback:
-                return ""
+                return "recommendations"
+            case let .profile(userUID), let .editProfile(userUID):
+                return "users/\(userUID)"
+            case .establishmentDetails(let establishmentUID):
+                return "establishments/\(establishmentUID)"
+            case .sendFeedback(let establishmentUID):
+                return "establishments/\(establishmentUID)/feedbacks"
             }
         }
         
-        var httpMethod: String {
+        var httpMethod: HttpMethods {
             switch self {
-            case .login, .createAccount, .saveFavorite, .recommendEstablishment, .editProfile, .sendFeedback:
-                return HttpMethods.post.rawValue
+            case .createUser, .saveFavorite, .recommendEstablishment, .sendFeedback:
+                return .post
             case .removeFavorite:
-                return HttpMethods.delete.rawValue
+                return .delete
+            case .editProfile:
+                return .patch
             default:
-                return HttpMethods.get.rawValue
+                return .get
             }
         }
     }

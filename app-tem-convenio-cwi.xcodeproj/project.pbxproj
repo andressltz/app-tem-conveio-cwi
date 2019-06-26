@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		04EA27D7633D61D84F8C985C /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB6AF01E6A699F82ED38ADC /* Pods_app_tem_convenio_cwi.framework */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
-		A027C7EB22BE5AE100445DCD /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestMaker.swift */; };
+		A027C7EB22BE5AE100445DCD /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* APIHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
 		A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7ED22BE5B8C00445DCD /* Endpoint.swift */; };
 		A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7F022BE608A00445DCD /* HttpMethods.swift */; };
-		A027C7F322BE67CB00445DCD /* RequestMakerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7F222BE67CB00445DCD /* RequestMakerError.swift */; };
+		A027C7F322BE67CB00445DCD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7F222BE67CB00445DCD /* APIError.swift */; };
 		A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7F622BE845000445DCD /* DictionaryExtensions.swift */; };
 		A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7F822BE846F00445DCD /* CharacterSetExtensions.swift */; };
 		A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */; };
+		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
+		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -28,14 +30,16 @@
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DB6AF01E6A699F82ED38ADC /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4345CEAAB41F849A8F5F60 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
-		A027C7EA22BE5AE100445DCD /* RequestMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
+		A027C7EA22BE5AE100445DCD /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		A027C7EC22BE5B8C00445DCD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A027C7ED22BE5B8C00445DCD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		A027C7F022BE608A00445DCD /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
-		A027C7F222BE67CB00445DCD /* RequestMakerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMakerError.swift; sourceTree = "<group>"; };
+		A027C7F222BE67CB00445DCD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A027C7F622BE845000445DCD /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		A027C7F822BE846F00445DCD /* CharacterSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtensions.swift; sourceTree = "<group>"; };
 		A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../Enums/Category.swift; sourceTree = "<group>"; };
+		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		A027C7E422BE58CD00445DCD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0B0D28F22C2DEC7003C8A02 /* Category.swift */,
+				A0B9886622BEAEDE00A6C237 /* Establishment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,9 +94,9 @@
 			children = (
 				A027C7ED22BE5B8C00445DCD /* Endpoint.swift */,
 				A027C7EC22BE5B8C00445DCD /* Result.swift */,
-				A027C7EA22BE5AE100445DCD /* RequestMaker.swift */,
+				A027C7EA22BE5AE100445DCD /* APIHandler.swift */,
 				A027C7F022BE608A00445DCD /* HttpMethods.swift */,
-				A027C7F222BE67CB00445DCD /* RequestMakerError.swift */,
+				A027C7F222BE67CB00445DCD /* APIError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -283,6 +290,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -299,15 +307,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */,
-				A027C7F322BE67CB00445DCD /* RequestMakerError.swift in Sources */,
+				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
-				A027C7EB22BE5AE100445DCD /* RequestMaker.swift in Sources */,
+				A027C7EB22BE5AE100445DCD /* APIHandler.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
+				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
+				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

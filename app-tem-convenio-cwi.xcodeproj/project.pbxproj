@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20776081F099C18ABBDAD53F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		20776081F099C18ABBDAD53F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
 		A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
@@ -21,6 +21,10 @@
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
 		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
+		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
+		D290929422C4422A000F4640 /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommend.storyboard */; };
+		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
+		D290929622C4422A000F4640 /* Establishments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929222C4422A000F4640 /* Establishments.storyboard */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
 		B1AC72F37DF68FD8C82AF00E /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		B7C19BA6AD9B38C3FEDE963B /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
+		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D290929022C4422A000F4640 /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
+		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D290929222C4422A000F4640 /* Establishments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Establishments.storyboard; sourceTree = "<group>"; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20776081F099C18ABBDAD53F /* BuildFile in Frameworks */,
+				20776081F099C18ABBDAD53F /* (null) in Frameworks */,
 				DE92494F5FDF38AF8D8BA99A /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +195,10 @@
 		D296EC9522B87A2400E52DF9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D290929222C4422A000F4640 /* Establishments.storyboard */,
+				D290929022C4422A000F4640 /* Recommend.storyboard */,
+				D290929122C4422A000F4640 /* Login.storyboard */,
+				D290928F22C4422A000F4640 /* Profile.storyboard */,
 				D296EC8622B877F000E52DF9 /* Main.storyboard */,
 				D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */,
 			);
@@ -263,7 +275,11 @@
 			files = (
 				D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */,
 				41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */,
+				D290929522C4422A000F4640 /* Login.storyboard in Resources */,
+				D290929422C4422A000F4640 /* Recommend.storyboard in Resources */,
+				D290929322C4422A000F4640 /* Profile.storyboard in Resources */,
 				D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */,
+				D290929622C4422A000F4640 /* Establishments.storyboard in Resources */,
 				D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

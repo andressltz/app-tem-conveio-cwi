@@ -19,10 +19,43 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="4WM-w8-LNJ" kind="relationship" relationship="rootViewController" id="HlY-lk-jUE"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCl-P2-aEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2194" y="1048"/>
+        </scene>
+        <!--Establishments-->
+        <scene sceneID="Xgf-PD-CYH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Establishments" id="4WM-w8-LNJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9AE-0G-pX3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ku-TF-f8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2195" y="1537"/>
+        </scene>
+        <!--Recommend-->
+        <scene sceneID="vI6-LM-bLo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recommend" id="DPJ-1d-Tet" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PN1-ZM-b4j"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REs-Ad-ZIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1343" y="1536"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="nCD-Bt-RTa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="18r-hF-lyZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jvc-Ll-cRt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMv-Kt-QfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="1536"/>
         </scene>
         <!--Indicações-->
         <scene sceneID="wI6-me-wBW">
@@ -33,6 +66,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="DPJ-1d-Tet" kind="relationship" relationship="rootViewController" id="9Z0-NI-cKf"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxH-Gd-p0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +83,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="18r-hF-lyZ" kind="relationship" relationship="rootViewController" id="kTx-mC-hAr"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAT-EN-ovL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

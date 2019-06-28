@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04EA27D7633D61D84F8C985C /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB6AF01E6A699F82ED38ADC /* Pods_app_tem_convenio_cwi.framework */; };
+		20776081F099C18ABBDAD53F /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D9932CBE2E62536764AEE /* Pods_app_tem_convenio_cwi.framework */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
 		A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
@@ -27,6 +27,10 @@
 		A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A322C4129F003C8A02 /* Favorite.swift */; };
 		A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */; };
 		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
+		D22C5AC322C0092100C3703D /* Establishments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22C5AC222C0092100C3703D /* Establishments.storyboard */; };
+		D22C5AC522C0099B00C3703D /* Indications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22C5AC422C0099B00C3703D /* Indications.storyboard */; };
+		D22C5AC722C009B500C3703D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22C5AC622C009B500C3703D /* Profile.storyboard */; };
+		D22C5ACD22C0107300C3703D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22C5ACC22C0107300C3703D /* Login.storyboard */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -36,8 +40,6 @@
 
 /* Begin PBXFileReference section */
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4DB6AF01E6A699F82ED38ADC /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B4345CEAAB41F849A8F5F60 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsHandler.swift; sourceTree = "<group>"; };
 		A027C7EC22BE5B8C00445DCD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A027C7ED22BE5B8C00445DCD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -56,6 +58,13 @@
 		A0B0D2A322C4129F003C8A02 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
+		ADE281E697590ADBBF6FF6DF /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
+		B56B781B3E1DD69B294182B6 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4D9932CBE2E62536764AEE /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22C5AC222C0092100C3703D /* Establishments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Establishments.storyboard; sourceTree = "<group>"; };
+		D22C5AC422C0099B00C3703D /* Indications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Indications.storyboard; sourceTree = "<group>"; };
+		D22C5AC622C009B500C3703D /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D22C5ACC22C0107300C3703D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +72,6 @@
 		D296EC8922B877F100E52DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D296EC8C22B877F100E52DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D296EC8E22B877F100E52DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9D3F4EA7596D3A4D1C73B60 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EA27D7633D61D84F8C985C /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
+				20776081F099C18ABBDAD53F /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +89,8 @@
 		0971102168A94484EB3DFC8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F9D3F4EA7596D3A4D1C73B60 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
-				9B4345CEAAB41F849A8F5F60 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
+				B56B781B3E1DD69B294182B6 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
+				ADE281E697590ADBBF6FF6DF /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		A027C7E722BE594200445DCD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				A027C7E822BE594A00445DCD /* CustomViews */,
 			);
 			path = UI;
@@ -180,7 +189,7 @@
 				D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */,
 				D296EC8022B877F000E52DF9 /* Products */,
 				0971102168A94484EB3DFC8E /* Pods */,
-				BAF0BE330009A4CAB32991B3 /* Frameworks */,
+				F124B9DA6C8E949D6C1BCE6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,7 +206,6 @@
 			children = (
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
-				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				A027C7E722BE594200445DCD /* UI */,
 				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				41AC254822B923130004B0EF /* GoogleService-Info.plist */,
@@ -211,10 +219,22 @@
 		D296EC9522B87A2400E52DF9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D22C5ACC22C0107300C3703D /* Login.storyboard */,
+				D22C5AC622C009B500C3703D /* Profile.storyboard */,
+				D22C5AC422C0099B00C3703D /* Indications.storyboard */,
+				D22C5AC222C0092100C3703D /* Establishments.storyboard */,
 				D296EC8622B877F000E52DF9 /* Main.storyboard */,
 				D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F124B9DA6C8E949D6C1BCE6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D9932CBE2E62536764AEE /* Pods_app_tem_convenio_cwi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,11 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D296EC9122B877F100E52DF9 /* Build configuration list for PBXNativeTarget "app-tem-convenio-cwi" */;
 			buildPhases = (
-				E7F472088B7E50DAC32F2B97 /* [CP] Check Pods Manifest.lock */,
+				98472CAD7C62287F604CF9B9 /* [CP] Check Pods Manifest.lock */,
 				D296EC7B22B877F000E52DF9 /* Sources */,
 				D296EC7C22B877F000E52DF9 /* Frameworks */,
 				D296EC7D22B877F000E52DF9 /* Resources */,
-				F7DDCE5843C0AAB25E3BDC3F /* [CP] Embed Pods Frameworks */,
+				1FC7479839DC4BD3200329A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,9 +297,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22C5ACD22C0107300C3703D /* Login.storyboard in Resources */,
 				D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */,
 				41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */,
+				D22C5AC522C0099B00C3703D /* Indications.storyboard in Resources */,
+				D22C5AC322C0092100C3703D /* Establishments.storyboard in Resources */,
 				D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */,
+				D22C5AC722C009B500C3703D /* Profile.storyboard in Resources */,
 				D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,29 +311,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E7F472088B7E50DAC32F2B97 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-tem-convenio-cwi-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7DDCE5843C0AAB25E3BDC3F /* [CP] Embed Pods Frameworks */ = {
+		1FC7479839DC4BD3200329A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,6 +339,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98472CAD7C62287F604CF9B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app-tem-convenio-cwi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -509,7 +533,7 @@
 		};
 		D296EC9222B877F100E52DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D3F4EA7596D3A4D1C73B60 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
+			baseConfigurationReference = B56B781B3E1DD69B294182B6 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,7 +552,7 @@
 		};
 		D296EC9322B877F100E52DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B4345CEAAB41F849A8F5F60 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
+			baseConfigurationReference = ADE281E697590ADBBF6FF6DF /* Pods-app-tem-convenio-cwi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

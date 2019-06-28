@@ -16,7 +16,7 @@ extension RequestsHandler {
         case establishments
         case saveEstablishment
         case saveDetailedEstablishment
-        case saveFavorite(userUID: String, establishmentUID: String)
+        case saveFavorite(userUID: String)
         case removeFavorite(userUID: String, establishmentUID: String)
         case recommendEstablishment
         case recommendations

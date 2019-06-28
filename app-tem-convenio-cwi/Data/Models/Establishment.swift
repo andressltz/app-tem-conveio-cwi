@@ -15,14 +15,22 @@ struct Establishment {
     let uid: String
     let name: String
     let category: Category?
-    let image: String
+    let image: String?
     let rate: Double
+    let phone: String?
+    let email: String?
+    let about: String?
+    let address: String?
     
     init(withJson json: JSON) {
         self.uid = json["uid"].stringValue
         self.name = json["name"].stringValue
         self.category = Category(rawValue: json["category"].stringValue)
-        self.image = json["image"].stringValue
+        self.image = json["image"].string
         self.rate = json["rate"].doubleValue
+        self.phone = json["phone"].string
+        self.email = json["email"].string
+        self.about = json["about"].string
+        self.address = json["address"].string
     }
 }

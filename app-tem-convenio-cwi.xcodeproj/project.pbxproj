@@ -25,6 +25,10 @@
 		D290929422C4422A000F4640 /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommend.storyboard */; };
 		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
 		D290929622C4422A000F4640 /* Establishments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929222C4422A000F4640 /* Establishments.storyboard */; };
+		D290929822C5815E000F4640 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929722C5815E000F4640 /* DesignableButton.swift */; };
+		D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929922C5844A000F4640 /* UIButttonExtension.swift */; };
+		D290929E22C58CF4000F4640 /* UITextFiedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */; };
+		D29092A022C58D28000F4640 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929F22C58D28000F4640 /* DesignableView.swift */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		D290929022C4422A000F4640 /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
 		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D290929222C4422A000F4640 /* Establishments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Establishments.storyboard; sourceTree = "<group>"; };
+		D290929722C5815E000F4640 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = "app-tem-convenio-cwi/UI/Storyboards/DesignableButton.swift"; sourceTree = SOURCE_ROOT; };
+		D290929922C5844A000F4640 /* UIButttonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButttonExtension.swift; sourceTree = "<group>"; };
+		D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFiedExtension.swift; sourceTree = "<group>"; };
+		D290929F22C58D28000F4640 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = "app-tem-convenio-cwi/Extensions/DesignableView.swift"; sourceTree = SOURCE_ROOT; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +135,8 @@
 		A027C7E822BE594A00445DCD /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D290929722C5815E000F4640 /* DesignableButton.swift */,
+				D290929F22C58D28000F4640 /* DesignableView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -137,6 +147,8 @@
 				A027C7F622BE845000445DCD /* DictionaryExtensions.swift */,
 				A027C7F822BE846F00445DCD /* CharacterSetExtensions.swift */,
 				A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */,
+				D290929922C5844A000F4640 /* UIButttonExtension.swift */,
+				D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,11 +366,15 @@
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
+				D29092A022C58D28000F4640 /* DesignableView.swift in Sources */,
+				D290929E22C58CF4000F4640 /* UITextFiedExtension.swift in Sources */,
+				D290929822C5815E000F4640 /* DesignableButton.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
+				D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,3 +17,13 @@ class DesignableTextFied: UITextField {
         self.setRightPaddingPoints(15)
     }
 }
+
+@IBDesignable
+class DesignablePasswordTextFied: UITextField {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.setLeftPaddingPoints(15)
+        self.setRightPaddingPoints(40)
+    }
+}

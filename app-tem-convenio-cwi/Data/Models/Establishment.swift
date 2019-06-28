@@ -21,6 +21,7 @@ struct Establishment {
     let email: String?
     let about: String?
     let address: String?
+    var feedbacks: [Feedback]
     
     init(withJson json: JSON) {
         self.uid = json["uid"].stringValue
@@ -32,5 +33,12 @@ struct Establishment {
         self.email = json["email"].string
         self.about = json["about"].string
         self.address = json["address"].string
+        self.feedbacks = [Feedback]()
+        json["feedbacks"].arrayValue.forEach { (feedbackJson) in
+            let feedback = Feedback(withJson: feedbackJson)
+            self.feedbacks.append(feedback)
+        }
+    }
+    
     }
 }

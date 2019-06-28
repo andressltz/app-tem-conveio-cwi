@@ -19,6 +19,7 @@
 		A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */; };
 		A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF2A22C548AE00543DB5 /* Feedback.swift */; };
 		A05DCF2D22C5844600543DB5 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF2C22C5844600543DB5 /* Recommendation.swift */; };
+		A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF2E22C5A6FD00543DB5 /* Session.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -47,6 +48,7 @@
 		A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A05DCF2A22C548AE00543DB5 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		A05DCF2C22C5844600543DB5 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		A05DCF2E22C5A6FD00543DB5 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				A027C7E522BE58EE00445DCD /* API */,
 				A027C7E422BE58CD00445DCD /* Models */,
+				A05DCF2E22C5A6FD00543DB5 /* Session.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
 				D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */,
 				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,

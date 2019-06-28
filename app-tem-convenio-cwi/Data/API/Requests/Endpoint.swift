@@ -14,30 +14,38 @@ extension RequestsHandler {
         
         case createUser(userUID: String)
         case establishments
-        case saveFavorite(userUID: String, establishmentUID: String)
+        case saveEstablishment
+        case saveDetailedEstablishment
+        case saveFavorite(userUID: String)
         case removeFavorite(userUID: String, establishmentUID: String)
         case recommendEstablishment
+        case recommendations
+        case removeRecommendation(recommendationUID: String)
         case profile(userUID: String)
         case editProfile(userUID: String)
         case establishmentDetails(establishmentUID: String)
-        case sendFeedback(establishmentUID: Int)
+        case sendFeedback(establishmentUID: String)
         
         var url: String {
             switch self {
             case let .createUser(userUID):
                 return "users/\(userUID)"
-            case .establishments:
+            case .establishments, .saveEstablishment:
                 return "establishments"
+            case .saveDetailedEstablishment:
+                return "detailed-establishments"
             case let .saveFavorite(userUID):
                 return "users/\(userUID)/favorites"
             case let .removeFavorite(userUID, establishmentUID):
                 return "users/\(userUID)/favorites/\(establishmentUID)"
-            case .recommendEstablishment:
+            case .recommendEstablishment, .recommendations:
                 return "recommendations"
+            case let .removeRecommendation(recommendationUID):
+                return "recommendations/\(recommendationUID)"
             case let .profile(userUID), let .editProfile(userUID):
                 return "users/\(userUID)"
             case .establishmentDetails(let establishmentUID):
-                return "establishments/\(establishmentUID)"
+                return "detailed-establishments/\(establishmentUID)"
             case .sendFeedback(let establishmentUID):
                 return "establishments/\(establishmentUID)/feedbacks"
             }
@@ -45,13 +53,13 @@ extension RequestsHandler {
         
         var httpMethod: HttpMethods {
             switch self {
-            case .saveFavorite, .recommendEstablishment, .sendFeedback:
+            case .saveEstablishment, .saveDetailedEstablishment, .saveFavorite, .recommendEstablishment, .sendFeedback:
                 return .post
-            case .removeFavorite:
+            case .removeFavorite, .removeRecommendation:
                 return .delete
             case .createUser, .editProfile:
                 return .patch
-            default:
+            case .establishments, .recommendations, .profile, .establishmentDetails:
                 return .get
             }
         }

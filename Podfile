@@ -11,5 +11,6 @@ target 'app-tem-convenio-cwi' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'SwiftyJSON'
+  pod 'Nuke'
 
 end

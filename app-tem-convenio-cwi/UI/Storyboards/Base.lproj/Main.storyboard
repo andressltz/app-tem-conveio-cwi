@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="-2195" y="1491"/>
         </scene>
-        <!--Indications-->
+        <!--Recommendations-->
         <scene sceneID="jkT-co-hrM">
             <objects>
-                <viewControllerPlaceholder storyboardName="Indications" id="drD-ev-qWP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Recommendations" id="drD-ev-qWP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="B2f-aX-Kdv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n13-ES-5LY" userLabel="First Responder" sceneMemberID="firstResponder"/>

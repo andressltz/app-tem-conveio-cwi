@@ -35,7 +35,7 @@
 		D290929822C5815E000F4640 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929722C5815E000F4640 /* DesignableButton.swift */; };
 		D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929922C5844A000F4640 /* UIButttonExtension.swift */; };
 		D290929E22C58CF4000F4640 /* UITextFiedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */; };
-		D29092A022C58D28000F4640 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929F22C58D28000F4640 /* DesignableView.swift */; };
+		D29092A022C58D28000F4640 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929F22C58D28000F4640 /* DesignableTextField.swift */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -74,7 +74,7 @@
 		D290929722C5815E000F4640 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = "app-tem-convenio-cwi/UI/Storyboards/DesignableButton.swift"; sourceTree = SOURCE_ROOT; };
 		D290929922C5844A000F4640 /* UIButttonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButttonExtension.swift; sourceTree = "<group>"; };
 		D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFiedExtension.swift; sourceTree = "<group>"; };
-		D290929F22C58D28000F4640 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = "app-tem-convenio-cwi/Extensions/DesignableView.swift"; sourceTree = SOURCE_ROOT; };
+		D290929F22C58D28000F4640 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = "app-tem-convenio-cwi/Extensions/DesignableTextField.swift"; sourceTree = SOURCE_ROOT; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D290929722C5815E000F4640 /* DesignableButton.swift */,
-				D290929F22C58D28000F4640 /* DesignableView.swift */,
+				D290929F22C58D28000F4640 /* DesignableTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
-				D29092A022C58D28000F4640 /* DesignableView.swift in Sources */,
+				D29092A022C58D28000F4640 /* DesignableTextField.swift in Sources */,
 				D290929E22C58CF4000F4640 /* UITextFiedExtension.swift in Sources */,
 				D290929822C5815E000F4640 /* DesignableButton.swift in Sources */,
 				A0B0D2A022C400D6003C8A02 /* User.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     var clickViewPassword = false
-    @IBOutlet weak var passwordTextField: DesignableTextFied!
+    @IBOutlet weak var passwordTextField: DesignableTextField!
     @IBOutlet weak var passwordViewButton: UIButton!
     
     @IBAction func clickViewPassword(_ sender: UIButton) {

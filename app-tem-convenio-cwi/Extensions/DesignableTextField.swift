@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class DesignableTextFied: UITextField {
+class DesignableTextField: UITextField {
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +19,7 @@ class DesignableTextFied: UITextField {
 }
 
 @IBDesignable
-class DesignablePasswordTextFied: UITextField {
+class DesignablePasswordTextField: UITextField {
     
     override func awakeFromNib() {
         super.awakeFromNib()

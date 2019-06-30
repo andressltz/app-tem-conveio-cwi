@@ -38,7 +38,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-5a-xaE">
                                         <rect key="frame" x="0.0" y="185" width="305" height="210"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-HO-VPs" customClass="DesignableTextFied" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-HO-VPs" customClass="DesignableTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="EiR-sE-bRV"/>
@@ -64,7 +64,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsf-h8-VEr" userLabel="Senha">
                                                 <rect key="frame" x="0.0" y="80" width="305" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-D8-3Xx" customClass="DesignablePasswordTextFied" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-D8-3Xx" customClass="DesignablePasswordTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
                                                         <color key="textColor" name="text-default"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
@@ -152,6 +152,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="TQx-FE-6T4" kind="presentation" id="xbs-Ue-x5N"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="sigh-in-backgroud"/>
@@ -194,6 +197,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y48-eC-Pwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1343.2" y="2011.8440779610196"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lna-ey-3xv">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="TQx-FE-6T4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="emg-7O-4Op">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0m-PM-Dh6">
+                                <rect key="frame" x="0.0" y="374" width="375" height="438"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="NGU-kr-QRD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axr-zd-mfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514.39999999999998" y="2010.5911330049262"/>
         </scene>
     </scenes>
     <resources>

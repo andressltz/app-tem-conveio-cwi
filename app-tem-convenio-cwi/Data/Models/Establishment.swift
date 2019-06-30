@@ -39,6 +39,4 @@ struct Establishment {
             self.feedbacks.append(feedback)
         }
     }
-    
-    }
-
+}

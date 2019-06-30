@@ -20,12 +20,42 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="VFG-YW-2NP" kind="relationship" relationship="rootViewController" id="rGQ-dn-FQx"/>
+                        <segue destination="4WM-w8-LNJ" kind="relationship" relationship="rootViewController" id="HlY-lk-jUE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCl-P2-aEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2194" y="1048"/>
+        </scene>
+        <!--Establishments-->
+        <scene sceneID="Xgf-PD-CYH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Establishments" id="4WM-w8-LNJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9AE-0G-pX3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ku-TF-f8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2195" y="1537"/>
+        </scene>
+        <!--Recommend-->
+        <scene sceneID="vI6-LM-bLo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recommend" id="DPJ-1d-Tet" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PN1-ZM-b4j"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REs-Ad-ZIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1343" y="1536"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="nCD-Bt-RTa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="18r-hF-lyZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jvc-Ll-cRt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMv-Kt-QfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="1536"/>
         </scene>
         <!--Indicações-->
         <scene sceneID="wI6-me-wBW">
@@ -37,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="drD-ev-qWP" kind="relationship" relationship="rootViewController" id="1aL-01-IQc"/>
+                        <segue destination="DPJ-1d-Tet" kind="relationship" relationship="rootViewController" id="9Z0-NI-cKf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxH-Gd-p0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yV8-4A-HsB" kind="relationship" relationship="rootViewController" id="5Cg-28-mOo"/>
+                        <segue destination="18r-hF-lyZ" kind="relationship" relationship="rootViewController" id="kTx-mC-hAr"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAT-EN-ovL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,36 +110,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnm-JY-Y3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1343" y="3"/>
-        </scene>
-        <!--Establishments-->
-        <scene sceneID="ox0-tM-wDy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Establishments" id="VFG-YW-2NP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="55l-Y5-p1z"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zv-OI-m0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2195" y="1491"/>
-        </scene>
-        <!--Indications-->
-        <scene sceneID="jkT-co-hrM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Indications" id="drD-ev-qWP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="B2f-aX-Kdv"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n13-ES-5LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1343" y="1491"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="uQI-HV-yd8">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="yV8-4A-HsB" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="fPD-ad-wMG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MoJ-5p-DLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-451" y="1491"/>
         </scene>
     </scenes>
     <resources>

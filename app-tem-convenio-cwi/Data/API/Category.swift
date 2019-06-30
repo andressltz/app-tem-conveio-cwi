@@ -6,29 +6,41 @@
 //  Copyright © 2019 Cwi Software. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Category: String {
     
-    case education
-    case capacitation
-    case languages
-    case restaurants
-    case others
+    case teaching
+    case training
+    case language
+    case restaurant
+    case recreation
 
     var name: String {
         switch self {
-        case .education:
+        case .teaching:
             return "educação"
-        case .capacitation:
+        case .training:
             return "capacitação"
-        case .languages:
+        case .language:
             return "linguas"
-        case .restaurants:
+        case .restaurant:
             return "restaurantes"
-        case .others:
+        case .recreation:
             return "saude / lazer / entretenimento"
         }
+    }
+    
+    var icon: UIImage? {
+        return UIImage(named: "ic_\(self.rawValue)")
+    }
+    
+    var primaryColor: UIColor? {
+        return UIColor(named: "\(self.rawValue)-primary")
+    }
+    
+    var secondaryColor: UIColor? {
+        return UIColor(named: "\(self.rawValue)-secondary")
     }
     
 }

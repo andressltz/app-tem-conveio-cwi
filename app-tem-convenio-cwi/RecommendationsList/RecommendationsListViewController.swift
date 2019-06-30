@@ -15,21 +15,30 @@ class RecommendationsListViewController: UIViewController {
     @IBOutlet weak var emptyWarningView: UIView!
     
     private let presenter = RecommendationsListPresenter()
+    private let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter.view = self
+        self.configSearchBar()
         self.configTableView()
         self.presenter.fetchData()
     }
     
+    private func configSearchBar() {
+        self.searchController.searchBar.barTintColor = .clear
+        self.searchController.delegate = self
+        self.searchController.searchResultsUpdater = self
+    }
+    
     private func configTableView() {
+        self.tableView.tableHeaderView = self.searchController.searchBar
         self.tableView.delegate = self
         self.tableView.dataSource = self.presenter
     }
     
     private func shouldShowEmptyWarning() {
-        self.emptyWarningView.isHidden = !self.presenter.recommendations.isEmpty
+        self.emptyWarningView.isHidden = !self.presenter.filteredRecommendations.isEmpty
     }
 
 }
@@ -44,7 +53,6 @@ extension RecommendationsListViewController: RecommendationsListViewType {
     
     func onRecommendationDeleted(indexPath: IndexPath) {
         self.loaderView.isHidden = true
-        self.presenter.recommendations.remove(at: indexPath.row)
         self.tableView.deleteRows(at: [indexPath], with: .automatic)
         self.shouldShowEmptyWarning()
     }
@@ -65,5 +73,17 @@ extension RecommendationsListViewController: UITableViewDelegate {
         }
         let configuration = UISwipeActionsConfiguration(actions: [contextualAction])
         return configuration
+    }
+}
+
+extension RecommendationsListViewController: UISearchControllerDelegate {
+    
+}
+
+extension RecommendationsListViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let name = searchController.searchBar.text
+        self.presenter.filterData(with: name)
     }
 }

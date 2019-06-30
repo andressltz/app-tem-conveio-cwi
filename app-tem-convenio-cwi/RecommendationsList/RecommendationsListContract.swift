@@ -16,5 +16,6 @@ protocol RecommendationsListViewType: AnyObject {
 protocol RecommendationsListPresenterType: UITableViewDataSource {
     var view: RecommendationsListViewType? { get set }
     func fetchData()
+    func filterData(with name: String?)
     func deleteRecommendation(withIndexPath indexPath: IndexPath)
 }

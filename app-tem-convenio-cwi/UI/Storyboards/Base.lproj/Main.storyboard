@@ -111,6 +111,36 @@
             </objects>
             <point key="canvasLocation" x="-1343" y="3"/>
         </scene>
+        <!--Establishments-->
+        <scene sceneID="ox0-tM-wDy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Establishments" id="VFG-YW-2NP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="55l-Y5-p1z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zv-OI-m0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2195" y="1491"/>
+        </scene>
+        <!--Recommendations-->
+        <scene sceneID="jkT-co-hrM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recommendations" id="drD-ev-qWP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="B2f-aX-Kdv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n13-ES-5LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1343" y="1491"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uQI-HV-yd8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="yV8-4A-HsB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fPD-ad-wMG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MoJ-5p-DLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="1491"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic_establishment" width="24" height="24"/>

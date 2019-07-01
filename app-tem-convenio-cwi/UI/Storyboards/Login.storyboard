@@ -366,6 +366,8 @@
                         <viewLayoutGuide key="safeArea" id="NGU-kr-QRD"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="v2h-oF-bgs" id="qsh-Ic-2A3"/>
+                        <outlet property="nameTextField" destination="bWr-XG-QDc" id="HKS-cT-Xvs"/>
                         <outlet property="passwordTextField" destination="nb4-hc-sQz" id="iZJ-50-xWf"/>
                         <outlet property="passwordViewButton" destination="fnX-Jq-4Tn" id="WLk-Re-wa4"/>
                         <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="H1y-m3-lCV"/>
@@ -405,6 +407,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AEJ-As-wsB"/>
+        <segue reference="H1y-m3-lCV"/>
     </inferredMetricsTieBreakers>
 </document>

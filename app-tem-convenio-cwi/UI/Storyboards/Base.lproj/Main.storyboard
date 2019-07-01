@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-2195" y="1537"/>
         </scene>
-        <!--Recommend-->
+        <!--Recommendations-->
         <scene sceneID="vI6-LM-bLo">
             <objects>
-                <viewControllerPlaceholder storyboardName="Recommend" id="DPJ-1d-Tet" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Recommendations" id="DPJ-1d-Tet" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PN1-ZM-b4j"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REs-Ad-ZIT" userLabel="First Responder" sceneMemberID="firstResponder"/>

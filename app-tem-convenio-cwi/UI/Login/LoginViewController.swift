@@ -11,7 +11,10 @@ import UIKit
 class LoginViewController: UIViewController {
     
     var clickViewPassword = false
+    
+    @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignablePasswordTextField!
+    
     @IBOutlet weak var passwordViewButton: UIButton!
     
     @IBAction func clickViewPassword(_ sender: UIButton) {
@@ -25,8 +28,9 @@ class LoginViewController: UIViewController {
         clickViewPassword = !clickViewPassword
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    @IBAction func sighInButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "MainSegue", sender: nil)
     }
-
+    
 }

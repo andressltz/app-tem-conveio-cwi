@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerTouchUpInside(_ sender: UIButton) {
-        dismiss(animated: true)
+        self.performSegue(withIdentifier: "MainSegue", sender: nil)
     }
     
 }

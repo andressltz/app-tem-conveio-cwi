@@ -121,6 +121,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="08i-dg-3sl" kind="show" id="1P2-ra-2M9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -190,6 +193,7 @@
                         <viewLayoutGuide key="safeArea" id="Yqi-fd-o0A"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="ynE-HO-VPs" id="97Z-Aa-zrF"/>
                         <outlet property="passwordTextField" destination="1qx-D8-3Xx" id="t74-Ad-nBY"/>
                         <outlet property="passwordViewButton" destination="BZr-Zt-ZOt" id="Nvg-7D-j1e"/>
                     </connections>
@@ -339,6 +343,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="registerTouchUpInside:" destination="TQx-FE-6T4" eventType="touchUpInside" id="Zwt-EC-jkN"/>
+                                            <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="OJI-Mn-ccz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -367,7 +372,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axr-zd-mfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514.39999999999998" y="2010.5911330049262"/>
+            <point key="canvasLocation" x="-494" y="2011"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="CDe-No-QwI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="08i-dg-3sl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1w-ZT-53V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="2498"/>
         </scene>
     </scenes>
     <resources>
@@ -390,4 +403,7 @@
             <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1P2-ra-2M9"/>
+    </inferredMetricsTieBreakers>
 </document>

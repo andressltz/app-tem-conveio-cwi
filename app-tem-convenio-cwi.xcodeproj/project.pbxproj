@@ -31,7 +31,7 @@
 		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
 		D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
-		D290929422C4422A000F4640 /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommend.storyboard */; };
+		D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommendations.storyboard */; };
 		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
 		D290929622C4422A000F4640 /* Establishments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929222C4422A000F4640 /* Establishments.storyboard */; };
 		D290929822C5815E000F4640 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929722C5815E000F4640 /* DesignableButton.swift */; };
@@ -72,7 +72,7 @@
 		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		D290929022C4422A000F4640 /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
+		D290929022C4422A000F4640 /* Recommendations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommendations.storyboard; sourceTree = "<group>"; };
 		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D290929222C4422A000F4640 /* Establishments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Establishments.storyboard; sourceTree = "<group>"; };
 		D290929722C5815E000F4640 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = "app-tem-convenio-cwi/UI/Storyboards/DesignableButton.swift"; sourceTree = SOURCE_ROOT; };
@@ -252,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				D290929222C4422A000F4640 /* Establishments.storyboard */,
-				D290929022C4422A000F4640 /* Recommend.storyboard */,
+				D290929022C4422A000F4640 /* Recommendations.storyboard */,
 				D290929122C4422A000F4640 /* Login.storyboard */,
 				D290928F22C4422A000F4640 /* Profile.storyboard */,
 				D296EC8622B877F000E52DF9 /* Main.storyboard */,
@@ -324,7 +324,7 @@
 				D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */,
 				41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */,
 				D290929522C4422A000F4640 /* Login.storyboard in Resources */,
-				D290929422C4422A000F4640 /* Recommend.storyboard in Resources */,
+				D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */,
 				D290929322C4422A000F4640 /* Profile.storyboard in Resources */,
 				D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */,
 				D290929622C4422A000F4640 /* Establishments.storyboard in Resources */,

@@ -1,15 +1,15 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  app-tem-convenio-cwi
 //
-//  Created by Marielle Wronka on 28/06/2019.
+//  Created by Marielle Wronka on 30/06/2019.
 //  Copyright © 2019 Cwi Software. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
+class RegisterViewController: UIViewController {
+  
     var clickViewPassword = false
     @IBOutlet weak var passwordTextField: DesignablePasswordTextField!
     @IBOutlet weak var passwordViewButton: UIButton!
@@ -25,8 +25,12 @@ class LoginViewController: UIViewController {
         clickViewPassword = !clickViewPassword
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func touchDsmiss(_ sender: UIButton) {
+        dismiss(animated: true)
     }
-
+    
+    @IBAction func registerTouchUpInside(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }

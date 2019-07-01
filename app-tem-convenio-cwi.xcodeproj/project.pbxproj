@@ -26,6 +26,9 @@
 		A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A322C4129F003C8A02 /* Favorite.swift */; };
 		A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */; };
 		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
+		D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */; };
+		D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAA22C96F89002D37D0 /* DesinableView.swift */; };
+		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
 		D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
 		D290929422C4422A000F4640 /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommend.storyboard */; };
@@ -64,6 +67,9 @@
 		A0B0D2A322C4129F003C8A02 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
+		D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D2440FAA22C96F89002D37D0 /* DesinableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesinableView.swift; path = "app-tem-convenio-cwi/Extensions/DesinableView.swift"; sourceTree = SOURCE_ROOT; };
+		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D290929022C4422A000F4640 /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 			children = (
 				D290929722C5815E000F4640 /* DesignableButton.swift */,
 				D290929F22C58D28000F4640 /* DesignableTextField.swift */,
+				D2440FAA22C96F89002D37D0 /* DesinableView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 				D290929922C5844A000F4640 /* UIButttonExtension.swift */,
 				D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */,
 				A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */,
+				D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */,
+				D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
 				D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
+				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
@@ -407,6 +417,8 @@
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
+				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
+				D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */,
 				D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 				A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */,

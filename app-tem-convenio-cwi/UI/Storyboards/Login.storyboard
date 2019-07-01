@@ -122,7 +122,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="08i-dg-3sl" kind="show" id="1P2-ra-2M9"/>
+                                                    <action selector="sighInButton:" destination="N27-aB-CaS" eventType="touchUpInside" id="Z3C-In-bjN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -196,6 +196,7 @@
                         <outlet property="emailTextField" destination="ynE-HO-VPs" id="97Z-Aa-zrF"/>
                         <outlet property="passwordTextField" destination="1qx-D8-3Xx" id="t74-Ad-nBY"/>
                         <outlet property="passwordViewButton" destination="BZr-Zt-ZOt" id="Nvg-7D-j1e"/>
+                        <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="AEJ-As-wsB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y48-eC-Pwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -343,7 +344,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="registerTouchUpInside:" destination="TQx-FE-6T4" eventType="touchUpInside" id="Zwt-EC-jkN"/>
-                                            <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="OJI-Mn-ccz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -368,6 +368,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="nb4-hc-sQz" id="iZJ-50-xWf"/>
                         <outlet property="passwordViewButton" destination="fnX-Jq-4Tn" id="WLk-Re-wa4"/>
+                        <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="H1y-m3-lCV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axr-zd-mfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,6 +405,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1P2-ra-2M9"/>
+        <segue reference="AEJ-As-wsB"/>
     </inferredMetricsTieBreakers>
 </document>

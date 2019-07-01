@@ -30,7 +30,26 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func sighInButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "MainSegue", sender: nil)
+        
+        let email: String
+        email = emailTextField.text!
+        
+        let password: String
+        password = passwordTextField.text!
+        
+        if email.isEmpty || password.isEmpty {
+            let alert = UIAlertController(title: "Oops!", message: "É necessário preencher usuário e senha.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
+            self.present(alert, animated: true, completion: nil)
+        } else if !email.contains("@cwi.com.br") {
+            let alert = UIAlertController(title: "E-mail Inválido!", message: "O e-mail precisa ser do domínio da CWI.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            // TODO: Conectar com Firebase
+            self.performSegue(withIdentifier: "MainSegue", sender: nil)
+        }
+        
     }
     
 }

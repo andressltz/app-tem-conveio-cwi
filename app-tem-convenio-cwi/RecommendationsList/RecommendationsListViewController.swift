@@ -62,7 +62,11 @@ extension RecommendationsListViewController: RecommendationsListViewType {
 extension RecommendationsListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //todo call recommendation details
+        let storyboard = self.storyboard
+        if let detailViewController = storyboard?.instantiateViewController(withIdentifier: "RecommendationDetailsViewController") as? RecommendationDetailsViewController {
+            detailViewController.recommendation = self.presenter.filteredRecommendations[indexPath.row]
+            self.navigationController?.present(detailViewController, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

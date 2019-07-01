@@ -26,6 +26,9 @@
 		A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF3922C7ACDB00543DB5 /* RecommendationTableViewCell.swift */; };
 		A05DCF3C22C7BC5A00543DB5 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF3B22C7BC5A00543DB5 /* UIImageViewExtensions.swift */; };
 		A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05DCF3D22C7F7A800543DB5 /* UIViewExtensions.swift */; };
+		A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3A22C9690D00D453F0 /* RecommendationDetailsContract.swift */; };
+		A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3C22C96AD900D453F0 /* RecommendationDetailsViewController.swift */; };
+		A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -63,6 +66,9 @@
 		A05DCF3922C7ACDB00543DB5 /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
 		A05DCF3B22C7BC5A00543DB5 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		A05DCF3D22C7F7A800543DB5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A066BC3A22C9690D00D453F0 /* RecommendationDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsContract.swift; sourceTree = "<group>"; };
+		A066BC3C22C96AD900D453F0 /* RecommendationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsViewController.swift; sourceTree = "<group>"; };
+		A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsPresenter.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -182,6 +188,16 @@
 			path = RecommendationsList;
 			sourceTree = "<group>";
 		};
+		A066BC3922C9654600D453F0 /* RecommendationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A066BC3A22C9690D00D453F0 /* RecommendationDetailsContract.swift */,
+				A066BC3C22C96AD900D453F0 /* RecommendationDetailsViewController.swift */,
+				A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */,
+			);
+			path = RecommendationDetails;
+			sourceTree = "<group>";
+		};
 		A0B0D29922C3A845003C8A02 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +241,7 @@
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
 				A05DCF3222C702CC00543DB5 /* RecommendationsList */,
+				A066BC3922C9654600D453F0 /* RecommendationDetails */,
 				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
 				41AC254822B923130004B0EF /* GoogleService-Info.plist */,
 				D296EC8222B877F000E52DF9 /* AppDelegate.swift */,
@@ -392,13 +409,16 @@
 			files = (
 				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
 				D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */,
+				A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */,
 				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
+				A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
+				A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
 				A0B0D2A022C400D6003C8A02 /* User.swift in Sources */,

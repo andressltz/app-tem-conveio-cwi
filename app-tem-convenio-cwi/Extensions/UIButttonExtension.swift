@@ -8,4 +8,16 @@
 
 import UIKit
 
-extension UIButton { }
+extension UIButton {
+    
+    func isDisableButton() {
+        self.isEnabled = false
+        self.backgroundColor = UIColor.init(named: "disable")
+    }
+    
+    func isEnabledButton() {
+        self.isEnabled = true
+        self.backgroundColor = UIColor.init(named: "primary-color")
+    }
+    
+}

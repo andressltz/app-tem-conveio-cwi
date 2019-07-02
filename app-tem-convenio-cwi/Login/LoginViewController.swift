@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignablePasswordTextField!
+    @IBOutlet weak var loginButon: DesignableButton!
     
     @IBOutlet weak var passwordViewButton: UIButton!
     
@@ -41,12 +42,13 @@ class LoginViewController: UIViewController {
         onFieldsInvalid(error: .invalidEmail)
         return
         }
-        
+
         guard let password = passwordTextField.text, password.count >= 6 else {
             onFieldsInvalid(error: .invalidPassword)
             return
         }
-        
+
+        loginButon.isDisableButton()
         self.presenter.login(withEmail: email, withPassword: password)
     }
     
@@ -61,11 +63,17 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewType {
     
     func onLoginSucess() {
-        self.performSegue(withIdentifier: "MainSegue", sender: nil)
+        DispatchQueue.main.async {
+            self.loginButon.isEnabledButton()
+            self.performSegue(withIdentifier: "MainSegue", sender: nil)
+        }
     }
     
     func onFailure(error: APIError) {
-        self.showFailureAlert(withError: error)
+        DispatchQueue.main.async {
+            self.loginButon.isEnabledButton()
+            self.showFailureAlert(withError: error)
+        }
     }
     
 }

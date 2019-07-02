@@ -21,9 +21,7 @@ extension LoginPresenter: LoginPresenterType {
         AuthHandler().login(email: withEmail, password: withPassword) { (result) in
             guard case let .success(json) = result else {
                 if case let .failure(error) = result {
-                    DispatchQueue.main.async {
-                        self.view?.onFailure(error: error)
-                    }
+                    self.view?.onFailure(error: error)
                 }
                 return
             }
@@ -31,9 +29,7 @@ extension LoginPresenter: LoginPresenterType {
                 let user = User(withJson: json)
                 Session.instance.loggedUser = user
             }
-            DispatchQueue.main.async {
-                self.view?.onLoginSucess()
-            }
+            self.view?.onLoginSucess()
         }
     }
 }

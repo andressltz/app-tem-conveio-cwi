@@ -194,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="ynE-HO-VPs" id="97Z-Aa-zrF"/>
+                        <outlet property="loginButon" destination="adO-WX-Wj6" id="1dd-Is-WjM"/>
                         <outlet property="passwordTextField" destination="1qx-D8-3Xx" id="t74-Ad-nBY"/>
                         <outlet property="passwordViewButton" destination="BZr-Zt-ZOt" id="Nvg-7D-j1e"/>
                         <segue destination="08i-dg-3sl" kind="show" identifier="MainSegue" id="AEJ-As-wsB"/>
@@ -367,6 +368,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="v2h-oF-bgs" id="qsh-Ic-2A3"/>
+                        <outlet property="loginButon" destination="CX2-fq-OIE" id="Xy9-dY-1jI"/>
                         <outlet property="nameTextField" destination="bWr-XG-QDc" id="HKS-cT-Xvs"/>
                         <outlet property="passwordTextField" destination="nb4-hc-sQz" id="iZJ-50-xWf"/>
                         <outlet property="passwordViewButton" destination="fnX-Jq-4Tn" id="WLk-Re-wa4"/>

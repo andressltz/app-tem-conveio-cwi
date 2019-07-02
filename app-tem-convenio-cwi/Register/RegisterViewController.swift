@@ -16,7 +16,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var nameTextField: DesignableTextField!
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignablePasswordTextField!
-    
+    @IBOutlet weak var loginButon: DesignableButton!
+
     @IBOutlet weak var passwordViewButton: UIButton!
     
     override func viewDidLoad() {
@@ -56,6 +57,7 @@ class RegisterViewController: UIViewController {
             return
         }
         
+        loginButon.isDisableButton()
         self.presenter.createUser(withUsername: name, withEmail: email, withPassword: password)
     }
     
@@ -71,12 +73,14 @@ extension RegisterViewController: RegisterViewType {
     
     func onRegisterSucess() {
         DispatchQueue.main.async {
+            self.loginButon.isEnabledButton()
             self.performSegue(withIdentifier: "MainSegue", sender: nil)
         }
     }
     
     func onFailure(error: APIError) {
         DispatchQueue.main.async {
+            self.loginButon.isEnabledButton()
             self.showFailureAlert(withError: error)
         }
     }

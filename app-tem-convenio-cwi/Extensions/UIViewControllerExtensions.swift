@@ -11,8 +11,9 @@ import UIKit
 extension UIViewController {
     
     func showFailureAlert(withError error: APIError) {
-        //TODO: OPEN FAILURE ALERT PASSING ERROR
-        print(error.localizedDescription)
+        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

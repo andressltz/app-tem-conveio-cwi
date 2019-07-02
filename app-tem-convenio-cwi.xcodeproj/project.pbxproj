@@ -52,6 +52,11 @@
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
 		D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */; };
 		D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8922B877F100E52DF9 /* Assets.xcassets */; };
+		D2DF848422CAD460002F429E /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848322CAD460002F429E /* LoginContract.swift */; };
+		D2DF848622CAD580002F429E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848522CAD580002F429E /* LoginPresenter.swift */; };
+		D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848722CAEA07002F429E /* RegisterContract.swift */; };
+		D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */; };
+		D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848B22CB0956002F429E /* ValidationError.swift */; };
 		FB742C89E5D83126D348916B /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34278D7F4724E1E21672D9F /* Pods_app_tem_convenio_cwi.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +109,11 @@
 		D296EC8922B877F100E52DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D296EC8C22B877F100E52DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D296EC8E22B877F100E52DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DF848322CAD460002F429E /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		D2DF848522CAD580002F429E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D2DF848722CAEA07002F429E /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		D2DF848B22CB0956002F429E /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		D7BA9E7DD0CA45610E542862 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		F34278D7F4724E1E21672D9F /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,7 +185,6 @@
 		A027C7E722BE594200445DCD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D29092A122C5BB27000F4640 /* Login */,
 				D296EC9522B87A2400E52DF9 /* Storyboards */,
 				A027C7E822BE594A00445DCD /* CustomViews */,
 			);
@@ -233,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */,
+				D2DF848B22CB0956002F429E /* ValidationError.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -251,7 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */,
-				D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */,
+				D2DF848322CAD460002F429E /* LoginContract.swift */,
+				D2DF848522CAD580002F429E /* LoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -280,6 +291,8 @@
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
+				D2DF848222CAD35E002F429E /* Register */,
+				D29092A122C5BB27000F4640 /* Login */,
 				A05DCF3222C702CC00543DB5 /* RecommendationsList */,
 				A066BC3922C9654600D453F0 /* RecommendationDetails */,
 				D296EC8922B877F100E52DF9 /* Assets.xcassets */,
@@ -302,6 +315,16 @@
 				D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D2DF848222CAD35E002F429E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */,
+				D2DF848722CAEA07002F429E /* RegisterContract.swift */,
+				D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +468,7 @@
 				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
+				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
 				A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
@@ -460,19 +484,23 @@
 				D290929822C5815E000F4640 /* DesignableButton.swift in Sources */,
 				A0B0D2A022C400D6003C8A02 /* User.swift in Sources */,
 				A05DCF2D22C5844600543DB5 /* Recommendation.swift in Sources */,
+				D2DF848622CAD580002F429E /* LoginPresenter.swift in Sources */,
 				A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */,
 				A05DCF3422C702FE00543DB5 /* RecommendationsListContract.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */,
+				D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A05DCF3C22C7BC5A00543DB5 /* UIImageViewExtensions.swift in Sources */,
 				A05DCF3822C7A96A00543DB5 /* RecommendationsListViewController.swift in Sources */,
+				D2DF848422CAD460002F429E /* LoginContract.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
 				D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */,
+				D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */,
 				D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 				A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */,

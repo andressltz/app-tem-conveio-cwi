@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecommendationDetailsViewController: UIViewController {
+class RecommendationDetailsViewController: BaseImagePickerViewController {
 
     @IBOutlet weak var imageButton: UIImageView!
     @IBOutlet weak var nameField: UITextField!
@@ -36,9 +36,10 @@ class RecommendationDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        self.addKeyboardObservers()
         self.presenter.view = self
+        self.baseImagePickerCallback = self
+        self.addGestureToImageView(imageView: self.imageButton)
         self.loadRecommendation()
     }
     
@@ -72,4 +73,17 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
     func onRecommendationSaved() {
         self.goBack()
     }
+}
+
+extension RecommendationDetailsViewController: BaseImagePickerProtocol {
+    
+    func onFailure() {
+        //todo: handle failure
+    }
+    
+    func onImageLoaded(image: UIImage) {
+        self.imageButton.image = image
+    }
+    
+    
 }

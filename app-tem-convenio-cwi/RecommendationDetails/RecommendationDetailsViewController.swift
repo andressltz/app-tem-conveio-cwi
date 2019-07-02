@@ -28,7 +28,13 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
-        self.presenter.saveRecommendation(with: [:])
+        self.presenter.saveRecommendation(withImage: self.recommendation?.image,
+                                          withName: self.nameField.text,
+                                          withPhone: self.phoneField.text,
+                                          withEmail: self.emailField.text,
+                                          withAddress: self.locationField.text,
+                                          withAbout: self.aboutField.text
+        )
     }
     
     var recommendation: Recommendation?
@@ -71,7 +77,9 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
     }
     
     func onRecommendationSaved() {
-        self.goBack()
+        DispatchQueue.main.async {
+            self.goBack()
+        }
     }
 }
 

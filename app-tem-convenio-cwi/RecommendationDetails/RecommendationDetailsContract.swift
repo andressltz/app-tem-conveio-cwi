@@ -14,5 +14,12 @@ protocol RecommentationDetailsViewType: AnyObject {
 }
 
 protocol RecommendationDetailsPresenterType {
-    func saveRecommendation(with params: [String: Any])
+    func saveRecommendation(
+        withImage imageURL: String?,
+        withName name: String?,
+        withPhone phone: String?,
+        withEmail email: String?,
+        withAddress address: String?,
+        withAbout about: String?
+    )
 }

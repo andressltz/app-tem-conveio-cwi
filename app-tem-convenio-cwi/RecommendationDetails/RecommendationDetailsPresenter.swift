@@ -12,6 +12,13 @@ class RecommendationDetailsPresenter: NSObject {
     
     weak var view: RecommentationDetailsViewType?
     private lazy var requestsHandler = RequestsHandler()
+    var selectedCategory: Int? {
+        didSet {
+            if let tag = self.selectedCategory {
+                self.view?.onCategorySelected(categoryTag: tag)
+            }
+        }
+    }
     
 }
 

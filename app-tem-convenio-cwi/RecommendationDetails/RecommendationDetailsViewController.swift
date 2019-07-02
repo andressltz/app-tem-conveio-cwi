@@ -24,11 +24,10 @@ class RecommendationDetailsViewController: UIViewController {
     }
     
     @IBAction func selectCategory(_ sender: UIButton) {
-        
+        self.presenter.selectedCategory = sender.tag
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
-        
         self.presenter.saveRecommendation(with: [:])
     }
     
@@ -49,7 +48,28 @@ class RecommendationDetailsViewController: UIViewController {
             if let imageURL = recommendation.image {
                 self.imageButton.loadImage(from: imageURL)
             }
+            if let category = recommendation.category {
+                self.presenter.selectedCategory = category.tag
+            }
         }
     }
 
+}
+
+extension RecommendationDetailsViewController: RecommentationDetailsViewType {
+    
+    func onCategorySelected(categoryTag: Int) {
+        let category = Category(tag: categoryTag)
+        self.categoryButtonsCollection.forEach { (button) in
+            if button.tag == categoryTag {
+                button.backgroundColor = category.primaryColor
+            } else {
+                button.backgroundColor = UIColor(named: "disable")
+            }
+        }
+    }
+    
+    func onRecommendationSaved() {
+        self.goBack()
+    }
 }

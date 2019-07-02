@@ -9,6 +9,7 @@
 import Foundation
 
 protocol RecommentationDetailsViewType: AnyObject {
+    func onCategorySelected(categoryTag: Int)
     func onRecommendationSaved()
 }
 

@@ -15,6 +15,23 @@ enum Category: String {
     case language
     case restaurant
     case recreation
+    
+    init(tag: Int) {
+        switch tag {
+        case 0:
+            self.init(rawValue: "teaching")!
+        case 1:
+            self.init(rawValue: "training")!
+        case 2:
+            self.init(rawValue: "language")!
+        case 3:
+            self.init(rawValue: "restaurant")!
+        case 4:
+            self.init(rawValue: "recreation")!
+        default:
+            self.init(rawValue: "recreation")!
+        }
+    }
 
     var name: String {
         switch self {
@@ -41,6 +58,21 @@ enum Category: String {
     
     var secondaryColor: UIColor? {
         return UIColor(named: "\(self.rawValue)-secondary")
+    }
+    
+    var tag: Int {
+        switch self {
+        case .teaching:
+            return 0
+        case .training:
+            return 1
+        case .language:
+            return 2
+        case .restaurant:
+            return 3
+        case .recreation:
+            return 4
+        }
     }
     
 }

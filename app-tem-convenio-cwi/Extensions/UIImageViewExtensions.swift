@@ -1,20 +1,25 @@
 //
 //  UIImageViewExtensions.swift
-//  app-tem-convenio-cwi
+//  Pokedex
 //
-//  Created by Ândres Schultz on 02/07/19.
-//  Copyright © 2019 Cwi Software. All rights reserved.
+//  Created by Gunther Ribak on 08/06/2019.
+//  Copyright © 2019 CWI Software. All rights reserved.
 //
 
 import UIKit
 import Nuke
 
+extension UIImage {
+    
+    static let placeholderImage = UIImage(named: "image_no_picture")!
+    
+}
+
 extension UIImageView {
     
     func loadImage(from urlString: String) {
         if let url = URL(string: urlString) {
-            let options = ImageLoadingOptions()
-            
+            let options = ImageLoadingOptions(placeholder: .placeholderImage, failureImage: .placeholderImage)
             Nuke.loadImage(with: url, options: options, into: self)
         }
     }

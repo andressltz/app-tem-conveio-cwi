@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum APIError: Error {
+enum APIError: BaseError {
     case missingParams
     case requestFailed
     case invalidData

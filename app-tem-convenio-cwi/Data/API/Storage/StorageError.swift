@@ -8,8 +8,31 @@
 
 import Foundation
 
-enum StorageError: Error {
+enum StorageError: BaseError {
+
     case serverError
     case invalidData
     case invalidURL
+    
+    var title: String {
+        switch self {
+        case .serverError:
+            return ""
+        case .invalidData:
+            return ""
+        case .invalidURL:
+            return ""
+        }
+    }
+    
+    var message: String {
+        switch self {
+        case .serverError:
+            return ""
+        case .invalidData:
+            return ""
+        case .invalidURL:
+            return ""
+        }
+    }
 }

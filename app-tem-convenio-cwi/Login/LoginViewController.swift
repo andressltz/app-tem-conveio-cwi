@@ -40,8 +40,8 @@ class LoginViewController: UIViewController {
     @IBAction func sighInButton(_ sender: UIButton) {
         
         guard let email = emailTextField.text, email.contains("@cwi.com.br") else {
-        onFieldsInvalid(error: .invalidEmail)
-        return
+            onFieldsInvalid(error: .invalidEmail)
+            return
         }
 
         guard let password = passwordTextField.text, password.count >= 6 else {
@@ -54,9 +54,7 @@ class LoginViewController: UIViewController {
     }
     
     func onFieldsInvalid(error: ValidationError) {
-        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
-        self.present(alert, animated: true, completion: nil)
+        self.showFailureAlert(withError: error)
     }
     
 }

@@ -8,7 +8,8 @@
 
 import UIKit
 
-enum ValidationError: Error {
+enum ValidationError: BaseError {
+    
     case invalidName
     case invalidEmail
     case invalidPassword

@@ -33,6 +33,7 @@
 		A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */; };
 		A066BC4A22CC381E00D453F0 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4922CC381E00D453F0 /* StorageHandler.swift */; };
 		A066BC4C22CC44C700D453F0 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4B22CC44C700D453F0 /* StorageError.swift */; };
+		A066BC4E22CD149C00D453F0 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4D22CD149C00D453F0 /* BaseError.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -93,6 +94,7 @@
 		A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerProtocol.swift; sourceTree = "<group>"; };
 		A066BC4922CC381E00D453F0 /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
 		A066BC4B22CC44C700D453F0 /* StorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
+		A066BC4D22CD149C00D453F0 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -186,7 +188,7 @@
 				A0B0D29922C3A845003C8A02 /* Auth */,
 				A0B0D29A22C3A855003C8A02 /* Requests */,
 				A027C7EC22BE5B8C00445DCD /* Result.swift */,
-				A027C7F222BE67CB00445DCD /* APIError.swift */,
+				A066BC4D22CD149C00D453F0 /* BaseError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -277,6 +279,7 @@
 		A0B0D29A22C3A855003C8A02 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				A027C7F222BE67CB00445DCD /* APIError.swift */,
 				A027C7ED22BE5B8C00445DCD /* Endpoint.swift */,
 				A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */,
 				A027C7F022BE608A00445DCD /* HttpMethods.swift */,
@@ -497,6 +500,7 @@
 				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
+				A066BC4E22CD149C00D453F0 /* BaseError.swift in Sources */,
 				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
 				A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,

@@ -19,7 +19,7 @@ class EstablishmentTableViewCell: UITableViewCell {
     func config(with model: Establishment) {
         pictureImageView.loadImage(from: model.image!) // TODO: mudar esse optional
         establishmentName.text = model.name
-//        categoryTypeImageView.loadImage(from: model.category)
+        categoryTypeImageView.image = model.category?.icon
         rateLabel.text = String(model.rate)
 //        favoriteImageView
 //        model.category.

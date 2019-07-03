@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addKeyboardObservers()
         self.presenter.view = self
     }
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
+		87B1EFA547A1BE522411CA60 /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */; };
 		A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
 		A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7ED22BE5B8C00445DCD /* Endpoint.swift */; };
@@ -28,6 +29,8 @@
 		A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3A22C9690D00D453F0 /* RecommendationDetailsContract.swift */; };
 		A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3C22C96AD900D453F0 /* RecommendationDetailsViewController.swift */; };
 		A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */; };
+		A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */; };
+		A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -57,12 +60,13 @@
 		D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848722CAEA07002F429E /* RegisterContract.swift */; };
 		D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */; };
 		D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848B22CB0956002F429E /* ValidationError.swift */; };
-		FB742C89E5D83126D348916B /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34278D7F4724E1E21672D9F /* Pods_app_tem_convenio_cwi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8806043EACB97B786A529C52 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
+		56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
+		911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsHandler.swift; sourceTree = "<group>"; };
 		A027C7EC22BE5B8C00445DCD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A027C7ED22BE5B8C00445DCD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		A066BC3A22C9690D00D453F0 /* RecommendationDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsContract.swift; sourceTree = "<group>"; };
 		A066BC3C22C96AD900D453F0 /* RecommendationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsViewController.swift; sourceTree = "<group>"; };
 		A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsPresenter.swift; sourceTree = "<group>"; };
+		A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerViewController.swift; sourceTree = "<group>"; };
+		A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerProtocol.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -114,8 +120,6 @@
 		D2DF848722CAEA07002F429E /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
 		D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		D2DF848B22CB0956002F429E /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
-		D7BA9E7DD0CA45610E542862 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
-		F34278D7F4724E1E21672D9F /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB742C89E5D83126D348916B /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
+				87B1EFA547A1BE522411CA60 /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,16 +137,16 @@
 		0971102168A94484EB3DFC8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8806043EACB97B786A529C52 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
-				D7BA9E7DD0CA45610E542862 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
+				56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
+				3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6A0488B392B8B5082C395653 /* Frameworks */ = {
+		81E23E2A54D85FA90A914BEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F34278D7F4724E1E21672D9F /* Pods_app_tem_convenio_cwi.framework */,
+				911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,6 +242,15 @@
 			path = RecommendationDetails;
 			sourceTree = "<group>";
 		};
+		A066BC4322CB215E00D453F0 /* BaseImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */,
+				A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */,
+			);
+			path = BaseImagePicker;
+			sourceTree = "<group>";
+		};
 		A0B0D29922C3A845003C8A02 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +286,7 @@
 				D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */,
 				D296EC8022B877F000E52DF9 /* Products */,
 				0971102168A94484EB3DFC8E /* Pods */,
-				6A0488B392B8B5082C395653 /* Frameworks */,
+				81E23E2A54D85FA90A914BEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +301,7 @@
 		D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */ = {
 			isa = PBXGroup;
 			children = (
+				A066BC4322CB215E00D453F0 /* BaseImagePicker */,
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
@@ -334,11 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D296EC9122B877F100E52DF9 /* Build configuration list for PBXNativeTarget "app-tem-convenio-cwi" */;
 			buildPhases = (
-				DBB97E78141E6E6E3AFD7599 /* [CP] Check Pods Manifest.lock */,
+				F5B4CFC7B4C535764131981A /* [CP] Check Pods Manifest.lock */,
 				D296EC7B22B877F000E52DF9 /* Sources */,
 				D296EC7C22B877F000E52DF9 /* Frameworks */,
 				D296EC7D22B877F000E52DF9 /* Resources */,
-				71A15071BC2BAE8121B9FFF0 /* [CP] Embed Pods Frameworks */,
+				7FA2060C0A6AFDB3220FB18F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,7 +415,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		71A15071BC2BAE8121B9FFF0 /* [CP] Embed Pods Frameworks */ = {
+		7FA2060C0A6AFDB3220FB18F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,7 +447,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DBB97E78141E6E6E3AFD7599 /* [CP] Check Pods Manifest.lock */ = {
+		F5B4CFC7B4C535764131981A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,6 +483,7 @@
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
 				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
+				A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
 				A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
@@ -488,6 +503,7 @@
 				A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */,
 				A05DCF3422C702FE00543DB5 /* RecommendationsListContract.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
+				A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */,
 				A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */,
 				D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
@@ -647,7 +663,7 @@
 		};
 		D296EC9222B877F100E52DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8806043EACB97B786A529C52 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
+			baseConfigurationReference = 56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,7 +682,7 @@
 		};
 		D296EC9322B877F100E52DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7BA9E7DD0CA45610E542862 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
+			baseConfigurationReference = 3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

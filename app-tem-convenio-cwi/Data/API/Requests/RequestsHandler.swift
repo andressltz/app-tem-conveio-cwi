@@ -18,7 +18,7 @@ class RequestsHandler {
         ref = Database.database().reference()
     }
     
-    func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any]? = nil, completion: @escaping CompletionCallback) {
+    func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any?]? = nil, completion: @escaping CompletionCallback) {
         let databaseRef = self.ref.child(endpoint.url)
         switch endpoint.httpMethod {
         case .post:

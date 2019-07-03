@@ -243,7 +243,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="text-default"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="2"/>
@@ -263,7 +263,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="text-default"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="2"/>
@@ -306,7 +306,7 @@
                                                             <constraint firstAttribute="width" constant="35" id="8oH-bY-chV"/>
                                                             <constraint firstAttribute="height" constant="35" id="AN2-kI-1IS"/>
                                                         </constraints>
-                                                        <state key="normal" image="ic_language"/>
+                                                        <state key="normal" image="ic_teaching"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="17"/>
@@ -316,14 +316,14 @@
                                                             <action selector="selectCategory:" destination="wGU-D3-bmR" eventType="touchUpInside" id="vZn-ZQ-cZ5"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-6Q-hSj">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-6Q-hSj">
                                                         <rect key="frame" x="43" y="0.0" width="35" height="35"/>
                                                         <color key="backgroundColor" name="disable"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="35" id="YjB-xH-OBX"/>
                                                             <constraint firstAttribute="height" constant="35" id="qj0-J8-KRl"/>
                                                         </constraints>
-                                                        <state key="normal" image="ic_recreation"/>
+                                                        <state key="normal" image="ic_training"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="17"/>
@@ -333,14 +333,14 @@
                                                             <action selector="selectCategory:" destination="wGU-D3-bmR" eventType="touchUpInside" id="03t-Xq-GWp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-vM-ZZW">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-vM-ZZW">
                                                         <rect key="frame" x="86" y="0.0" width="35" height="35"/>
                                                         <color key="backgroundColor" name="disable"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="BCj-85-jdr"/>
                                                             <constraint firstAttribute="width" constant="35" id="NaG-Yg-xkM"/>
                                                         </constraints>
-                                                        <state key="normal" image="ic_training"/>
+                                                        <state key="normal" image="ic_language"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="17"/>
@@ -350,7 +350,7 @@
                                                             <action selector="selectCategory:" destination="wGU-D3-bmR" eventType="touchUpInside" id="iNe-hm-9Ns"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul7-GA-iuy">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul7-GA-iuy">
                                                         <rect key="frame" x="129" y="0.0" width="35" height="35"/>
                                                         <color key="backgroundColor" name="disable"/>
                                                         <constraints>
@@ -367,14 +367,14 @@
                                                             <action selector="selectCategory:" destination="wGU-D3-bmR" eventType="touchUpInside" id="mjE-zy-c1I"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icI-yl-gro">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icI-yl-gro">
                                                         <rect key="frame" x="172" y="0.0" width="35" height="35"/>
                                                         <color key="backgroundColor" name="disable"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="35" id="EzD-sA-QkX"/>
                                                             <constraint firstAttribute="height" constant="35" id="Hc5-Mk-3m7"/>
                                                         </constraints>
-                                                        <state key="normal" image="ic_teaching"/>
+                                                        <state key="normal" image="ic_recreation"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="17"/>
@@ -385,7 +385,30 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="D6s-xS-vUr"/>
+                                                </constraints>
                                             </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-8e-wqS">
+                                                <rect key="frame" x="19" y="369" width="337" height="157"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="bNZ-o5-6dq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="disable"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg4-m2-r38">
                                                 <rect key="frame" x="19" y="545" width="337" height="50"/>
                                                 <color key="backgroundColor" name="primary-color"/>
@@ -405,49 +428,32 @@
                                                     <action selector="saveRecommendation:" destination="wGU-D3-bmR" eventType="touchUpInside" id="dyB-fi-CwM"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-8e-wqS">
-                                                <rect key="frame" x="19" y="369" width="337" height="157"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="disable"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="mqR-z2-YHW" secondAttribute="trailing" constant="19" id="1kc-qm-gSz"/>
                                             <constraint firstItem="gg4-m2-r38" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="6AB-xP-uK7"/>
+                                            <constraint firstItem="KuN-8e-wqS" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="7IE-wm-WFO"/>
                                             <constraint firstItem="jvz-Am-DNi" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="7WT-ZH-qWy"/>
                                             <constraint firstItem="mqR-z2-YHW" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="A1e-i8-IJx"/>
                                             <constraint firstItem="za7-4y-hVJ" firstAttribute="centerX" secondItem="wOO-Se-uFR" secondAttribute="centerX" id="AUu-Sn-dXF"/>
                                             <constraint firstItem="Cpt-uR-jmJ" firstAttribute="centerX" secondItem="wOO-Se-uFR" secondAttribute="centerX" id="EAL-EX-iZr"/>
                                             <constraint firstAttribute="trailing" secondItem="jvz-Am-DNi" secondAttribute="trailing" constant="19" id="EBl-3c-LbZ"/>
                                             <constraint firstAttribute="trailing" secondItem="vxa-GO-fXG" secondAttribute="trailing" constant="19" id="K8r-31-6k2"/>
-                                            <constraint firstItem="KuN-8e-wqS" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="NDA-aU-eBt"/>
-                                            <constraint firstItem="gg4-m2-r38" firstAttribute="top" secondItem="KuN-8e-wqS" secondAttribute="bottom" constant="19" id="NkY-xb-TcF"/>
                                             <constraint firstAttribute="trailing" secondItem="gg4-m2-r38" secondAttribute="trailing" constant="19" id="OJT-UK-mMl"/>
                                             <constraint firstAttribute="trailing" secondItem="WH1-JJ-veD" secondAttribute="trailing" constant="19" id="QDt-ky-gAd"/>
-                                            <constraint firstItem="KuN-8e-wqS" firstAttribute="top" secondItem="jvz-Am-DNi" secondAttribute="bottom" constant="19" id="WV6-7e-poS"/>
+                                            <constraint firstAttribute="trailing" secondItem="KuN-8e-wqS" secondAttribute="trailing" constant="19" id="Xxr-uD-x9u"/>
                                             <constraint firstAttribute="bottom" secondItem="gg4-m2-r38" secondAttribute="bottom" constant="19" id="a0p-fR-MZT"/>
+                                            <constraint firstItem="KuN-8e-wqS" firstAttribute="top" secondItem="jvz-Am-DNi" secondAttribute="bottom" constant="19" id="cf1-Sr-jSM"/>
                                             <constraint firstItem="WH1-JJ-veD" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="fT0-gN-kyT"/>
                                             <constraint firstItem="Cpt-uR-jmJ" firstAttribute="top" secondItem="wOO-Se-uFR" secondAttribute="top" constant="-60" id="fZI-ij-jqj"/>
-                                            <constraint firstAttribute="trailing" secondItem="KuN-8e-wqS" secondAttribute="trailing" constant="19" id="i8U-Nn-GWa"/>
                                             <constraint firstItem="WH1-JJ-veD" firstAttribute="top" secondItem="mqR-z2-YHW" secondAttribute="bottom" constant="19" id="jV7-ie-hAV"/>
                                             <constraint firstItem="za7-4y-hVJ" firstAttribute="top" secondItem="vxa-GO-fXG" secondAttribute="bottom" constant="19" id="na0-Im-ko3"/>
                                             <constraint firstItem="jvz-Am-DNi" firstAttribute="top" secondItem="WH1-JJ-veD" secondAttribute="bottom" constant="19" id="taB-us-NWN"/>
                                             <constraint firstItem="mqR-z2-YHW" firstAttribute="top" secondItem="za7-4y-hVJ" secondAttribute="bottom" constant="19" id="tps-eQ-q1K"/>
                                             <constraint firstItem="vxa-GO-fXG" firstAttribute="leading" secondItem="wOO-Se-uFR" secondAttribute="leading" constant="19" id="vuh-lD-WKI"/>
                                             <constraint firstItem="vxa-GO-fXG" firstAttribute="top" secondItem="Cpt-uR-jmJ" secondAttribute="bottom" constant="19" id="xMz-mN-4fr"/>
+                                            <constraint firstItem="gg4-m2-r38" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KuN-8e-wqS" secondAttribute="bottom" constant="19" id="zTM-O4-Rbm"/>
                                         </constraints>
                                     </view>
                                 </subviews>

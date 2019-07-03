@@ -11,7 +11,11 @@ import UIKit
 class RecommendationDetailsPresenter: NSObject {
     
     weak var view: RecommentationDetailsViewType?
+    var recommendationUID: String?
+    
     private lazy var requestsHandler = RequestsHandler()
+    private lazy var storageHandler = StorageHandler()
+    
     var selectedCategory: Int? {
         didSet {
             if let tag = self.selectedCategory {
@@ -19,7 +23,39 @@ class RecommendationDetailsPresenter: NSObject {
             }
         }
     }
-    var image: UIImage?
+    var image: UIImage? {
+        didSet {
+            if let image = self.image {
+                self.view?.onImageSelected(image: image)
+            }
+        }
+    }
+    
+    func saveEstablishment(withImage imageURL: String, establishmentParams: [String: Any?], establishmentDetailsParams: [String: Any?]) {
+        self.requestsHandler.make(withEndpoint: .saveEstablishment, withParams: establishmentParams) { (result) in
+            guard case .success = result else {
+                //todo: handle error
+                return
+            }
+            self.requestsHandler.make(withEndpoint: .saveDetailedEstablishment, withParams: establishmentDetailsParams, completion: { (result) in
+                guard case .success = result else {
+                    //todo: handle error
+                    return
+                }
+                if let recommendationUID = self.recommendationUID {
+                    self.requestsHandler.make(withEndpoint: .removeRecommendation(recommendationUID: recommendationUID), completion: { (result) in
+                        guard case .success = result else {
+                            //todo: handle error
+                            return
+                        }
+                        self.view?.onRecommendationSaved()
+                    })
+                } else {
+                    //todo: handle failure
+                }
+            })
+        }
+    }
     
 }
 
@@ -41,23 +77,37 @@ extension RecommendationDetailsPresenter: RecommendationDetailsPresenterType {
         
         let category = Category(tag: categoryTag)
         
-        var params: [String: Any?] = [:]
-        params["name"] = name
-        params["phone"] = phone
-        params["email"] = email
-        params["address"] = address
-        params["about"] = about
-        params["image"] = imageURL
-        params["category"] = category.rawValue
-        params["rate"] = 0.0
+        var establishentParams: [String: Any?] = [:]
+        establishentParams["name"] = name
+        establishentParams["category"] = category.rawValue
+        establishentParams["rate"] = 0.0
         
-        requestsHandler.make(withEndpoint: .saveEstablishment, withParams: params) { (result) in
-            guard case .success = result else {
-                //todo: handle error
+        var establishmentDetailsParams: [String: Any?] = [:]
+        establishmentDetailsParams.merge(establishentParams) { (first, _) -> Any? in
+            first
+        }
+        establishmentDetailsParams["phone"] = phone
+        establishmentDetailsParams["email"] = email
+        establishmentDetailsParams["address"] = address
+        establishmentDetailsParams["about"] = about
+        
+        guard let image = self.image else {
+            if let imageURL = imageURL {
+                establishentParams["image"] = imageURL
+                establishmentDetailsParams["image"] = imageURL
+                saveEstablishment(withImage: imageURL, establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
+            }
+            return
+        }
+        
+        self.storageHandler.upload(name: name, image: image) { (result) in
+            guard case let .success(imageURL) = result else {
+                //handle failure
                 return
             }
-            //todo: delete recommendation from database
-            self.view?.onRecommendationSaved()
+            establishentParams["image"] = imageURL
+            establishmentDetailsParams["image"] = imageURL
+            self.saveEstablishment(withImage: imageURL, establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
         }
     }
     

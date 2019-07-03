@@ -6,10 +6,11 @@
 //  Copyright © 2019 Cwi Software. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol RecommentationDetailsViewType: AnyObject {
     func onCategorySelected(categoryTag: Int)
+    func onImageSelected(image: UIImage)
     func onRecommendationSaved()
 }
 

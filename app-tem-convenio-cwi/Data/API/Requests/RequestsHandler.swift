@@ -30,7 +30,7 @@ class RequestsHandler {
                 completion(.failure(.invalidData))
                 return
             }
-            params["uid"] = uid
+            params["uid"] = uid 
             databaseRef.child(uid).setValue(params, withCompletionBlock: ({ (error, _) in
                 guard error == nil else {
                     print(error!.localizedDescription)

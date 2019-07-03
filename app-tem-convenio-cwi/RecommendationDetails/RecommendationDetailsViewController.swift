@@ -38,12 +38,16 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     var recommendation: Recommendation?
+    
     private let presenter = RecommendationDetailsPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addKeyboardObservers()
         self.presenter.view = self
+        if let recommendation = self.recommendation {
+            self.presenter.recommendationUID = recommendation.uid
+        }
         self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.imageButton)
         self.loadRecommendation()
@@ -76,6 +80,10 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
         }
     }
     
+    func onImageSelected(image: UIImage) {
+        self.imageButton.image = image
+    }
+    
     func onRecommendationSaved() {
         DispatchQueue.main.async {
             self.goBack()
@@ -90,7 +98,7 @@ extension RecommendationDetailsViewController: BaseImagePickerProtocol {
     }
     
     func onImageLoaded(image: UIImage) {
-        self.imageButton.image = image
+        self.presenter.image = image
     }
     
     

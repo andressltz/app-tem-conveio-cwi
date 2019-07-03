@@ -31,6 +31,8 @@
 		A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */; };
 		A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */; };
 		A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */; };
+		A066BC4A22CC381E00D453F0 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4922CC381E00D453F0 /* StorageHandler.swift */; };
+		A066BC4C22CC44C700D453F0 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4B22CC44C700D453F0 /* StorageError.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -73,6 +75,8 @@
 		A066BC3E22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailsPresenter.swift; sourceTree = "<group>"; };
 		A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerViewController.swift; sourceTree = "<group>"; };
 		A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImagePickerProtocol.swift; sourceTree = "<group>"; };
+		A066BC4922CC381E00D453F0 /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
+		A066BC4B22CC44C700D453F0 /* StorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		A027C7E522BE58EE00445DCD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A066BC4822CC37EE00D453F0 /* Storage */,
 				A0B0D29922C3A845003C8A02 /* Auth */,
 				A0B0D29A22C3A855003C8A02 /* Requests */,
 				A027C7EC22BE5B8C00445DCD /* Result.swift */,
@@ -209,6 +214,15 @@
 				A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */,
 			);
 			path = BaseImagePicker;
+			sourceTree = "<group>";
+		};
+		A066BC4822CC37EE00D453F0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A066BC4922CC381E00D453F0 /* StorageHandler.swift */,
+				A066BC4B22CC44C700D453F0 /* StorageError.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		A0B0D29922C3A845003C8A02 /* Auth */ = {
@@ -423,6 +437,7 @@
 			files = (
 				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
 				D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */,
+				A066BC4A22CC381E00D453F0 /* StorageHandler.swift in Sources */,
 				A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */,
 				A027C7F322BE67CB00445DCD /* APIError.swift in Sources */,
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
@@ -443,6 +458,7 @@
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */,
 				A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */,
+				A066BC4C22CC44C700D453F0 /* StorageError.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A05DCF3C22C7BC5A00543DB5 /* UIImageViewExtensions.swift in Sources */,

@@ -23,7 +23,9 @@ class StorageHandler {
             completion(.failure(.invalidData))
             return
         }
-        imageRef.putData(data, metadata: nil) { (metadata, error) in
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/png"
+        imageRef.putData(data, metadata: metadata) { (metadata, error) in
             imageRef.downloadURL { (url, error) in
                 guard error == nil else {
                     completion(.failure(.serverError))

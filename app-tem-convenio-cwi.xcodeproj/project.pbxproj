@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		20776081F099C18ABBDAD53F /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D9932CBE2E62536764AEE /* Pods_app_tem_convenio_cwi.framework */; };
+		410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */; };
+		410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */; };
+		4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */; };
+		4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */; };
+		418106B722CC2AB30028A123 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418106B622CC2AB30028A123 /* UIImageViewExtensions.swift */; };
+		418106B922CC2C530028A123 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418106B822CC2C530028A123 /* UIViewExtensions.swift */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
 		A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EstablishmentTableViewCell.swift; path = "app-tem-convenio-cwi/Components/EstablishmentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewController.swift; sourceTree = "<group>"; };
+		4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListPresenter.swift; sourceTree = "<group>"; };
+		4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListContract.swift; sourceTree = "<group>"; };
+		418106B622CC2AB30028A123 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		418106B822CC2C530028A123 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsHandler.swift; sourceTree = "<group>"; };
 		A027C7EC22BE5B8C00445DCD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -93,6 +105,24 @@
 				ADE281E697590ADBBF6FF6DF /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		410066F622C9A9AB0038CBF8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		416299D322C9ABD000FF3763 /* Establishment */ = {
+			isa = PBXGroup;
+			children = (
+				410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */,
+				4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */,
+				4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */,
+			);
+			path = Establishment;
 			sourceTree = "<group>";
 		};
 		A027C7E322BE589800445DCD /* Data */ = {
@@ -153,6 +183,8 @@
 				A027C7F822BE846F00445DCD /* CharacterSetExtensions.swift */,
 				A027C7FA22BE8D8700445DCD /* UIViewControllerExtensions.swift */,
 				A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */,
+				418106B622CC2AB30028A123 /* UIImageViewExtensions.swift */,
+				418106B822CC2C530028A123 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,14 +205,6 @@
 				A027C7F022BE608A00445DCD /* HttpMethods.swift */,
 			);
 			path = Requests;
-			sourceTree = "<group>";
-		};
-		BAF0BE330009A4CAB32991B3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DB6AF01E6A699F82ED38ADC /* Pods_app_tem_convenio_cwi.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D296EC7622B877F000E52DF9 = {
@@ -204,6 +228,8 @@
 		D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */ = {
 			isa = PBXGroup;
 			children = (
+				416299D322C9ABD000FF3763 /* Establishment */,
+				410066F622C9A9AB0038CBF8 /* Components */,
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
@@ -322,6 +348,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -332,6 +359,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -376,6 +404,8 @@
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
+				4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */,
+				410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
@@ -384,9 +414,13 @@
 				A05DCF2D22C5844600543DB5 /* Recommendation.swift in Sources */,
 				A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
+				418106B922CC2C530028A123 /* UIViewExtensions.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
+				410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */,
+				418106B722CC2AB30028A123 /* UIImageViewExtensions.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
+				4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 				A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */,

@@ -13,7 +13,10 @@ protocol EstablishmentsListViewType: AnyObject {
 }
 
 protocol EstablishmentListPresenterType: UITableViewDataSource {
+    
     var view: EstablishmentsListViewType? { get set }
     
     func fetchData()
+    
+    func filterData(with name: String?)
 }

@@ -14,12 +14,17 @@ class EstablishmentListViewController: UIViewController {
     
     private let presenter = EstablishmentsListPresenter()
     
+    private let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.delegate = self
         self.tableView.dataSource = presenter
         self.presenter.view = self
+        self.searchController.delegate = self
+        self.searchController.searchResultsUpdater = self
+        self.tableView.tableHeaderView = searchController.searchBar
         self.presenter.fetchData()
     }
     
@@ -33,6 +38,18 @@ extension EstablishmentListViewController: EstablishmentsListViewType {
     
     func reloadData() {
         self.tableView.reloadData()
+    }
+    
+}
+
+extension EstablishmentListViewController: UISearchControllerDelegate {
+    
+}
+
+extension EstablishmentListViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        presenter.filterData(with: searchController.searchBar.text)
     }
     
 }

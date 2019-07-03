@@ -15,25 +15,25 @@ class EstablishmentsListPresenter: NSObject {
     weak var view: EstablishmentsListViewType?
     
     private var establishmentsList = [Establishment]()
+    
+    var filterEstablishmentsList = [Establishment]()
 }
 
-extension EstablishmentsListPresenter: EstablishmentsListViewType {
-    func reloadData() {
-        print("reloadData")
-    }
+extension EstablishmentsListPresenter: EstablishmentListPresenterType {
     
     func fetchData() {
         self.establishmentsList = [Establishment]()
         
         requestsHandler.make(withEndpoint: .establishments, completion: { (list) in
             guard case let .success(json) = list else {
-                print("deu errrooo")
+                // TODO: fail alert
                 return
             }
             
             json?.arrayValue.forEach({ (establishmentJson) in
                 let establishment = Establishment(withJson: establishmentJson)
                 self.establishmentsList.append(establishment)
+                self.filterEstablishmentsList.append(establishment)
             })
             DispatchQueue.main.async {
                 self.view?.reloadData()
@@ -41,19 +41,29 @@ extension EstablishmentsListPresenter: EstablishmentsListViewType {
         })
     }
     
+    func filterData(with name: String?) {
+        if let name = name {
+            filterEstablishmentsList = establishmentsList.filter({
+                (establishment) -> Bool in
+                return name.isEmpty || establishment.name.lowercased().contains(name.lowercased())
+            })
+            self.view?.reloadData()
+        }
+    }
+    
 }
 
 extension EstablishmentsListPresenter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.establishmentsList.count
+        return self.filterEstablishmentsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "establishment", for: indexPath)
         
         if let establishmentCell = cell as? EstablishmentTableViewCell {
-            establishmentCell.config(with: establishmentsList[indexPath.row])
+            establishmentCell.config(with: filterEstablishmentsList[indexPath.row])
         }
         
         return cell

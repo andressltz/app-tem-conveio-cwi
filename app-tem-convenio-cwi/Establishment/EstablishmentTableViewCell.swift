@@ -20,6 +20,8 @@ class EstablishmentTableViewCell: UITableViewCell {
     func config(with model: Establishment) {
         if let imageUrl = model.image {
             pictureImageView.loadImage(from: imageUrl)
+        } else {
+            self.pictureImageView.image = .placeholderImage
         }
         establishmentName.text = model.name
         categoryImageView.image = model.category?.icon

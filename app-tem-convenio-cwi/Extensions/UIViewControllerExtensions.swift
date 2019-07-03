@@ -16,7 +16,7 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func RequestsHandleraddKeyboardObservers() {
+    func addKeyboardObservers() {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillShow),

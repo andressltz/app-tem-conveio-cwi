@@ -12,17 +12,19 @@ class EstablishmentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var pictureImageView: UIImageView!
     @IBOutlet weak var establishmentName: UILabel!
-    @IBOutlet weak var categoryTypeImageView: UIImageView!
+    @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var categoryView: UIView!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var favoriteImageView: UIImageView!
     
     func config(with model: Establishment) {
-        pictureImageView.loadImage(from: model.image!) // TODO: mudar esse optional
+        if let imageUrl = model.image {
+            pictureImageView.loadImage(from: imageUrl)
+        }
         establishmentName.text = model.name
-//        categoryTypeImageView.image = model.category?.icon
+        categoryImageView.image = model.category?.icon
+        categoryView.backgroundColor = model.category?.primaryColor
         rateLabel.text = String(model.rate)
-//        favoriteImageView
-//        model.category.
     }
     
 }

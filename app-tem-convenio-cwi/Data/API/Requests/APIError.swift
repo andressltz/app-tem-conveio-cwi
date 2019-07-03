@@ -32,11 +32,11 @@ enum APIError: BaseError {
         case .missingParams:
             return "Por favor, informe todos os parâmetros."
         case .requestFailed:
-            return "Ocorrou um erro na requisição, tente novamente."
+            return "Ocorreu um erro na requisição, tente novamente."
         case .invalidData:
-            return "Por favor, verificaque os dados informados"
+            return "Por favor, verifique os dados informados"
         case .decodingFailed:
-            return "Ocorrou um erro na decodificação, tente novamente."
+            return "Ocorreu um erro na decodificação, tente novamente."
         }
     }
     

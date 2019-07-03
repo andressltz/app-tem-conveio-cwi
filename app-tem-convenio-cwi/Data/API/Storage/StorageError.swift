@@ -17,22 +17,22 @@ enum StorageError: BaseError {
     var title: String {
         switch self {
         case .serverError:
-            return ""
+            return "Erro na Requisição!"
         case .invalidData:
-            return ""
+            return "Arquivo inválido"
         case .invalidURL:
-            return ""
+            return "URL inválida"
         }
     }
     
     var message: String {
         switch self {
         case .serverError:
-            return ""
+            return "Ocorreu um erro na requisição, tente novamente."
         case .invalidData:
-            return ""
+            return "Por favor verifique o arquivo enviado."
         case .invalidURL:
-            return ""
+            return "Ocorreu um erro ao carregar a URL, tente novamente."
         }
     }
 }

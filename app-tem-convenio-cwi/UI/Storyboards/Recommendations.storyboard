@@ -484,6 +484,7 @@
                         <outlet property="locationField" destination="jvz-Am-DNi" id="Jmm-Dv-qcm"/>
                         <outlet property="nameField" destination="vxa-GO-fXG" id="JLP-Da-a1f"/>
                         <outlet property="phoneField" destination="mqR-z2-YHW" id="nAY-Qw-34B"/>
+                        <outlet property="saveButton" destination="gg4-m2-r38" id="xty-wj-BWj"/>
                         <outletCollection property="categoryButtonsCollection" destination="0vy-sy-Ruh" collectionClass="NSMutableArray" id="lQN-Vw-yYs"/>
                         <outletCollection property="categoryButtonsCollection" destination="7ra-6Q-hSj" collectionClass="NSMutableArray" id="cfm-SD-Jse"/>
                         <outletCollection property="categoryButtonsCollection" destination="1Ka-vM-ZZW" collectionClass="NSMutableArray" id="mwb-OD-LrY"/>

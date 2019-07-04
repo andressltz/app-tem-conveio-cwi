@@ -1,4 +1,4 @@
-//
+    //
 //  RequestMakerError.swift
 //  app-tem-convenio-cwi
 //
@@ -8,7 +8,9 @@
 
 import Foundation
 
-enum APIError: Error {
+enum APIError: BaseError {
+    
+    case noInternetConnection
     case missingParams
     case requestFailed
     case invalidData
@@ -16,6 +18,8 @@ enum APIError: Error {
     
     var title: String {
         switch self {
+        case .noInternetConnection:
+            return "Erro de conexão"
         case .missingParams:
             return "Faltam Parâmetros!"
         case .requestFailed:
@@ -29,14 +33,16 @@ enum APIError: Error {
     
     var message: String {
         switch self {
+        case .noInternetConnection:
+            return "Por favor confira sua conexão com a internet."
         case .missingParams:
             return "Por favor, informe todos os parâmetros."
         case .requestFailed:
-            return "Ocorrou um erro na requisição, tente novamente."
+            return "Ocorreu um erro na requisição, tente novamente."
         case .invalidData:
-            return "Por favor, verificaque os dados informados"
+            return "Por favor, verifique os dados informados"
         case .decodingFailed:
-            return "Ocorrou um erro na decodificação, tente novamente."
+            return "Ocorreu um erro na decodificação, tente novamente."
         }
     }
     

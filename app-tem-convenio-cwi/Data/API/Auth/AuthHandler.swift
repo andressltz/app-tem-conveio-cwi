@@ -12,7 +12,13 @@ import SwiftyJSON
 
 class AuthHandler {
     
+    private let reachability = Reachability()
+    
     func createCredentials(email: String, password: String, username: String, completion: @escaping CompletionCallback) {
+        guard reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             guard error == nil else {
                 completion(.failure(.requestFailed))
@@ -37,6 +43,10 @@ class AuthHandler {
     }
     
     func login(email: String, password: String, completion: @escaping CompletionCallback) {
+        guard reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
             guard error == nil else {
                 completion(.failure(.requestFailed))

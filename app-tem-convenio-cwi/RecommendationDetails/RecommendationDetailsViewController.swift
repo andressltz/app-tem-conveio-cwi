@@ -28,6 +28,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
+        //disable button
         self.presenter.saveRecommendation(withImage: self.recommendation?.image,
                                           withName: self.nameField.text,
                                           withPhone: self.phoneField.text,
@@ -38,12 +39,16 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     var recommendation: Recommendation?
+    
     private let presenter = RecommendationDetailsPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addKeyboardObservers()
         self.presenter.view = self
+        if let recommendation = self.recommendation {
+            self.presenter.recommendationUID = recommendation.uid
+        }
         self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.imageButton)
         self.loadRecommendation()
@@ -64,7 +69,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
 }
 
 extension RecommendationDetailsViewController: RecommentationDetailsViewType {
-    
+
     func onCategorySelected(categoryTag: Int) {
         let category = Category(tag: categoryTag)
         self.categoryButtonsCollection.forEach { (button) in
@@ -76,21 +81,31 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
         }
     }
     
+    func onImageSelected(image: UIImage) {
+        self.imageButton.image = image
+    }
+    
     func onRecommendationSaved() {
+        //enabled button
         DispatchQueue.main.async {
             self.goBack()
         }
+    }
+    
+    func onFailure(error: BaseError) {
+        //enable button
+        self.showFailureAlert(withError: error)
     }
 }
 
 extension RecommendationDetailsViewController: BaseImagePickerProtocol {
     
     func onFailure() {
-        //todo: handle failure
+        self.showFailureAlert(withError: ImagePickerError.failure)
     }
     
     func onImageLoaded(image: UIImage) {
-        self.imageButton.image = image
+        self.presenter.image = image
     }
     
     

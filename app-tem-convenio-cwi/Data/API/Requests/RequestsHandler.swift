@@ -13,31 +13,37 @@ import SwiftyJSON
 class RequestsHandler {
     
     var ref: DatabaseReference!
+    let reachability = Reachability()
     
     init() {
         ref = Database.database().reference()
     }
     
     func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any?]? = nil, completion: @escaping CompletionCallback) {
-        let databaseRef = self.ref.child(endpoint.url)
+        guard reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
+        var databaseRef = self.ref.child(endpoint.url)
         switch endpoint.httpMethod {
         case .post:
+            databaseRef = databaseRef.childByAutoId()
             guard var params = params else {
                 completion(.failure(.missingParams))
                 return
             }
-            guard let uid = databaseRef.childByAutoId().key else {
+            guard let uid = databaseRef.key else {
                 completion(.failure(.invalidData))
                 return
             }
-            params["uid"] = uid
-            databaseRef.child(uid).setValue(params, withCompletionBlock: ({ (error, _) in
+            params["uid"] = uid 
+            databaseRef.setValue(params, withCompletionBlock: ({ (error, _) in
                 guard error == nil else {
                     print(error!.localizedDescription)
                     completion(.failure(.requestFailed))
                     return
                 }
-                completion(.success(nil))
+                completion(.success(JSON(params)))
             }))
         case .delete:
             databaseRef.setValue(nil, withCompletionBlock: ({ (error, _) in
@@ -59,7 +65,7 @@ class RequestsHandler {
                     completion(.failure(.requestFailed))
                     return
                 }
-                completion(.success(nil))
+                completion(.success(JSON(params)))
             }))
         case .get:
             databaseRef.observeSingleEvent(of: .value) { (snapshot) in

@@ -11,7 +11,11 @@ import UIKit
 class RecommendationDetailsPresenter: NSObject {
     
     weak var view: RecommentationDetailsViewType?
+    var recommendationUID: String?
+    
     private lazy var requestsHandler = RequestsHandler()
+    private lazy var storageHandler = StorageHandler()
+    
     var selectedCategory: Int? {
         didSet {
             if let tag = self.selectedCategory {
@@ -19,7 +23,62 @@ class RecommendationDetailsPresenter: NSObject {
             }
         }
     }
-    var image: UIImage?
+    var image: UIImage? {
+        didSet {
+            if let image = self.image {
+                self.view?.onImageSelected(image: image)
+            }
+        }
+    }
+    
+    func saveEstablishment(establishmentParams: [String: Any?], establishmentDetailsParams: [String: Any?]) {
+        self.requestsHandler.make(withEndpoint: .saveEstablishment, withParams: establishmentParams) { (result) in
+            guard case let .success(json) = result else {
+                if case let .failure(error) = result {
+                    self.handleError(error: error)
+                }
+                return
+            }
+            if let json = json {
+                let establishment = Establishment(withJson: json)
+                var params: [String: Any?] = [:]
+                params.merge(establishmentDetailsParams, uniquingKeysWith: { (first, last) -> Any? in
+                    first
+                })
+                let uid = establishment.uid
+                params["uid"] = uid
+                self.requestsHandler.make(withEndpoint: .saveDetailedEstablishment(establishmentUID: uid), withParams: params, completion: { (result) in
+                    guard case .success = result else {
+                        if case let .failure(error) = result {
+                            self.handleError(error: error)
+                        }
+                        return
+                    }
+                    if let recommendationUID = self.recommendationUID {
+                        self.requestsHandler.make(withEndpoint: .removeRecommendation(recommendationUID: recommendationUID), completion: { (result) in
+                            guard case .success = result else {
+                                if case let .failure(error) = result {
+                                    self.handleError(error: error)
+                                }
+                                return
+                            }
+                            self.view?.onRecommendationSaved()
+                        })
+                    } else {
+                        self.handleError(error: APIError.missingParams)
+                    }
+                })
+            } else {
+                self.handleError(error: APIError.invalidData)
+            }
+        }
+    }
+    
+    private func handleError(error: BaseError) {
+        DispatchQueue.main.async {
+            self.view?.onFailure(error: error)
+        }
+    }
     
 }
 
@@ -30,35 +89,79 @@ extension RecommendationDetailsPresenter: RecommendationDetailsPresenterType {
                             withAddress address: String?, withAbout about: String?) {
         
         guard let name = name, !name.isEmpty else {
-            //todo: handle failure
+            self.handleError(error: ValidationError.name)
             return
         }
         
         guard let categoryTag = selectedCategory else {
-            //todo: no category selected
+            self.handleError(error: ValidationError.category)
             return
         }
         
         let category = Category(tag: categoryTag)
         
-        var params: [String: Any?] = [:]
-        params["name"] = name
-        params["phone"] = phone
-        params["email"] = email
-        params["address"] = address
-        params["about"] = about
-        params["image"] = imageURL
-        params["category"] = category.rawValue
-        params["rate"] = 0.0
+        var establishentParams: [String: Any?] = [:]
+        establishentParams["name"] = name
+        establishentParams["category"] = category.rawValue
+        establishentParams["rate"] = 0.0
         
-        requestsHandler.make(withEndpoint: .saveEstablishment, withParams: params) { (result) in
-            guard case .success = result else {
-                //todo: handle error
-                return
-            }
-            //todo: delete recommendation from database
-            self.view?.onRecommendationSaved()
+        var establishmentDetailsParams: [String: Any?] = [:]
+        establishmentDetailsParams.merge(establishentParams) { (first, _) -> Any? in
+            first
         }
+        establishmentDetailsParams["phone"] = phone
+        establishmentDetailsParams["email"] = email
+        establishmentDetailsParams["address"] = address
+        establishmentDetailsParams["about"] = about
+        
+        if let image = self.image {
+            self.storageHandler.upload(name: name, image: image) { (result) in
+                guard case let .success(imageURL) = result else {
+                    if case let .failure(error) = result {
+                        self.handleError(error: error)
+                    }
+                    return
+                }
+                establishentParams["image"] = imageURL
+                establishmentDetailsParams["image"] = imageURL
+                self.saveEstablishment(establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
+            }
+        } else {
+            if let imageURL = imageURL {
+                establishentParams["image"] = imageURL
+                establishmentDetailsParams["image"] = imageURL
+            }
+            saveEstablishment(establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
+        }
+    }
+    
+}
+
+extension RecommendationDetailsPresenter {
+    
+    enum ValidationError: BaseError {
+    
+        case name
+        case category
+    
+        var title: String {
+            switch self {
+            case .name:
+                return "Nome inválido"
+            case .category:
+                return "Categoria não selecionada"
+            }
+        }
+        
+        var message: String {
+            switch self {
+            case .name:
+                return "Por favor informe um nome válido."
+            case .category:
+                return "Por favor selecione uma categoria."
+            }
+        }
+        
     }
     
 }

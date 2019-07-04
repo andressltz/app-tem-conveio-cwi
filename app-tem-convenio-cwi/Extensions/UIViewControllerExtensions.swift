@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    func showFailureAlert(withError error: APIError) {
+    func showFailureAlert(withError error: BaseError) {
         let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
         self.present(alert, animated: true, completion: nil)

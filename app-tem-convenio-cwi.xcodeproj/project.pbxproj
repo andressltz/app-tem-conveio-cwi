@@ -38,7 +38,6 @@
 		A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A322C4129F003C8A02 /* Favorite.swift */; };
 		A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */; };
 		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
-		D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */; };
 		D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAA22C96F89002D37D0 /* DesinableView.swift */; };
 		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
 		D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */; };
@@ -55,6 +54,7 @@
 		D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929922C5844A000F4640 /* UIButttonExtension.swift */; };
 		D290929E22C58CF4000F4640 /* UITextFiedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */; };
 		D29092A022C58D28000F4640 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290929F22C58D28000F4640 /* DesignableTextField.swift */; };
+		D295920722CDB6B3007790FF /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295920622CDB6B3007790FF /* ProfileEditViewController.swift */; };
 		D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8222B877F000E52DF9 /* AppDelegate.swift */; };
 		D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296EC8422B877F000E52DF9 /* ViewController.swift */; };
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
@@ -101,7 +101,6 @@
 		A0B0D2A322C4129F003C8A02 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
-		D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D2440FAA22C96F89002D37D0 /* DesinableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesinableView.swift; path = "app-tem-convenio-cwi/Extensions/DesinableView.swift"; sourceTree = SOURCE_ROOT; };
 		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = "app-tem-convenio-cwi/Data/API/Auth/DesignableImageView.swift"; sourceTree = SOURCE_ROOT; };
@@ -118,6 +117,7 @@
 		D290929922C5844A000F4640 /* UIButttonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButttonExtension.swift; sourceTree = "<group>"; };
 		D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFiedExtension.swift; sourceTree = "<group>"; };
 		D290929F22C58D28000F4640 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = "app-tem-convenio-cwi/Extensions/DesignableTextField.swift"; sourceTree = SOURCE_ROOT; };
+		D295920622CDB6B3007790FF /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		D296EC7F22B877F000E52DF9 /* app-tem-convenio-cwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-tem-convenio-cwi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D296EC8222B877F000E52DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D296EC8422B877F000E52DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +227,6 @@
 				D290929922C5844A000F4640 /* UIButttonExtension.swift */,
 				D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */,
 				A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */,
-				D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */,
 				D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */,
 			);
 			path = Extensions;
@@ -302,6 +301,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		D295920522CDB688007790FF /* ProfileEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D295920622CDB6B3007790FF /* ProfileEditViewController.swift */,
+			);
+			path = ProfileEdit;
+			sourceTree = "<group>";
+		};
 		D296EC7622B877F000E52DF9 = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +335,7 @@
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
 				D26DD95822CC7097008B95F6 /* Profile */,
+				D295920522CDB688007790FF /* ProfileEdit */,
 				D2DF848222CAD35E002F429E /* Register */,
 				D29092A122C5BB27000F4640 /* Login */,
 				A05DCF3222C702CC00543DB5 /* RecommendationsList */,
@@ -543,8 +551,8 @@
 				D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
-				D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */,
 				D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */,
+				D295920722CDB6B3007790FF /* ProfileEditViewController.swift in Sources */,
 				D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 				A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */,

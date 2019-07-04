@@ -10,3 +10,12 @@ import UIKit
 
 @IBDesignable
 class DesinableView: UIView { }
+
+class DesinableViewShadow: UIView {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.applyCircleShadow()
+    }
+    
+}

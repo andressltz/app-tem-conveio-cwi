@@ -9,8 +9,9 @@
 import UIKit
 
 protocol ProfileViewType: AnyObject {
+    func loadData(user: User?)
 }
 
 protocol ProfilePresenterType {
-    func fetchData() -> User?
+    func fetchData()
 }

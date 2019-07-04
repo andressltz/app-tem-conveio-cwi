@@ -18,6 +18,7 @@ extension UIImage {
 extension UIImageView {
     
     func loadImage(from urlString: String) {
+        
         if let url = URL(string: urlString) {
             let options = ImageLoadingOptions(placeholder: .placeholderImage, failureImage: .placeholderImage)
             Nuke.loadImage(with: url, options: options, into: self)

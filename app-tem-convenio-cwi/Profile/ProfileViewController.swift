@@ -22,34 +22,8 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadUser()
-    }
-    
-    @IBAction func clickButtonEdit(_ sender: Any) {
-    }
-    
-    func loadUser() {
-        
-        guard let user = presenter.fetchData() else {
-            onFieldsInvalid(error: .invalidEmail)
-            return
-        }
-        
-        DispatchQueue.main.async {
-            if let imageURL = user.imageURL {
-                self.userImageView.loadImage(from: imageURL)
-            } else {
-                self.userImageView.image = .placeholderImage
-            }
-
-        }
-        
-        usernameLabel.text = user.name
-        birthLabel.text = user.birthday?.toString()
-        professionLabel.text = user.profession
-        phoneLabel.text = user.phone
-        emailLabel.text = user.email
-        aboutLabel.text = user.about
+        self.presenter.view = self
+        presenter.fetchData()
     }
     
     func onFieldsInvalid(error: ValidationError) {
@@ -58,4 +32,31 @@ class ProfileViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+}
+
+extension ProfileViewController: ProfileViewType {
+    func loadData(user: User?) {
+        
+        guard user != nil else {
+            onFieldsInvalid(error: .notFoudUser)
+            return
+        }
+        
+        DispatchQueue.main.async {
+            if let imageURL = user?.imageURL {
+                self.userImageView.loadImage(from: imageURL)
+            } else {
+                self.userImageView.image = .placeholderImage
+            }
+            
+        }
+        
+        usernameLabel.text = user?.name
+        birthLabel.text = user?.birthday?.toString()
+        professionLabel.text = user?.profession
+        phoneLabel.text = user?.phone
+        emailLabel.text = user?.email
+        aboutLabel.text = user?.about
+        
+    }
 }

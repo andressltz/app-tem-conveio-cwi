@@ -36,4 +36,14 @@ extension UIView {
         NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
     }
+    
+    func applyCircleShadow() {
+        layer.cornerRadius = frame.size.height / 2
+        layer.masksToBounds = false
+        layer.shadowColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowRadius = 3
+        layer.shadowOpacity = 0.3
+    }
+    
 }

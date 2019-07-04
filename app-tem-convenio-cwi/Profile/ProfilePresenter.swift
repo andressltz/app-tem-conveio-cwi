@@ -17,11 +17,8 @@ class ProfilePresenter: NSObject {
 
 extension ProfilePresenter: ProfilePresenterType {
     
-    func fetchData() -> User? {
-        return Session.instance.loggedUser
+    func fetchData() {
+        self.view?.loadData(user: Session.instance.loggedUser)
     }
     
 }
-
-
-

@@ -31,7 +31,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="104.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-Yb-3t7">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-Yb-3t7">
                                                     <rect key="frame" x="15" y="15" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="75" id="Sy7-i7-BVl"/>
@@ -204,7 +204,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-Se-uFR">
                                         <rect key="frame" x="0.0" y="120" width="375" height="614"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-uR-jmJ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-uR-jmJ">
                                                 <rect key="frame" x="127.66666666666669" y="-60" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="NtG-5v-C8c"/>
@@ -390,7 +390,7 @@
                                                 </constraints>
                                             </stackView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-8e-wqS">
-                                                <rect key="frame" x="19" y="369" width="337" height="157"/>
+                                                <rect key="frame" x="19" y="369" width="337" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="bNZ-o5-6dq"/>

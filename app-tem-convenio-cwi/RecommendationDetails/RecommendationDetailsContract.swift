@@ -12,6 +12,7 @@ protocol RecommentationDetailsViewType: AnyObject {
     func onCategorySelected(categoryTag: Int)
     func onImageSelected(image: UIImage)
     func onRecommendationSaved()
+    func onFailure(error: BaseError)
 }
 
 protocol RecommendationDetailsPresenterType {

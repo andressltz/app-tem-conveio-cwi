@@ -34,6 +34,8 @@
 		A066BC4A22CC381E00D453F0 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4922CC381E00D453F0 /* StorageHandler.swift */; };
 		A066BC4C22CC44C700D453F0 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4B22CC44C700D453F0 /* StorageError.swift */; };
 		A066BC4E22CD149C00D453F0 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4D22CD149C00D453F0 /* BaseError.swift */; };
+		A066BC5022CE871C00D453F0 /* ImagePickerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC4F22CE871C00D453F0 /* ImagePickerError.swift */; };
+		A066BC5222CE9A4800D453F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066BC5122CE9A4800D453F0 /* Reachability.swift */; };
 		A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D28F22C2DEC7003C8A02 /* Category.swift */; };
 		A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */; };
 		A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D29D22C3AEB5003C8A02 /* UserType.swift */; };
@@ -95,6 +97,8 @@
 		A066BC4922CC381E00D453F0 /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
 		A066BC4B22CC44C700D453F0 /* StorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
 		A066BC4D22CD149C00D453F0 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		A066BC4F22CE871C00D453F0 /* ImagePickerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerError.swift; sourceTree = "<group>"; };
+		A066BC5122CE9A4800D453F0 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A0B0D28F22C2DEC7003C8A02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../API/Category.swift; sourceTree = "<group>"; };
 		A0B0D29722C3A0C6003C8A02 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		A0B0D29D22C3AEB5003C8A02 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				A027C7E522BE58EE00445DCD /* API */,
 				A027C7E422BE58CD00445DCD /* Models */,
 				A05DCF2E22C5A6FD00543DB5 /* Session.swift */,
+				A066BC5122CE9A4800D453F0 /* Reachability.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			children = (
 				A066BC4422CB217E00D453F0 /* BaseImagePickerViewController.swift */,
 				A066BC4622CB23EE00D453F0 /* BaseImagePickerProtocol.swift */,
+				A066BC4F22CE871C00D453F0 /* ImagePickerError.swift */,
 			);
 			path = BaseImagePicker;
 			sourceTree = "<group>";
@@ -521,6 +527,7 @@
 				D2DF848622CAD580002F429E /* LoginPresenter.swift in Sources */,
 				A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */,
 				A05DCF3422C702FE00543DB5 /* RecommendationsListContract.swift in Sources */,
+				A066BC5222CE9A4800D453F0 /* Reachability.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */,
 				A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */,
@@ -537,6 +544,7 @@
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
 				D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */,
 				D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */,
+				A066BC5022CE871C00D453F0 /* ImagePickerError.swift in Sources */,
 				D290929A22C5844A000F4640 /* UIButttonExtension.swift in Sources */,
 				A0B0D29022C2DEC7003C8A02 /* Category.swift in Sources */,
 				A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */,

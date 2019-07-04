@@ -16,6 +16,12 @@ class RecommendationsListPresenter: NSObject {
     private var recommendations = [Recommendation]()
     var filteredRecommendations = [Recommendation]()
     
+    func handleError(error: APIError) {
+        DispatchQueue.main.async {
+            self.view?.onFailure(error: error)
+        }
+    }
+    
 }
 
 extension RecommendationsListPresenter: RecommendationsListPresenterType {
@@ -23,7 +29,9 @@ extension RecommendationsListPresenter: RecommendationsListPresenterType {
     func fetchData() {
         requestsHandler.make(withEndpoint: .recommendations) { (result) in
             guard case let .success(json) = result else {
-                //todo: show failure alert
+                if case let .failure(error) = result {
+                    self.handleError(error: error)
+                }
                 return
             }
             self.recommendations = [Recommendation]()
@@ -51,7 +59,9 @@ extension RecommendationsListPresenter: RecommendationsListPresenterType {
         let recommendation = self.filteredRecommendations[indexPath.row]
         requestsHandler.make(withEndpoint: .removeRecommendation(recommendationUID: recommendation.uid)) { (result) in
             guard case .success = result else {
-                //todo: handle failure
+                if case let .failure(error) = result {
+                    self.handleError(error: error)
+                }
                 return
             }
             if let index = self.recommendations.firstIndex(where: { $0.uid == recommendation.uid }) {

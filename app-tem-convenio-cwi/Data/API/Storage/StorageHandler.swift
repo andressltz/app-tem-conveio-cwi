@@ -12,12 +12,17 @@ import FirebaseStorage
 class StorageHandler {
     
     var ref: StorageReference!
+    private let reachability = Reachability()
     
     init() {
         ref = Storage.storage().reference()
     }
     
     func upload(name: String, image: UIImage, completion: @escaping StorageCompletionCallback) {
+        guard reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
         let imageRef = ref.child("\(name).png")
         guard let data = image.pngData() else {
             completion(.failure(.invalidData))

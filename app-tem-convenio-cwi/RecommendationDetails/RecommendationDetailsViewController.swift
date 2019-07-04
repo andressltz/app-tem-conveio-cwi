@@ -28,6 +28,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
+        //disable button
         self.presenter.saveRecommendation(withImage: self.recommendation?.image,
                                           withName: self.nameField.text,
                                           withPhone: self.phoneField.text,
@@ -68,7 +69,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
 }
 
 extension RecommendationDetailsViewController: RecommentationDetailsViewType {
-    
+
     func onCategorySelected(categoryTag: Int) {
         let category = Category(tag: categoryTag)
         self.categoryButtonsCollection.forEach { (button) in
@@ -85,16 +86,22 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
     }
     
     func onRecommendationSaved() {
+        //enabled button
         DispatchQueue.main.async {
             self.goBack()
         }
+    }
+    
+    func onFailure(error: BaseError) {
+        //enable button
+        self.showFailureAlert(withError: error)
     }
 }
 
 extension RecommendationDetailsViewController: BaseImagePickerProtocol {
     
     func onFailure() {
-        //todo: handle failure
+        self.showFailureAlert(withError: ImagePickerError.failure)
     }
     
     func onImageLoaded(image: UIImage) {

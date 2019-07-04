@@ -11,6 +11,7 @@ import UIKit
 protocol RecommendationsListViewType: AnyObject {
     func reloadData()
     func onRecommendationDeleted(indexPath: IndexPath)
+    func onFailure(error: APIError)
 }
 
 protocol RecommendationsListPresenterType: UITableViewDataSource {

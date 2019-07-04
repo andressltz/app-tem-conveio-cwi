@@ -13,12 +13,17 @@ import SwiftyJSON
 class RequestsHandler {
     
     var ref: DatabaseReference!
+    let reachability = Reachability()
     
     init() {
         ref = Database.database().reference()
     }
     
     func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any?]? = nil, completion: @escaping CompletionCallback) {
+        guard reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
         var databaseRef = self.ref.child(endpoint.url)
         switch endpoint.httpMethod {
         case .post:

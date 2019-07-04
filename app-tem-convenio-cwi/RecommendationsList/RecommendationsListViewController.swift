@@ -57,6 +57,12 @@ extension RecommendationsListViewController: RecommendationsListViewType {
         self.shouldShowEmptyWarning()
     }
     
+    func onFailure(error: APIError) {
+        self.loaderView.isHidden = true
+        self.showFailureAlert(withError: error)
+        self.shouldShowEmptyWarning()
+    }
+    
 }
 
 extension RecommendationsListViewController: UITableViewDelegate {

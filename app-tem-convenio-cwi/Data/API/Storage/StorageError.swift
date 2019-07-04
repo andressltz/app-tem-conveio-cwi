@@ -10,12 +10,15 @@ import Foundation
 
 enum StorageError: BaseError {
 
+    case noInternetConnection
     case serverError
     case invalidData
     case invalidURL
     
     var title: String {
         switch self {
+        case .noInternetConnection:
+            return "Erro de conexão"
         case .serverError:
             return "Erro na Requisição!"
         case .invalidData:
@@ -27,6 +30,8 @@ enum StorageError: BaseError {
     
     var message: String {
         switch self {
+        case .noInternetConnection:
+            return "Por favor confira sua conexão com a internet."
         case .serverError:
             return "Ocorreu um erro na requisição, tente novamente."
         case .invalidData:

@@ -363,7 +363,7 @@
                                                                 </constraints>
                                                                 <color key="textColor" name="text-default"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress" textContentType="tel"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="25"/>
@@ -386,7 +386,7 @@
                                                                 </constraints>
                                                                 <color key="textColor" name="text-default"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress" textContentType="email"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="25"/>
@@ -548,6 +548,15 @@
                         <viewLayoutGuide key="safeArea" id="OUW-CU-Xa6"/>
                     </view>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="aboutTextField" destination="ps1-2J-PL8" id="xfe-hT-GUp"/>
+                        <outlet property="birthTextField" destination="VeT-C1-KOK" id="I27-15-gVh"/>
+                        <outlet property="emailTextField" destination="gxb-hi-W26" id="r0P-Dt-wbJ"/>
+                        <outlet property="phoneTextField" destination="gHZ-fL-Yn6" id="9nv-OK-zaj"/>
+                        <outlet property="professionTextField" destination="0np-mu-6xu" id="YrP-N7-c2p"/>
+                        <outlet property="userImageView" destination="CfP-h4-GJL" id="gIN-PF-NFM"/>
+                        <outlet property="usernameTextField" destination="5BM-Ma-jwI" id="T7j-Qk-3HZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="te5-zn-ogc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

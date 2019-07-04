@@ -46,6 +46,8 @@
 		D26DD95E22CD6B38008B95F6 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95D22CD6B38008B95F6 /* ProfilePresenter.swift */; };
 		D26DD96022CD80CA008B95F6 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */; };
 		D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */; };
+		D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */; };
+		D284F8EC22CDE57B008EC103 /* ProfileEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
 		D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommendations.storyboard */; };
 		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
@@ -109,6 +111,8 @@
 		D26DD95D22CD6B38008B95F6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditContract.swift; sourceTree = "<group>"; };
+		D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditPresenter.swift; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D290929022C4422A000F4640 /* Recommendations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommendations.storyboard; sourceTree = "<group>"; };
 		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -305,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				D295920622CDB6B3007790FF /* ProfileEditViewController.swift */,
+				D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */,
+				D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */,
 			);
 			path = ProfileEdit;
 			sourceTree = "<group>";
@@ -544,10 +550,12 @@
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A05DCF3C22C7BC5A00543DB5 /* UIImageViewExtensions.swift in Sources */,
+				D284F8EC22CDE57B008EC103 /* ProfileEditPresenter.swift in Sources */,
 				A05DCF3822C7A96A00543DB5 /* RecommendationsListViewController.swift in Sources */,
 				D2DF848422CAD460002F429E /* LoginContract.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
+				D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */,
 				D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class RecommendationsListPresenter: NSObject {
     
@@ -26,8 +27,8 @@ extension RecommendationsListPresenter: RecommendationsListPresenterType {
                 return
             }
             self.recommendations = [Recommendation]()
-            json?.arrayValue.forEach({ (recommendationJson) in
-                let recommendationModel = Recommendation(withJson: recommendationJson)
+            json?.dictionaryValue.forEach({ (key, json) in
+                let recommendationModel = Recommendation(withJson: json)
                 self.recommendations.append(recommendationModel)
                 self.filteredRecommendations.append(recommendationModel)
             })

@@ -27,3 +27,12 @@ class DesignablePasswordTextField: UITextField {
         self.setRightPaddingPoints(40)
     }
 }
+
+@IBDesignable
+class DesignableTextView: UITextView {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.setPaddingTextView()
+    }
+}

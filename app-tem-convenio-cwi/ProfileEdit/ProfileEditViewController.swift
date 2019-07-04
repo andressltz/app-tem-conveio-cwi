@@ -16,7 +16,7 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet weak var birthTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var aboutTextField: UITextField!
+    @IBOutlet weak var aboutTextView: UITextView!
     
     private let presenter = ProfileEditPresenter()
 
@@ -25,6 +25,7 @@ class ProfileEditViewController: UIViewController {
         self.presenter.view = self
         self.addKeyboardObservers()
         presenter.fetchData()
+        aboutTextView.placeholder = "Resumo do Usuário"
     }
     
     func onFieldsInvalid(error: ValidationError) {
@@ -65,7 +66,7 @@ extension ProfileEditViewController: ProfileEditViewType {
         professionTextField.text = user?.profession
         phoneTextField.text = user?.phone
         emailTextField.text = user?.email
-        aboutTextField.text = user?.about
+        aboutTextView.text = user?.about
         
     }
     

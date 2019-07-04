@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuu-kP-Obr">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="433"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-TM-3qi">
                                                 <rect key="frame" x="20" y="30" width="270" height="90"/>
@@ -197,6 +197,7 @@
                                             <constraint firstItem="vye-2v-Odk" firstAttribute="top" secondItem="0T7-3u-47y" secondAttribute="bottom" constant="15" id="YJH-kh-z0P"/>
                                             <constraint firstItem="qnF-TM-3qi" firstAttribute="leading" secondItem="fuu-kP-Obr" secondAttribute="leading" constant="20" id="chx-sd-oSC"/>
                                             <constraint firstItem="vye-2v-Odk" firstAttribute="leading" secondItem="fuu-kP-Obr" secondAttribute="leading" constant="30" id="e3F-yh-bHO"/>
+                                            <constraint firstAttribute="bottom" secondItem="vye-2v-Odk" secondAttribute="bottom" constant="30" id="gjl-3l-qHg"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vye-2v-Odk" secondAttribute="bottom" constant="30" id="iU0-Zg-bRr"/>
                                             <constraint firstItem="0T7-3u-47y" firstAttribute="top" secondItem="Xnm-4x-wt8" secondAttribute="bottom" constant="30" id="lAK-FB-KCF"/>
                                             <constraint firstItem="Xnm-4x-wt8" firstAttribute="top" secondItem="dpC-Ah-FBa" secondAttribute="bottom" constant="30" id="tcH-Bg-Pc1"/>
@@ -240,7 +241,6 @@
                             <constraint firstItem="1OC-cZ-c4n" firstAttribute="bottom" secondItem="Z19-s4-mMr" secondAttribute="bottom" id="YcF-Bi-gCh"/>
                             <constraint firstItem="Z19-s4-mMr" firstAttribute="top" secondItem="1OC-cZ-c4n" secondAttribute="top" id="gpV-OM-0l2"/>
                             <constraint firstItem="1OC-cZ-c4n" firstAttribute="bottom" secondItem="4dF-Vq-Lek" secondAttribute="bottom" constant="30" id="m5K-2b-gXP"/>
-                            <constraint firstItem="fuu-kP-Obr" firstAttribute="height" secondItem="1fg-C1-c0y" secondAttribute="height" id="mha-IK-XaB"/>
                             <constraint firstItem="1OC-cZ-c4n" firstAttribute="trailing" secondItem="Z19-s4-mMr" secondAttribute="trailing" id="sVD-6m-SWu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1OC-cZ-c4n"/>
@@ -425,29 +425,26 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resumo do Usuário" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ps1-2J-PL8" customClass="DesignableTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nwj-cb-lPE" customClass="DesignableTextView" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="350" width="335" height="120"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="120" id="EEn-pW-AOF"/>
+                                                                    <constraint firstAttribute="height" constant="120" id="ddF-zT-1xa"/>
                                                                 </constraints>
-                                                                <color key="textColor" name="text-default"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress"/>
+                                                                <inset key="scrollIndicatorInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                         <real key="value" value="1"/>
                                                                     </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                        <color key="value" name="feedback-line"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
                                                                     </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                                        <real key="value" value="1"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="disable"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
-                                                            </textField>
+                                                            </textView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -572,7 +569,7 @@
                     </view>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
-                        <outlet property="aboutTextField" destination="ps1-2J-PL8" id="xfe-hT-GUp"/>
+                        <outlet property="aboutTextView" destination="nwj-cb-lPE" id="8lC-Gn-aM4"/>
                         <outlet property="birthTextField" destination="VeT-C1-KOK" id="I27-15-gVh"/>
                         <outlet property="emailTextField" destination="gxb-hi-W26" id="r0P-Dt-wbJ"/>
                         <outlet property="phoneTextField" destination="gHZ-fL-Yn6" id="9nv-OK-zaj"/>

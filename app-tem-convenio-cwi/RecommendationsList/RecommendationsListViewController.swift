@@ -26,7 +26,7 @@ class RecommendationsListViewController: UIViewController {
     }
     
     private func configSearchBar() {
-        self.searchController.searchBar.barTintColor = .clear
+        self.searchController.searchBar.barTintColor = UIColor(named: "search-bar")
         self.searchController.delegate = self
         self.searchController.searchResultsUpdater = self
     }

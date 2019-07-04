@@ -26,7 +26,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="uzS-zF-bfx">
-                                <rect key="frame" x="35" y="160.66666666666663" width="344" height="395"/>
+                                <rect key="frame" x="35" y="140.66666666666663" width="344" height="385"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qIE-iW-4tp">
                                         <rect key="frame" x="81.333333333333329" y="0.0" width="181.33333333333337" height="150"/>
@@ -35,8 +35,8 @@
                                             <constraint firstAttribute="height" constant="150" id="kHU-ya-5er"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-5a-xaE">
-                                        <rect key="frame" x="0.0" y="185" width="344" height="210"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-5a-xaE">
+                                        <rect key="frame" x="0.0" y="185" width="344" height="200"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="marielle.wronka@cwi.com.br" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-HO-VPs" customClass="DesignableTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
@@ -62,7 +62,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsf-h8-VEr" userLabel="Senha">
-                                                <rect key="frame" x="0.0" y="80" width="344" height="50"/>
+                                                <rect key="frame" x="0.0" y="75" width="344" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-D8-3Xx" customClass="DesignablePasswordTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
@@ -106,7 +106,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adO-WX-Wj6" customClass="DesignableButton" customModule="app_tem_convenio_cwi" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="160" width="344" height="50"/>
+                                                <rect key="frame" x="0.0" y="150" width="344" height="50"/>
                                                 <color key="backgroundColor" name="primary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LIR-SC-Q7A"/>
@@ -184,7 +184,7 @@
                             <constraint firstItem="Yqi-fd-o0A" firstAttribute="trailing" secondItem="BFj-Vl-kTz" secondAttribute="trailing" id="cgf-7U-96g"/>
                             <constraint firstItem="Yqi-fd-o0A" firstAttribute="trailing" secondItem="uzS-zF-bfx" secondAttribute="trailing" constant="35" id="drq-75-faP"/>
                             <constraint firstItem="BFj-Vl-kTz" firstAttribute="leading" secondItem="Yqi-fd-o0A" secondAttribute="leading" id="jNU-zV-139"/>
-                            <constraint firstItem="uzS-zF-bfx" firstAttribute="top" secondItem="Pp4-pM-acL" secondAttribute="bottom" constant="-60" id="kva-es-WN2"/>
+                            <constraint firstItem="uzS-zF-bfx" firstAttribute="top" secondItem="Pp4-pM-acL" secondAttribute="bottom" constant="-80" id="kva-es-WN2"/>
                             <constraint firstItem="imB-VZ-PBz" firstAttribute="trailing" secondItem="Yqi-fd-o0A" secondAttribute="trailing" id="pIm-1r-2Jw"/>
                             <constraint firstItem="BFj-Vl-kTz" firstAttribute="top" secondItem="imB-VZ-PBz" secondAttribute="bottom" id="qmq-KM-MYh"/>
                             <constraint firstItem="imB-VZ-PBz" firstAttribute="leading" secondItem="Yqi-fd-o0A" secondAttribute="leading" id="xau-es-H7g"/>

@@ -48,6 +48,7 @@
 		D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */; };
 		D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */; };
 		D284F8EC22CDE57B008EC103 /* ProfileEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */; };
+		D284F8EE22CDEECC008EC103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
 		D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommendations.storyboard */; };
 		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
@@ -113,6 +114,7 @@
 		D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditContract.swift; sourceTree = "<group>"; };
 		D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditPresenter.swift; sourceTree = "<group>"; };
+		D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D290929022C4422A000F4640 /* Recommendations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommendations.storyboard; sourceTree = "<group>"; };
 		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				D295920622CDB6B3007790FF /* ProfileEditViewController.swift */,
 				D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */,
 				D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */,
+				D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */,
 			);
 			path = ProfileEdit;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				A05DCF3622C7A72400543DB5 /* RecommendationsListPresenter.swift in Sources */,
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
 				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
+				D284F8EE22CDEECC008EC103 /* CalendarViewController.swift in Sources */,
 				A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */,
 				D26DD95C22CD6ABF008B95F6 /* ProfileContract.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,

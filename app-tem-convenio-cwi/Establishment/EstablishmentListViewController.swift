@@ -29,7 +29,7 @@ class EstablishmentListViewController: UIViewController {
     private func configSearchBar() {
         self.searchController.delegate = self
         self.searchController.searchResultsUpdater = self
-//        self.searchController.searchBar.barTintColor = .lightText
+//                self.searchController.searchBar.barTintColor = .lightText
     }
     
     private func configTableView() {
@@ -39,7 +39,7 @@ class EstablishmentListViewController: UIViewController {
     }
     
     private func configNavigationButtons() {
-//        self.navigationController!.navigationBar.barTintColor = .lightText
+//                self.navigationController!.navigationBar.barTintColor = .lightText
         
         let recommendBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_add"), style: .plain, target: self, action: #selector(recommendNewEstablishment(_:)))
         let filterBarButton = UIBarButtonItem(image: UIImage(named: "ic_filter"), style: .plain, target: self, action: #selector(filterList(_:)))
@@ -51,12 +51,20 @@ class EstablishmentListViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = filterBarButton
     }
     
+    func searchCategory(with name: String) {
+        presenter.filterData(with: name)
+    }
+    
     @objc func recommendNewEstablishment(_ sender: UIBarButtonItem) {
         print("aaaa")
     }
     
     @objc func filterList(_ sender: UIBarButtonItem ) {
-        self.dismiss(animated: true, completion: nil)
+        //        self.dismiss(animated: true, completion: nil)
+        let sb = UIStoryboard(name: "Establishments", bundle: nil)
+        let popup = sb.instantiateViewController(withIdentifier: "filterPopup")
+        
+        self.present(popup, animated: true)
     }
     
 }

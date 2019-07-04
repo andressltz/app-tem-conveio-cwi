@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */; };
 		410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */; };
+		4164CB9822CD72C0004C9042 /* FilterPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164CB9722CD72C0004C9042 /* FilterPopupViewController.swift */; };
 		4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */; };
 		4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
@@ -70,6 +71,7 @@
 		3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EstablishmentTableViewCell.swift; path = "app-tem-convenio-cwi/Establishment/EstablishmentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewController.swift; sourceTree = "<group>"; };
+		4164CB9722CD72C0004C9042 /* FilterPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopupViewController.swift; sourceTree = "<group>"; };
 		4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListPresenter.swift; sourceTree = "<group>"; };
 		4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListContract.swift; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -158,6 +160,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4161815B22CE72CF0094E55D /* EstablishmentFilter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EstablishmentFilter;
+			sourceTree = "<group>";
+		};
 		416299D322C9ABD000FF3763 /* Establishment */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +174,7 @@
 				410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */,
 				4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */,
 				4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */,
+				4164CB9722CD72C0004C9042 /* FilterPopupViewController.swift */,
 			);
 			path = Establishment;
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				416299D322C9ABD000FF3763 /* Establishment */,
+				4161815B22CE72CF0094E55D /* EstablishmentFilter */,
 				410066F622C9A9AB0038CBF8 /* Components */,
 				A066BC4322CB215E00D453F0 /* BaseImagePicker */,
 				A027C7E322BE589800445DCD /* Data */,
@@ -543,6 +554,7 @@
 				A05DCF3822C7A96A00543DB5 /* RecommendationsListViewController.swift in Sources */,
 				D2DF848422CAD460002F429E /* LoginContract.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
+				4164CB9822CD72C0004C9042 /* FilterPopupViewController.swift in Sources */,
 				4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */,
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
@@ -698,15 +710,17 @@
 			baseConfigurationReference = 56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 592CL5HBX3;
+				DEVELOPMENT_TEAM = 853H6ALNQX;
 				INFOPLIST_FILE = "app-tem-convenio-cwi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.mari.app-tem-convenio-cwi";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.andres.app-tem-convenio-cwi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -717,15 +731,17 @@
 			baseConfigurationReference = 3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 592CL5HBX3;
+				DEVELOPMENT_TEAM = 853H6ALNQX;
 				INFOPLIST_FILE = "app-tem-convenio-cwi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.mari.app-tem-convenio-cwi";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.andres.app-tem-convenio-cwi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

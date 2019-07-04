@@ -42,7 +42,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.addKeyboardObservers()
+        self.addKeyboardObservers()
         self.presenter.view = self
         self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.imageButton)

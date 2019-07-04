@@ -43,6 +43,7 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
     
     func filterData(with name: String?) {
         if let name = name {
+            print(establishmentsList)
             filterEstablishmentsList = establishmentsList.filter({
                 (establishment) -> Bool in
                 return name.isEmpty || establishment.name.lowercased().contains(name.lowercased())

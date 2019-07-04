@@ -30,8 +30,8 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
                 return
             }
             
-            json?.arrayValue.forEach({ (establishmentJson) in
-                let establishment = Establishment(withJson: establishmentJson)
+            json?.dictionary?.forEach({ (establishmentJson) in
+                let establishment = Establishment(withJson: establishmentJson.value)
                 self.establishmentsList.append(establishment)
                 self.filterEstablishmentsList.append(establishment)
             })

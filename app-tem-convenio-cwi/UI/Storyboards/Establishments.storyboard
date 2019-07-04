@@ -146,6 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Estabelecimentos" id="yz0-hS-CBC"/>
                     <connections>
+                        <outlet property="navigationItem" destination="yz0-hS-CBC" id="DZq-qb-glz"/>
                         <outlet property="tableView" destination="n1s-J3-PuN" id="RgD-kZ-wpE"/>
                     </connections>
                 </viewController>

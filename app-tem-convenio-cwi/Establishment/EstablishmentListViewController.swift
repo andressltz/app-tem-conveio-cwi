@@ -19,13 +19,44 @@ class EstablishmentListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = presenter
         self.presenter.view = self
+        configSearchBar()
+        configTableView()
+        configNavigationButtons()
+        self.presenter.fetchData()
+    }
+    
+    private func configSearchBar() {
         self.searchController.delegate = self
         self.searchController.searchResultsUpdater = self
+//        self.searchController.searchBar.barTintColor = .lightText
+    }
+    
+    private func configTableView() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = presenter
         self.tableView.tableHeaderView = searchController.searchBar
-        self.presenter.fetchData()
+    }
+    
+    private func configNavigationButtons() {
+//        self.navigationController!.navigationBar.barTintColor = .lightText
+        
+        let recommendBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_add"), style: .plain, target: self, action: #selector(recommendNewEstablishment(_:)))
+        let filterBarButton = UIBarButtonItem(image: UIImage(named: "ic_filter"), style: .plain, target: self, action: #selector(filterList(_:)))
+        
+        recommendBarButtonItem.tintColor = .black
+        filterBarButton.tintColor = .black
+        
+        self.navigationItem.leftBarButtonItem = recommendBarButtonItem
+        self.navigationItem.rightBarButtonItem = filterBarButton
+    }
+    
+    @objc func recommendNewEstablishment(_ sender: UIBarButtonItem) {
+        print("aaaa")
+    }
+    
+    @objc func filterList(_ sender: UIBarButtonItem ) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

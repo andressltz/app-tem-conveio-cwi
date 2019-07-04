@@ -14,4 +14,13 @@ protocol ProfileEditViewType: AnyObject {
 
 protocol ProfileEditPresenterType {
     func fetchData()
+    func saveUser(
+        withName name: String?,
+        withEmail email: String?,
+        withProfession profession: String?,
+        withBirth birth: Date?,
+        withPhone phone: String?,
+        withAbout about: String?,
+        withImageURL imageURL: String?
+    )
 }

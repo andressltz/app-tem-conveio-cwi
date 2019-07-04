@@ -17,6 +17,16 @@ class ProfileEditPresenter: NSObject {
 
 extension ProfileEditPresenter: ProfileEditPresenterType {
     
+    func saveUser(withName name: String?,
+                  withEmail email: String?,
+                  withProfession profession: String?,
+                  withBirth birth: Date?,
+                  withPhone phone: String?,
+                  withAbout about: String?,
+                  withImageURL imageURL: String?) {
+    }
+    
+    
     func fetchData() {
         self.view?.loadData(user: Session.instance.loggedUser)
     }

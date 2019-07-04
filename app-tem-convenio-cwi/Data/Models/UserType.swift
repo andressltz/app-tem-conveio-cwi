@@ -11,4 +11,13 @@ import Foundation
 enum UserType: String {
     case basic
     case manager
+    
+    var description: String {
+        switch self {
+        case .basic:
+            return "Usuário Básico"
+        case .manager:
+            return "Usuário RH"
+        }
+    }
 }

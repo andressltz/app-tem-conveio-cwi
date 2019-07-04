@@ -38,7 +38,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-5a-xaE">
                                         <rect key="frame" x="0.0" y="185" width="344" height="210"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-HO-VPs" customClass="DesignableTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="marielle.wronka@cwi.com.br" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-HO-VPs" customClass="DesignableTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="EiR-sE-bRV"/>
@@ -64,7 +64,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsf-h8-VEr" userLabel="Senha">
                                                 <rect key="frame" x="0.0" y="80" width="344" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-D8-3Xx" customClass="DesignablePasswordTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-D8-3Xx" customClass="DesignablePasswordTextField" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
                                                         <color key="textColor" name="text-default"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
@@ -409,6 +409,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H1y-m3-lCV"/>
+        <segue reference="AEJ-As-wsB"/>
     </inferredMetricsTieBreakers>
 </document>

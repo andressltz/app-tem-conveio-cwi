@@ -31,7 +31,7 @@ struct User {
         self.birthday = json["birthday"].string?.toDate()
         self.phone = json["phone"].string
         self.about = json["about"].string
-        self.imageURL = json["image"].string
+        self.imageURL = json["imageURL"].string
         self.favorites = [Favorite]()
         json["favorites"].arrayValue.forEach { (favoriteJson) in
             let favorite = Favorite(withJson: favoriteJson)

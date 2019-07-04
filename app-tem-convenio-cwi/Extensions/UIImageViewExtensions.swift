@@ -23,4 +23,10 @@ extension UIImageView {
             Nuke.loadImage(with: url, options: options, into: self)
         }
     }
+    
+    func asCircle() {
+        self.layer.cornerRadius = self.frame.width / 2;
+        self.layer.masksToBounds = true
+    }
+    
 }

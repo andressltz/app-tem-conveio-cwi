@@ -12,15 +12,18 @@ enum ValidationError: Error {
     case invalidName
     case invalidEmail
     case invalidPassword
+    case notFoudUser
     
     var title: String {
         switch self {
         case .invalidName:
-            return "Nome Inválido"
+            return "Nome Inválido!"
         case .invalidEmail:
-            return "Email Inválido"
+            return "Email Inválido!"
         case .invalidPassword:
-            return "Senha Inválido"
+            return "Senha Inválido!"
+        case .notFoudUser:
+            return "Oops!"
         }
     }
     
@@ -32,6 +35,8 @@ enum ValidationError: Error {
             return "Por favor informe um e-mail vádido com domínio da CWI."
         case .invalidPassword:
             return "Por favor, informe a senha com no mínimo 6 dígitos."
+        case .notFoudUser:
+            return "Não foi possível carregar os dados do usuário."
         }
     }
     

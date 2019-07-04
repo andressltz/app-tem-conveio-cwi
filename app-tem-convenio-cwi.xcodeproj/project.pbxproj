@@ -41,6 +41,11 @@
 		D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */; };
 		D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAA22C96F89002D37D0 /* DesinableView.swift */; };
 		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
+		D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */; };
+		D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95922CC70CD008B95F6 /* ProfileViewController.swift */; };
+		D26DD95C22CD6ABF008B95F6 /* ProfileContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95B22CD6ABF008B95F6 /* ProfileContract.swift */; };
+		D26DD95E22CD6B38008B95F6 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95D22CD6B38008B95F6 /* ProfilePresenter.swift */; };
+		D26DD96022CD80CA008B95F6 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */; };
 		D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
 		D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommendations.storyboard */; };
@@ -99,6 +104,11 @@
 		D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D2440FAA22C96F89002D37D0 /* DesinableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesinableView.swift; path = "app-tem-convenio-cwi/Extensions/DesinableView.swift"; sourceTree = SOURCE_ROOT; };
 		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = "app-tem-convenio-cwi/Data/API/Auth/DesignableImageView.swift"; sourceTree = SOURCE_ROOT; };
+		D26DD95922CC70CD008B95F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D26DD95B22CD6ABF008B95F6 /* ProfileContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContract.swift; sourceTree = "<group>"; };
+		D26DD95D22CD6B38008B95F6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		D26FCE2622C5BC6900FB0870 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D290929022C4422A000F4640 /* Recommendations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommendations.storyboard; sourceTree = "<group>"; };
@@ -201,6 +211,7 @@
 				D290929722C5815E000F4640 /* DesignableButton.swift */,
 				D290929F22C58D28000F4640 /* DesignableTextField.swift */,
 				D2440FAA22C96F89002D37D0 /* DesinableView.swift */,
+				D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				D290929D22C58CF4000F4640 /* UITextFiedExtension.swift */,
 				A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */,
 				D2440FA822C96F6B002D37D0 /* UIViewExtension.swift */,
+				D26DD95F22CD80CA008B95F6 /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +282,16 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		D26DD95822CC7097008B95F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D26DD95922CC70CD008B95F6 /* ProfileViewController.swift */,
+				D26DD95B22CD6ABF008B95F6 /* ProfileContract.swift */,
+				D26DD95D22CD6B38008B95F6 /* ProfilePresenter.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		D29092A122C5BB27000F4640 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +327,7 @@
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
+				D26DD95822CC7097008B95F6 /* Profile */,
 				D2DF848222CAD35E002F429E /* Register */,
 				D29092A122C5BB27000F4640 /* Login */,
 				A05DCF3222C702CC00543DB5 /* RecommendationsList */,
@@ -476,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D26DD96022CD80CA008B95F6 /* DateExtensions.swift in Sources */,
 				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
 				D296EC8522B877F000E52DF9 /* ViewController.swift in Sources */,
 				A066BC3F22C96AEA00D453F0 /* RecommendationDetailsPresenter.swift in Sources */,
@@ -484,6 +508,7 @@
 				A05DCF2B22C548AE00543DB5 /* Feedback.swift in Sources */,
 				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
 				A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */,
+				D26DD95C22CD6ABF008B95F6 /* ProfileContract.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
 				A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
@@ -492,6 +517,7 @@
 				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */,
+				D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
 				D29092A022C58D28000F4640 /* DesignableTextField.swift in Sources */,
@@ -500,6 +526,7 @@
 				A0B0D2A022C400D6003C8A02 /* User.swift in Sources */,
 				A05DCF2D22C5844600543DB5 /* Recommendation.swift in Sources */,
 				D2DF848622CAD580002F429E /* LoginPresenter.swift in Sources */,
+				D26DD95E22CD6B38008B95F6 /* ProfilePresenter.swift in Sources */,
 				A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */,
 				A05DCF3422C702FE00543DB5 /* RecommendationsListContract.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
@@ -513,6 +540,7 @@
 				D2DF848422CAD460002F429E /* LoginContract.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
+				D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
 				D2440FA922C96F6B002D37D0 /* UIViewExtension.swift in Sources */,

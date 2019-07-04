@@ -19,19 +19,20 @@ class RequestsHandler {
     }
     
     func make(withEndpoint endpoint: Endpoint, withParams params: [String: Any?]? = nil, completion: @escaping CompletionCallback) {
-        let databaseRef = self.ref.child(endpoint.url)
+        var databaseRef = self.ref.child(endpoint.url)
         switch endpoint.httpMethod {
         case .post:
+            databaseRef = databaseRef.childByAutoId()
             guard var params = params else {
                 completion(.failure(.missingParams))
                 return
             }
-            guard let uid = databaseRef.childByAutoId().key else {
+            guard let uid = databaseRef.key else {
                 completion(.failure(.invalidData))
                 return
             }
             params["uid"] = uid 
-            databaseRef.child(uid).setValue(params, withCompletionBlock: ({ (error, _) in
+            databaseRef.setValue(params, withCompletionBlock: ({ (error, _) in
                 guard error == nil else {
                     print(error!.localizedDescription)
                     completion(.failure(.requestFailed))

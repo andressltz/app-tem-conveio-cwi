@@ -15,7 +15,7 @@ extension RequestsHandler {
         case createUser(userUID: String)
         case establishments
         case saveEstablishment
-        case saveDetailedEstablishment
+        case saveDetailedEstablishment(establishmentUID: String)
         case saveFavorite(userUID: String)
         case removeFavorite(userUID: String, establishmentUID: String)
         case recommendEstablishment
@@ -32,8 +32,8 @@ extension RequestsHandler {
                 return "users/\(userUID)"
             case .establishments, .saveEstablishment:
                 return "establishments"
-            case .saveDetailedEstablishment:
-                return "detailed-establishments"
+            case let .saveDetailedEstablishment(establishmentUID):
+                return "detailed-establishments/\(establishmentUID)"
             case let .saveFavorite(userUID):
                 return "users/\(userUID)/favorites"
             case let .removeFavorite(userUID, establishmentUID):
@@ -53,11 +53,11 @@ extension RequestsHandler {
         
         var httpMethod: HttpMethods {
             switch self {
-            case .saveEstablishment, .saveDetailedEstablishment, .saveFavorite, .recommendEstablishment, .sendFeedback:
+            case .saveEstablishment, .saveFavorite, .recommendEstablishment, .sendFeedback:
                 return .post
             case .removeFavorite, .removeRecommendation:
                 return .delete
-            case .createUser, .editProfile:
+            case .createUser, .editProfile, .saveDetailedEstablishment:
                 return .patch
             case .establishments, .recommendations, .profile, .establishmentDetails:
                 return .get

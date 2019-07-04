@@ -31,29 +31,40 @@ class RecommendationDetailsPresenter: NSObject {
         }
     }
     
-    func saveEstablishment(withImage imageURL: String, establishmentParams: [String: Any?], establishmentDetailsParams: [String: Any?]) {
+    func saveEstablishment(establishmentParams: [String: Any?], establishmentDetailsParams: [String: Any?]) {
         self.requestsHandler.make(withEndpoint: .saveEstablishment, withParams: establishmentParams) { (result) in
-            guard case .success = result else {
+            guard case let .success(json) = result else {
                 //todo: handle error
                 return
             }
-            self.requestsHandler.make(withEndpoint: .saveDetailedEstablishment, withParams: establishmentDetailsParams, completion: { (result) in
-                guard case .success = result else {
-                    //todo: handle error
-                    return
-                }
-                if let recommendationUID = self.recommendationUID {
-                    self.requestsHandler.make(withEndpoint: .removeRecommendation(recommendationUID: recommendationUID), completion: { (result) in
-                        guard case .success = result else {
-                            //todo: handle error
-                            return
-                        }
-                        self.view?.onRecommendationSaved()
-                    })
-                } else {
-                    //todo: handle failure
-                }
-            })
+            if let json = json {
+                let establishment = Establishment(withJson: json)
+                var params: [String: Any?] = [:]
+                params.merge(establishmentDetailsParams, uniquingKeysWith: { (first, last) -> Any? in
+                    first
+                })
+                let uid = establishment.uid
+                params["uid"] = uid
+                self.requestsHandler.make(withEndpoint: .saveDetailedEstablishment(establishmentUID: uid), withParams: params, completion: { (result) in
+                    guard case .success = result else {
+                        //todo: handle error
+                        return
+                    }
+                    if let recommendationUID = self.recommendationUID {
+                        self.requestsHandler.make(withEndpoint: .removeRecommendation(recommendationUID: recommendationUID), completion: { (result) in
+                            guard case .success = result else {
+                                //todo: handle error
+                                return
+                            }
+                            self.view?.onRecommendationSaved()
+                        })
+                    } else {
+                        //todo: handle failure
+                    }
+                })
+            } else {
+                //todo: handle failure
+            }
         }
     }
     
@@ -91,23 +102,22 @@ extension RecommendationDetailsPresenter: RecommendationDetailsPresenterType {
         establishmentDetailsParams["address"] = address
         establishmentDetailsParams["about"] = about
         
-        guard let image = self.image else {
+        if let image = self.image {
+            self.storageHandler.upload(name: name, image: image) { (result) in
+                guard case let .success(imageURL) = result else {
+                    //todo: handle failure
+                    return
+                }
+                establishentParams["image"] = imageURL
+                establishmentDetailsParams["image"] = imageURL
+                self.saveEstablishment(establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
+            }
+        } else {
             if let imageURL = imageURL {
                 establishentParams["image"] = imageURL
                 establishmentDetailsParams["image"] = imageURL
-                saveEstablishment(withImage: imageURL, establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
             }
-            return
-        }
-        
-        self.storageHandler.upload(name: name, image: image) { (result) in
-            guard case let .success(imageURL) = result else {
-                //handle failure
-                return
-            }
-            establishentParams["image"] = imageURL
-            establishmentDetailsParams["image"] = imageURL
-            self.saveEstablishment(withImage: imageURL, establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
+            saveEstablishment(establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
         }
     }
     

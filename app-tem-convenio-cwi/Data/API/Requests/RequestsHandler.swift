@@ -38,7 +38,7 @@ class RequestsHandler {
                     completion(.failure(.requestFailed))
                     return
                 }
-                completion(.success(nil))
+                completion(.success(JSON(params)))
             }))
         case .delete:
             databaseRef.setValue(nil, withCompletionBlock: ({ (error, _) in
@@ -60,7 +60,7 @@ class RequestsHandler {
                     completion(.failure(.requestFailed))
                     return
                 }
-                completion(.success(nil))
+                completion(.success(JSON(params)))
             }))
         case .get:
             databaseRef.observeSingleEvent(of: .value) { (snapshot) in

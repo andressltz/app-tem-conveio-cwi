@@ -49,10 +49,6 @@ class EstablishmentListViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = filterCategoryBarButton
     }
     
-    func searchCategory(with name: String) {
-        presenter.filterData(with: name)
-    }
-    
     @objc func recommendNewEstablishment(_ sender: UIBarButtonItem) {
         let establishmentsStoryboard = UIStoryboard(name: "Establishments", bundle: nil)
         let recomendationViewController = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentRecommendationViewController")
@@ -62,7 +58,9 @@ class EstablishmentListViewController: UIViewController {
     
     @objc func filterCategoryList(_ sender: UIBarButtonItem ) {
         let establishmentsStoryboard = UIStoryboard(name: "Establishments", bundle: nil)
-        let filterViewController = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentFilterViewController")
+        let filterViewController = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentFilterViewController") as! EstablishmentFilterViewController
+        
+        filterViewController.delegate = self
         
         self.present(filterViewController, animated: true)
     }
@@ -96,4 +94,11 @@ extension EstablishmentListViewController: UISearchResultsUpdating {
         presenter.filterData(with: searchController.searchBar.text)
     }
     
+}
+
+extension EstablishmentListViewController: EstablishmentFilterViewControllerDelegate {
+
+    func filterList(_ category: Category) {
+        presenter.filterCategory(with: category)
+    }
 }

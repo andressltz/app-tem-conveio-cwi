@@ -19,6 +19,8 @@ class EstablishmentFilterViewController: UIViewController {
     
     private let presenter = EstablishmentFilterPresenter()
     
+    weak var delegate: EstablishmentFilterViewControllerDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,28 +30,32 @@ class EstablishmentFilterViewController: UIViewController {
     }
     
     @IBAction func favoriteFilterClick(_ sender: Any) {
-        
-        
+        // TODO: fzer busca pelos favoritos
         dismiss(animated: true)
     }
 
     @IBAction func teachingFilterClick(_ sender: Any) {
+        delegate.filterList(Category.teaching)
         dismiss(animated: true)
     }
     
     @IBAction func trainingFilterClick(_ sender: Any) {
+        delegate.filterList(Category.training)
         dismiss(animated: true)
     }
     
     @IBAction func languageFilterClick(_ sender: Any) {
+        delegate.filterList(Category.language)
         dismiss(animated: true)
     }
     
     @IBAction func restaurantFilterClick(_ sender: Any) {
+        delegate.filterList(Category.restaurant)
         dismiss(animated: true)
     }
     
     @IBAction func recreationFilterClick(_ sender: Any) {
+        delegate.filterList(Category.recreation)
         dismiss(animated: true)
     }
 }

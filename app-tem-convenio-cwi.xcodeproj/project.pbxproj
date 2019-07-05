@@ -293,8 +293,8 @@
 			children = (
 				A066BC5822CEFB5C00D453F0 /* EstablishmentDetailsViewController.swift */,
 				A0D19E5E22CF523D005391E9 /* EstablishmentDetailsContract.swift */,
-				A0D19E6022CF53CC005391E9 /* DetailsTableViewCell.swift */,
 				A0D19E6222CF54A3005391E9 /* EstablishmentDetailsPresenter.swift */,
+				A0D19E6022CF53CC005391E9 /* DetailsTableViewCell.swift */,
 				A006CF1C22CFAB2C00A374AA /* MapTableViewCell.swift */,
 			);
 			path = EstablishmentDetails;

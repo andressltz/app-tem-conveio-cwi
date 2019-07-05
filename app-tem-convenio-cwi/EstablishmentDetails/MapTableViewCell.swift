@@ -8,21 +8,34 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MapTableViewCell: UITableViewCell {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func config(with address: String?) {
+        DispatchQueue.main.async {
+            if let address = address {
+                self.addressLabel.text = address
+                let geocoder = CLGeocoder()
+                geocoder.geocodeAddressString(address) { [weak self] placemarks, error in
+                    if let placemark = placemarks?.first, let location = placemark.location {
+                        let mark = MKPlacemark(placemark: placemark)
+                        if var region = self?.mapView.region {
+                            region.center = location.coordinate
+                            region.span.longitudeDelta /= 8.0
+                            region.span.latitudeDelta /= 8.0
+                            self?.mapView.setRegion(region, animated: true)
+                            self?.mapView.addAnnotation(mark)
+                        }
+                    }
+                }
+            } else {
+                self.addressLabel.text = "-"
+            }
+        }
     }
 
 }

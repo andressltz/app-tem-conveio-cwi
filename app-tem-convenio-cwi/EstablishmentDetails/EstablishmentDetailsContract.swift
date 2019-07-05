@@ -13,5 +13,5 @@ protocol EstablishmentDetailsViewType {
 }
 
 protocol EstablishmentDetailsPresenterType {
-    func share()
+    
 }

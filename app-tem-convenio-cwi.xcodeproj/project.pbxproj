@@ -334,8 +334,8 @@
 			isa = PBXGroup;
 			children = (
 				D295920622CDB6B3007790FF /* ProfileEditViewController.swift */,
-				D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */,
 				D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */,
+				D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */,
 				D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */,
 			);
 			path = ProfileEdit;

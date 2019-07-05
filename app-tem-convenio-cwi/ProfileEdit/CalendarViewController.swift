@@ -24,6 +24,10 @@ class CalendarViewController: UIViewController {
     }
     
     @IBAction func updateDate(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let destination = storyboard.instantiateViewController(withIdentifier: "ProfileEditViewController") as! ProfileEditViewController
+        
+        destination.date = birthDatePicker.date
         dismiss(animated: true)
     }
     

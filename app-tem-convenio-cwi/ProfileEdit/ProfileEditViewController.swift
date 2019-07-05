@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileEditViewController: UIViewController {
+class ProfileEditViewController: BaseImagePickerViewController {
     
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var usernameTextField: UITextField!
@@ -19,11 +19,36 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet weak var aboutTextView: UITextView!
     
     private let presenter = ProfileEditPresenter()
+    
+    var date = Date() {
+        didSet {
+            //self.birthTextField.text = self.date.toString()
+        }
+    }
+
+    @IBAction func touchDismiss(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func touchSaveUser(_ sender: Any) {
+        self.presenter.saveUser(withUID: (Session.instance.loggedUser?.uid)!,
+                                withName: usernameTextField.text,
+                                withEmail: emailTextField.text,
+                                withProfession: professionTextField.text,
+                                withBirth: birthTextField.text?.toDate(),
+                                withPhone: phoneTextField.text,
+                                withAbout: aboutTextView.text,
+                                withImageURL: "")
+        //dismiss(animated: true)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter.view = self
         self.addKeyboardObservers()
+        self.presenter.view = self
+        self.baseImagePickerCallback = self
+        //self.addGestureToImageView(imageView: self.imageButton)
         presenter.fetchData()
         aboutTextView.placeholder = "Resumo do Usuário"
     }
@@ -34,16 +59,28 @@ class ProfileEditViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func touchDismiss(_ sender: Any) {
-        dismiss(animated: true)
-    }
-    
-    @IBAction func touchSaveUser(_ sender: Any) {
-        dismiss(animated: true)
-    }
 }
 
 extension ProfileEditViewController: ProfileEditViewType {
+    
+    func onProfileSucess() {
+        
+    }
+    
+    func onImageSelected(image: UIImage) {
+        self.userImageView.image = image
+    }
+    
+    func onProfileSaved() {
+        DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func onFailure(error: BaseError) {
+        self.showFailureAlert(withError: error)
+    }
+    
     
     func loadData(user: User?) {
         
@@ -69,5 +106,18 @@ extension ProfileEditViewController: ProfileEditViewType {
         aboutTextView.text = user?.about
         
     }
+    
+}
+
+extension ProfileEditViewController: BaseImagePickerProtocol {
+    
+    func onFailure() {
+        self.showFailureAlert(withError: ImagePickerError.failure)
+    }
+    
+    func onImageLoaded(image: UIImage) {
+        self.presenter.image = image
+    }
+    
     
 }

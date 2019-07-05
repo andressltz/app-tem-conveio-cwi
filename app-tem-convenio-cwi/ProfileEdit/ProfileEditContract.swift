@@ -10,15 +10,20 @@ import UIKit
 
 protocol ProfileEditViewType: AnyObject {
     func loadData(user: User?)
+    func onImageSelected(image: UIImage)
+    func onProfileSaved()
+    func onFailure(error: BaseError)
+    func onProfileSucess()
 }
 
 protocol ProfileEditPresenterType {
     func fetchData()
     func saveUser(
+        withUID uid: String,
         withName name: String?,
         withEmail email: String?,
         withProfession profession: String?,
-        withBirth birth: Date?,
+        withBirth birthday: Date?,
         withPhone phone: String?,
         withAbout about: String?,
         withImageURL imageURL: String?

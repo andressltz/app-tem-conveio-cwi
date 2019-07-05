@@ -28,22 +28,10 @@ class EstablishmentFilterViewController: UIViewController {
     }
     
     @IBAction func favoriteFilterClick(_ sender: Any) {
-//        let storyboard = self.storyboard
         
-//        if let establishmentListViewController = storyboard?.instantiateViewController(withIdentifier: "EstablishmentListViewController") as? EstablishmentListViewController {
-
-//            establishmentListViewController.searchCategory(with: "Uni")
-//             print(presenter.filterData(with: "Uni"))
-//            self.navigationController?.present(establishmentListViewController, animated: true)
-//        }
-    
+        
         dismiss(animated: true)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! EstablishmentListViewController
-//        vc.searchCategory(with: "Uni")
-//    }
 
     @IBAction func teachingFilterClick(_ sender: Any) {
         dismiss(animated: true)
@@ -64,15 +52,4 @@ class EstablishmentFilterViewController: UIViewController {
     @IBAction func recreationFilterClick(_ sender: Any) {
         dismiss(animated: true)
     }
-}
-
-extension EstablishmentFilterViewController: EstablishmentsListViewType {
-    
-    func reloadData() {
-//        let storyboard = self.storyboard
-//        if let establishmentListViewController = storyboard?.instantiateViewController(withIdentifier: "EstablishmentListViewController") as? EstablishmentListViewController {
-//            establishmentListViewController.viewDidLoad()
-//        }
-    }
-    
 }

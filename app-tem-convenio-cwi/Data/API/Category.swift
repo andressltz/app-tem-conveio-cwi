@@ -44,7 +44,7 @@ enum Category: String {
         case .restaurant:
             return "restaurantes"
         case .recreation:
-            return "saude / lazer / entretenimento"
+            return "saúde / lazer / entretenimento"
         }
     }
     

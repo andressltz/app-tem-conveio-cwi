@@ -75,6 +75,11 @@ extension EstablishmentListViewController: UITableViewDelegate {
 
 extension EstablishmentListViewController: EstablishmentsListViewType {
     
+    func onFailure(error: APIError) {
+        self.showFailureAlert(withError: error)
+    }
+    
+    
     func reloadData() {
         self.tableView.reloadData()
     }

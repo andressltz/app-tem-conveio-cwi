@@ -17,6 +17,12 @@ class EstablishmentsListPresenter: NSObject {
     private var establishmentsList = [Establishment]()
     
     var filterEstablishmentsList = [Establishment]()
+    
+    func handleError(error: APIError) {
+        DispatchQueue.main.async {
+            self.view?.onFailure(error: error)
+        }
+    }
 }
 
 extension EstablishmentsListPresenter: EstablishmentListPresenterType {
@@ -26,7 +32,9 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
         
         requestsHandler.make(withEndpoint: .establishments, completion: { (list) in
             guard case let .success(json) = list else {
-                // TODO: fail alert
+                if case let .failure(error) = list {
+                    self.handleError(error: error)
+                }
                 return
             }
             

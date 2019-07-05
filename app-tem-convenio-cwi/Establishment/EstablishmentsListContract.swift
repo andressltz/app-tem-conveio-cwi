@@ -10,6 +10,7 @@ import UIKit
 
 protocol EstablishmentsListViewType: AnyObject {
     func reloadData()
+    func onFailure(error: APIError)
 }
 
 protocol EstablishmentListPresenterType: UITableViewDataSource {

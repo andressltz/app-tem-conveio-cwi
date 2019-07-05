@@ -23,3 +23,6 @@ enum Result<Success, Failure> where Failure : Error {
 
 typealias RequestResult = Result<JSON?, APIError>
 typealias CompletionCallback = (RequestResult) -> Void
+
+typealias StorageResult = Result<String, StorageError>
+typealias StorageCompletionCallback = (StorageResult) -> Void

@@ -16,6 +16,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var locationField: UITextField!
     @IBOutlet weak var aboutField: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet var categoryButtonsCollection: [UIButton]!
     
@@ -28,6 +29,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
+        self.saveButton.isDisableButton()
         self.presenter.saveRecommendation(withImage: self.recommendation?.image,
                                           withName: self.nameField.text,
                                           withPhone: self.phoneField.text,
@@ -38,12 +40,16 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     var recommendation: Recommendation?
+    
     private let presenter = RecommendationDetailsPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addKeyboardObservers()
         self.presenter.view = self
+        if let recommendation = self.recommendation {
+            self.presenter.recommendationUID = recommendation.uid
+        }
         self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.imageButton)
         self.loadRecommendation()
@@ -64,7 +70,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
 }
 
 extension RecommendationDetailsViewController: RecommentationDetailsViewType {
-    
+
     func onCategorySelected(categoryTag: Int) {
         let category = Category(tag: categoryTag)
         self.categoryButtonsCollection.forEach { (button) in
@@ -76,21 +82,31 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
         }
     }
     
+    func onImageSelected(image: UIImage) {
+        self.imageButton.image = image
+    }
+    
     func onRecommendationSaved() {
+        self.saveButton.isEnabledButton()
         DispatchQueue.main.async {
             self.goBack()
         }
+    }
+    
+    func onFailure(error: BaseError) {
+        self.saveButton.isEnabledButton()
+        self.showFailureAlert(withError: error)
     }
 }
 
 extension RecommendationDetailsViewController: BaseImagePickerProtocol {
     
     func onFailure() {
-        //todo: handle failure
+        self.showFailureAlert(withError: ImagePickerError.failure)
     }
     
     func onImageLoaded(image: UIImage) {
-        self.imageButton.image = image
+        self.presenter.image = image
     }
     
     

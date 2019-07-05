@@ -26,7 +26,7 @@ class RecommendationsListViewController: UIViewController {
     }
     
     private func configSearchBar() {
-        self.searchController.searchBar.barTintColor = .clear
+        self.searchController.searchBar.barTintColor = UIColor(named: "search-bar")
         self.searchController.delegate = self
         self.searchController.searchResultsUpdater = self
     }
@@ -54,6 +54,12 @@ extension RecommendationsListViewController: RecommendationsListViewType {
     func onRecommendationDeleted(indexPath: IndexPath) {
         self.loaderView.isHidden = true
         self.tableView.deleteRows(at: [indexPath], with: .automatic)
+        self.shouldShowEmptyWarning()
+    }
+    
+    func onFailure(error: APIError) {
+        self.loaderView.isHidden = true
+        self.showFailureAlert(withError: error)
         self.shouldShowEmptyWarning()
     }
     

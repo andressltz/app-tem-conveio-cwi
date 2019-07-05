@@ -1,5 +1,5 @@
 //
-//  FilterPopupViewController.swift
+//  EstablishmentFilterViewController.swift
 //  app-tem-convenio-cwi
 //
 //  Created by Ândres Schultz on 03/07/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FilterPopupViewController: UIViewController {
+class EstablishmentFilterViewController: UIViewController {
     
     @IBOutlet weak var favoriteButton: DesignableButton!
     @IBOutlet weak var teachingButton: DesignableButton!
@@ -17,12 +17,10 @@ class FilterPopupViewController: UIViewController {
     @IBOutlet weak var restaurantButton: DesignableButton!
     @IBOutlet weak var recreationButton: DesignableButton!
     
-    private let presenter = EstablishmentsListPresenter()
+    private let presenter = EstablishmentFilterPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        presenter.view = self
     }
     
     @IBAction func backgroundClick(_ sender: Any) {
@@ -30,23 +28,23 @@ class FilterPopupViewController: UIViewController {
     }
     
     @IBAction func favoriteFilterClick(_ sender: Any) {
-        let storyboard = self.storyboard
+//        let storyboard = self.storyboard
         
-        if let establishmentListViewController = storyboard?.instantiateViewController(withIdentifier: "EstablishmentListViewController") as? EstablishmentListViewController {
+//        if let establishmentListViewController = storyboard?.instantiateViewController(withIdentifier: "EstablishmentListViewController") as? EstablishmentListViewController {
 
 //            establishmentListViewController.searchCategory(with: "Uni")
 //             print(presenter.filterData(with: "Uni"))
 //            self.navigationController?.present(establishmentListViewController, animated: true)
-        }
+//        }
     
         dismiss(animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! EstablishmentListViewController
-        vc.searchCategory(with: "Uni")
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! EstablishmentListViewController
+//        vc.searchCategory(with: "Uni")
+//    }
+
     @IBAction func teachingFilterClick(_ sender: Any) {
         dismiss(animated: true)
     }
@@ -68,7 +66,7 @@ class FilterPopupViewController: UIViewController {
     }
 }
 
-extension FilterPopupViewController: EstablishmentsListViewType {
+extension EstablishmentFilterViewController: EstablishmentsListViewType {
     
     func reloadData() {
 //        let storyboard = self.storyboard

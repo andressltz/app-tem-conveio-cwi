@@ -102,8 +102,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lq4-ly-n5O">
-                                                                <rect key="frame" x="0.0" y="48" width="225" height="33"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="lq4-ly-n5O">
+                                                                <rect key="frame" x="0.0" y="48" width="209" height="33"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub9-x2-GZN">
                                                                         <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
@@ -133,7 +133,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1L-CE-Wal">
-                                                                        <rect key="frame" x="48" y="0.0" width="33" height="33"/>
+                                                                        <rect key="frame" x="44" y="0.0" width="33" height="33"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-G0-37F">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
@@ -160,7 +160,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-Oq-l1k">
-                                                                        <rect key="frame" x="96" y="0.0" width="33" height="33"/>
+                                                                        <rect key="frame" x="88" y="0.0" width="33" height="33"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-fX-coz">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
@@ -187,7 +187,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCf-wO-kWK">
-                                                                        <rect key="frame" x="144" y="0.0" width="33" height="33"/>
+                                                                        <rect key="frame" x="132" y="0.0" width="33" height="33"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDz-M6-c1t">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
@@ -214,7 +214,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqU-sa-vL7">
-                                                                        <rect key="frame" x="192" y="0.0" width="33" height="33"/>
+                                                                        <rect key="frame" x="176" y="0.0" width="33" height="33"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6x-tx-1NH">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>

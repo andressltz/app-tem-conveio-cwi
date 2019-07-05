@@ -30,7 +30,7 @@ enum ValidationError: BaseError {
         case .invalidName:
             return "Por favor, preencha o nome do usuário."
         case .invalidEmail:
-            return "Por favor informe um e-mail váLido com domínio da CWI."
+            return "Por favor informe um e-mail válido com domínio da CWI."
         case .invalidPassword:
             return "Por favor, informe a senha com no mínimo 6 dígitos."
         }

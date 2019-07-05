@@ -68,7 +68,6 @@
 		D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */; };
 		D284F8EC22CDE57B008EC103 /* ProfileEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */; };
 		D284F8EE22CDEECC008EC103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */; };
-		D284F8F022CFC134008EC103 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D284F8EF22CFC134008EC103 /* Feedback.storyboard */; };
 		D290929322C4422A000F4640 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290928F22C4422A000F4640 /* Profile.storyboard */; };
 		D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929022C4422A000F4640 /* Recommendations.storyboard */; };
 		D290929522C4422A000F4640 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D290929122C4422A000F4640 /* Login.storyboard */; };
@@ -83,6 +82,10 @@
 		D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8622B877F000E52DF9 /* Main.storyboard */; };
 		D296EC8D22B877F100E52DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */; };
 		D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D296EC8922B877F100E52DF9 /* Assets.xcassets */; };
+		D2C9349F22CFF25B00C12400 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9349E22CFF25B00C12400 /* FeedbackViewController.swift */; };
+		D2C934A122CFFD0400C12400 /* FeedbackContrats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C934A022CFFD0400C12400 /* FeedbackContrats.swift */; };
+		D2C934A322CFFE5000C12400 /* FeedbackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C934A222CFFE5000C12400 /* FeedbackPresenter.swift */; };
+		D2C934A522D0113A00C12400 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C934A422D0113A00C12400 /* Feedback.storyboard */; };
 		D2DF848422CAD460002F429E /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848322CAD460002F429E /* LoginContract.swift */; };
 		D2DF848622CAD580002F429E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848522CAD580002F429E /* LoginPresenter.swift */; };
 		D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DF848722CAEA07002F429E /* RegisterContract.swift */; };
@@ -154,7 +157,6 @@
 		D284F8E922CDE54C008EC103 /* ProfileEditContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditContract.swift; sourceTree = "<group>"; };
 		D284F8EB22CDE57B008EC103 /* ProfileEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditPresenter.swift; sourceTree = "<group>"; };
 		D284F8ED22CDEECC008EC103 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		D284F8EF22CFC134008EC103 /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
 		D290928F22C4422A000F4640 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D290929022C4422A000F4640 /* Recommendations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommendations.storyboard; sourceTree = "<group>"; };
 		D290929122C4422A000F4640 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,10 @@
 		D296EC8922B877F100E52DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D296EC8C22B877F100E52DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D296EC8E22B877F100E52DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C9349E22CFF25B00C12400 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		D2C934A022CFFD0400C12400 /* FeedbackContrats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackContrats.swift; sourceTree = "<group>"; };
+		D2C934A222CFFE5000C12400 /* FeedbackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackPresenter.swift; sourceTree = "<group>"; };
+		D2C934A422D0113A00C12400 /* Feedback.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
 		D2DF848322CAD460002F429E /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		D2DF848522CAD580002F429E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		D2DF848722CAEA07002F429E /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
@@ -449,6 +455,7 @@
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
 				A027C7E722BE594200445DCD /* UI */,
+				D2C9349D22CFF1A200C12400 /* Feedback */,
 				D26DD95822CC7097008B95F6 /* Profile */,
 				D295920522CDB688007790FF /* ProfileEdit */,
 				D2DF848222CAD35E002F429E /* Register */,
@@ -470,13 +477,23 @@
 				D290929222C4422A000F4640 /* Establishments.storyboard */,
 				D290929022C4422A000F4640 /* Recommendations.storyboard */,
 				D290929122C4422A000F4640 /* Login.storyboard */,
+				D2C934A422D0113A00C12400 /* Feedback.storyboard */,
 				D290928F22C4422A000F4640 /* Profile.storyboard */,
 				D296EC8622B877F000E52DF9 /* Main.storyboard */,
 				D296EC8B22B877F100E52DF9 /* LaunchScreen.storyboard */,
 				A066BC5522CEFB1400D453F0 /* EstablishmentDetailsStoryboard.storyboard */,
-				D284F8EF22CFC134008EC103 /* Feedback.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D2C9349D22CFF1A200C12400 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9349E22CFF25B00C12400 /* FeedbackViewController.swift */,
+				D2C934A022CFFD0400C12400 /* FeedbackContrats.swift */,
+				D2C934A222CFFE5000C12400 /* FeedbackPresenter.swift */,
+			);
+			path = Feedback;
 			sourceTree = "<group>";
 		};
 		D2DF848222CAD35E002F429E /* Register */ = {
@@ -556,9 +573,9 @@
 				D290929422C4422A000F4640 /* Recommendations.storyboard in Resources */,
 				D290929322C4422A000F4640 /* Profile.storyboard in Resources */,
 				D29F6EBE22B897F7002E9BD4 /* Assets.xcassets in Resources */,
+				D2C934A522D0113A00C12400 /* Feedback.storyboard in Resources */,
 				D290929622C4422A000F4640 /* Establishments.storyboard in Resources */,
 				D296EC8822B877F000E52DF9 /* Main.storyboard in Resources */,
-				D284F8F022CFC134008EC103 /* Feedback.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +671,7 @@
 				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */,
+				D2C934A122CFFD0400C12400 /* FeedbackContrats.swift in Sources */,
 				D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */,
 				A027C7F722BE845000445DCD /* DictionaryExtensions.swift in Sources */,
 				A0B0D29822C3A0C6003C8A02 /* AuthHandler.swift in Sources */,
@@ -670,6 +688,7 @@
 				A066BC5222CE9A4800D453F0 /* Reachability.swift in Sources */,
 				A027C7F122BE608A00445DCD /* HttpMethods.swift in Sources */,
 				A066BC4722CB23EE00D453F0 /* BaseImagePickerProtocol.swift in Sources */,
+				D2C934A322CFFE5000C12400 /* FeedbackPresenter.swift in Sources */,
 				A0D19E6122CF53CC005391E9 /* DetailsTableViewCell.swift in Sources */,
 				A05DCF3E22C7F7A800543DB5 /* UIViewExtensions.swift in Sources */,
 				D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */,
@@ -687,6 +706,7 @@
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
 				D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */,
 				D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */,
+				D2C9349F22CFF25B00C12400 /* FeedbackViewController.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
 				41CA381622CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift in Sources */,

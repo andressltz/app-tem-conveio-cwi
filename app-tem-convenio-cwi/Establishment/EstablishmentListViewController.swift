@@ -40,13 +40,13 @@ class EstablishmentListViewController: UIViewController {
     
     private func configNavigationButtons() {
         let recommendBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_add"), style: .plain, target: self, action: #selector(recommendNewEstablishment(_:)))
-        let filterBarButton = UIBarButtonItem(image: UIImage(named: "ic_filter"), style: .plain, target: self, action: #selector(filterCategoryList(_:)))
+        let filterCategoryBarButton = UIBarButtonItem(image: UIImage(named: "ic_filter"), style: .plain, target: self, action: #selector(filterCategoryList(_:)))
         
         recommendBarButtonItem.tintColor = .black
-        filterBarButton.tintColor = .black
+        filterCategoryBarButton.tintColor = .black
         
         self.navigationItem.leftBarButtonItem = recommendBarButtonItem
-        self.navigationItem.rightBarButtonItem = filterBarButton
+        self.navigationItem.rightBarButtonItem = filterCategoryBarButton
     }
     
     func searchCategory(with name: String) {
@@ -55,16 +55,16 @@ class EstablishmentListViewController: UIViewController {
     
     @objc func recommendNewEstablishment(_ sender: UIBarButtonItem) {
         let establishmentsStoryboard = UIStoryboard(name: "Establishments", bundle: nil)
-        let popup = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentRecommendationViewController")
+        let recomendationViewController = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentRecommendationViewController")
         
-        self.present(popup, animated: true)
+        self.present(recomendationViewController, animated: true)
     }
     
     @objc func filterCategoryList(_ sender: UIBarButtonItem ) {
         let establishmentsStoryboard = UIStoryboard(name: "Establishments", bundle: nil)
-        let popup = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentFilterViewController")
+        let filterViewController = establishmentsStoryboard.instantiateViewController(withIdentifier: "EstablishmentFilterViewController")
         
-        self.present(popup, animated: true)
+        self.present(filterViewController, animated: true)
     }
     
 }

@@ -16,6 +16,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var locationField: UITextField!
     @IBOutlet weak var aboutField: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet var categoryButtonsCollection: [UIButton]!
     
@@ -28,7 +29,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
     }
     
     @IBAction func saveRecommendation(_ sender: UIButton) {
-        //disable button
+        self.saveButton.isDisableButton()
         self.presenter.saveRecommendation(withImage: self.recommendation?.image,
                                           withName: self.nameField.text,
                                           withPhone: self.phoneField.text,
@@ -86,14 +87,14 @@ extension RecommendationDetailsViewController: RecommentationDetailsViewType {
     }
     
     func onRecommendationSaved() {
-        //enabled button
+        self.saveButton.isEnabledButton()
         DispatchQueue.main.async {
             self.goBack()
         }
     }
     
     func onFailure(error: BaseError) {
-        //enable button
+        self.saveButton.isEnabledButton()
         self.showFailureAlert(withError: error)
     }
 }

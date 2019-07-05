@@ -23,13 +23,13 @@ class StorageHandler {
             completion(.failure(.noInternetConnection))
             return
         }
-        let imageRef = ref.child("\(name).png")
-        guard let data = image.pngData() else {
+        let imageRef = ref.child("\(name).jpg")
+        guard let data = image.jpegData(compressionQuality: 0.7) else {
             completion(.failure(.invalidData))
             return
         }
         let metadata = StorageMetadata()
-        metadata.contentType = "image/png"
+        metadata.contentType = "image/jpeg"
         imageRef.putData(data, metadata: metadata) { (metadata, error) in
             imageRef.downloadURL { (url, error) in
                 guard error == nil else {

@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */; };
+		410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */; };
+		4164CB9822CD72C0004C9042 /* EstablishmentFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */; };
+		4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */; };
+		4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
-		87B1EFA547A1BE522411CA60 /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */; };
+		41B24C8322CEB6FA007B3224 /* EstablishmentFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */; };
+		41CA381622CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */; };
 		A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */; };
 		A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7EC22BE5B8C00445DCD /* Result.swift */; };
 		A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027C7ED22BE5B8C00445DCD /* Endpoint.swift */; };
@@ -43,6 +49,7 @@
 		A0B0D2A422C4129F003C8A02 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A322C4129F003C8A02 /* Favorite.swift */; };
 		A0B0D2A622C4138D003C8A02 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */; };
 		A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B9886622BEAEDE00A6C237 /* Establishment.swift */; };
+		A4C0879B6E9641971832B4B5 /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77376C9861740656F0FE603 /* Pods_app_tem_convenio_cwi.framework */; };
 		D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAA22C96F89002D37D0 /* DesinableView.swift */; };
 		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
 		D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */; };
@@ -76,10 +83,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
+		410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EstablishmentTableViewCell.swift; path = "app-tem-convenio-cwi/Establishment/EstablishmentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewController.swift; sourceTree = "<group>"; };
+		4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterViewController.swift; sourceTree = "<group>"; };
+		4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListPresenter.swift; sourceTree = "<group>"; };
+		4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListContract.swift; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
-		911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterPresenter.swift; sourceTree = "<group>"; };
+		41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationViewController.swift; sourceTree = "<group>"; };
+		70C32CC207C999265EA9A627 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		A027C7EA22BE5AE100445DCD /* RequestsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsHandler.swift; sourceTree = "<group>"; };
 		A027C7EC22BE5B8C00445DCD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A027C7ED22BE5B8C00445DCD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -114,6 +126,8 @@
 		A0B0D2A322C4129F003C8A02 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A0B0D2A522C4138D003C8A02 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A0B9886622BEAEDE00A6C237 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
+		A5007DA35FEDD7D4EEA08E15 /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
+		C77376C9861740656F0FE603 /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2440FAA22C96F89002D37D0 /* DesinableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesinableView.swift; path = "app-tem-convenio-cwi/Extensions/DesinableView.swift"; sourceTree = SOURCE_ROOT; };
 		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = "app-tem-convenio-cwi/Data/API/Auth/DesignableImageView.swift"; sourceTree = SOURCE_ROOT; };
@@ -153,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B1EFA547A1BE522411CA60 /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
+				A4C0879B6E9641971832B4B5 /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,18 +177,45 @@
 		0971102168A94484EB3DFC8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
-				3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
+				A5007DA35FEDD7D4EEA08E15 /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
+				70C32CC207C999265EA9A627 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		81E23E2A54D85FA90A914BEE /* Frameworks */ = {
+		410066F622C9A9AB0038CBF8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				911746A04D522861BBF57928 /* Pods_app_tem_convenio_cwi.framework */,
 			);
-			name = Frameworks;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4161815B22CE72CF0094E55D /* EstablishmentFilter */ = {
+			isa = PBXGroup;
+			children = (
+				4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */,
+				41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */,
+			);
+			path = EstablishmentFilter;
+			sourceTree = "<group>";
+		};
+		416299D322C9ABD000FF3763 /* Establishment */ = {
+			isa = PBXGroup;
+			children = (
+				410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */,
+				410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */,
+				4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */,
+				4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */,
+			);
+			path = Establishment;
+			sourceTree = "<group>";
+		};
+		41CA381422CEE87200864AB1 /* EstablishmentRecommendation */ = {
+			isa = PBXGroup;
+			children = (
+				41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */,
+			);
+			path = EstablishmentRecommendation;
 			sourceTree = "<group>";
 		};
 		A027C7E322BE589800445DCD /* Data */ = {
@@ -347,7 +388,7 @@
 				D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */,
 				D296EC8022B877F000E52DF9 /* Products */,
 				0971102168A94484EB3DFC8E /* Pods */,
-				81E23E2A54D85FA90A914BEE /* Frameworks */,
+				E0680161914F46C1EB0576EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,6 +403,10 @@
 		D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */ = {
 			isa = PBXGroup;
 			children = (
+				416299D322C9ABD000FF3763 /* Establishment */,
+				41CA381422CEE87200864AB1 /* EstablishmentRecommendation */,
+				4161815B22CE72CF0094E55D /* EstablishmentFilter */,
+				410066F622C9A9AB0038CBF8 /* Components */,
 				A066BC4322CB215E00D453F0 /* BaseImagePicker */,
 				A027C7E322BE589800445DCD /* Data */,
 				A027C7E922BE596200445DCD /* Extensions */,
@@ -404,6 +449,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		E0680161914F46C1EB0576EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77376C9861740656F0FE603 /* Pods_app_tem_convenio_cwi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,11 +464,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D296EC9122B877F100E52DF9 /* Build configuration list for PBXNativeTarget "app-tem-convenio-cwi" */;
 			buildPhases = (
-				F5B4CFC7B4C535764131981A /* [CP] Check Pods Manifest.lock */,
+				AF09A6C393491DBD8D4D753C /* [CP] Check Pods Manifest.lock */,
 				D296EC7B22B877F000E52DF9 /* Sources */,
 				D296EC7C22B877F000E52DF9 /* Frameworks */,
 				D296EC7D22B877F000E52DF9 /* Resources */,
-				7FA2060C0A6AFDB3220FB18F /* [CP] Embed Pods Frameworks */,
+				FD643D14659B0F10C9042F02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -478,7 +531,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7FA2060C0A6AFDB3220FB18F /* [CP] Embed Pods Frameworks */ = {
+		AF09A6C393491DBD8D4D753C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app-tem-convenio-cwi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD643D14659B0F10C9042F02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,28 +585,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5B4CFC7B4C535764131981A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-tem-convenio-cwi-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -550,11 +603,14 @@
 				A066BC4E22CD149C00D453F0 /* BaseError.swift in Sources */,
 				D2DF848C22CB0956002F429E /* ValidationError.swift in Sources */,
 				D284F8EE22CDEECC008EC103 /* CalendarViewController.swift in Sources */,
+				41B24C8322CEB6FA007B3224 /* EstablishmentFilterPresenter.swift in Sources */,
 				A066BC4522CB217E00D453F0 /* BaseImagePickerViewController.swift in Sources */,
 				D26DD95C22CD6ABF008B95F6 /* ProfileContract.swift in Sources */,
 				A0B0D29E22C3AEB5003C8A02 /* UserType.swift in Sources */,
 				A066BC3B22C9690D00D453F0 /* RecommendationDetailsContract.swift in Sources */,
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
+				4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */,
+				410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */,
 				D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
 				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,
@@ -579,17 +635,21 @@
 				D2DF848A22CAEBAE002F429E /* RegisterPresenter.swift in Sources */,
 				A066BC4C22CC44C700D453F0 /* StorageError.swift in Sources */,
 				A027C7EE22BE5B8C00445DCD /* Result.swift in Sources */,
+				410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */,
 				D296EC8322B877F000E52DF9 /* AppDelegate.swift in Sources */,
 				A05DCF3C22C7BC5A00543DB5 /* UIImageViewExtensions.swift in Sources */,
 				D284F8EC22CDE57B008EC103 /* ProfileEditPresenter.swift in Sources */,
 				A05DCF3822C7A96A00543DB5 /* RecommendationsListViewController.swift in Sources */,
 				D2DF848422CAD460002F429E /* LoginContract.swift in Sources */,
 				A0B9886722BEAEDE00A6C237 /* Establishment.swift in Sources */,
+				4164CB9822CD72C0004C9042 /* EstablishmentFilterViewController.swift in Sources */,
+				4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */,
 				A05DCF3A22C7ACDB00543DB5 /* RecommendationTableViewCell.swift in Sources */,
 				D284F8EA22CDE54C008EC103 /* ProfileEditContract.swift in Sources */,
 				D26DD95A22CC70CD008B95F6 /* ProfileViewController.swift in Sources */,
 				A027C7EF22BE5B8C00445DCD /* Endpoint.swift in Sources */,
 				D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */,
+				41CA381622CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift in Sources */,
 				D2DF848822CAEA07002F429E /* RegisterContract.swift in Sources */,
 				D295920722CDB6B3007790FF /* ProfileEditViewController.swift in Sources */,
 				A066BC5022CE871C00D453F0 /* ImagePickerError.swift in Sources */,
@@ -739,9 +799,10 @@
 		};
 		D296EC9222B877F100E52DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56996FD9878F98EB554E2C59 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
+			baseConfigurationReference = A5007DA35FEDD7D4EEA08E15 /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 592CL5HBX3;
 				INFOPLIST_FILE = "app-tem-convenio-cwi/Info.plist";
@@ -749,8 +810,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.mari.app-tem-convenio-cwi";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.andres.app-tem-convenio-cwi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -758,9 +820,10 @@
 		};
 		D296EC9322B877F100E52DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3534D0646DB21AC053D15836 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
+			baseConfigurationReference = 70C32CC207C999265EA9A627 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 592CL5HBX3;
 				INFOPLIST_FILE = "app-tem-convenio-cwi/Info.plist";
@@ -768,8 +831,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.mari.app-tem-convenio-cwi";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.andres.app-tem-convenio-cwi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

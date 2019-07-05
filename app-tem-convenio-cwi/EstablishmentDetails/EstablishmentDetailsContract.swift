@@ -7,11 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
-protocol EstablishmentDetailsViewType {
+protocol EstablishmentDetailsViewType: AnyObject {
     func onFavoriteStateChanged(to enabled: Bool)
+    func onEstablishmentLoaded(establishment: Establishment)
+    func onFailure(error: BaseError)
 }
 
 protocol EstablishmentDetailsPresenterType {
-    
+    func fetchData(establishmentUID: String)
+    func getCategory() -> Category
 }

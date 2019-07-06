@@ -18,7 +18,13 @@ class MapTableViewCell: UITableViewCell {
     func config(with address: String?) {
         DispatchQueue.main.async {
             if let address = address {
-                self.addressLabel.text = address
+                
+                if address == "" {
+                    self.addressLabel.text = "Não há localização cadastrada"
+                } else {
+                    self.addressLabel.text = address
+                }
+                
                 let geocoder = CLGeocoder()
                 geocoder.geocodeAddressString(address) { [weak self] placemarks, error in
                     if let placemark = placemarks?.first, let location = placemark.location {

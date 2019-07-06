@@ -23,6 +23,10 @@ class EstablishmentListViewController: UIViewController {
         configSearchBar()
         configTableView()
         configNavigationButtons()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.presenter.fetchData()
     }
     

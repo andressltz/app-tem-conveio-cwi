@@ -18,7 +18,40 @@ class EstablishmentDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.view = self
+        self.presenter.fetchData(establishmentUID: "-LiuyY_Ovo1ylX3Hl5Nb")
     }
     
 
+}
+
+extension EstablishmentDetailsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "header-feedback")
+            if let feedbackHeaderCell = cell as? FeedbackHeaderTableViewCell {
+                feedbackHeaderCell.config(with: self.presenter.getCategory())
+            }
+            return cell
+        }
+        return nil
+    }
+    
+}
+
+extension EstablishmentDetailsViewController: EstablishmentDetailsViewType {
+    func onFavoriteStateChanged(to enabled: Bool) {
+        
+    }
+    
+    func onEstablishmentLoaded(establishment: Establishment) {
+        self.tableView.reloadData()
+    }
+    
+    func onFailure(error: BaseError) {
+        self.showFailureAlert(withError: error)
+    }
+    
+    
 }

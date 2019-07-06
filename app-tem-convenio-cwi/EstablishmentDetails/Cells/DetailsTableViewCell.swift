@@ -12,19 +12,20 @@ class DetailsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var pictureImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet var buttonsCollection: [UIButton]!
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
+    
+    @IBOutlet var buttonsCollection: [UIButton]!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func config(with model: Establishment) {
+        DispatchQueue.main.async {
+            if let image = model.image {
+                self.pictureImageView.loadImage(from: image)
+            }
+            self.nameLabel.text = model.name
+            self.aboutLabel.text = model.about
+            self.rateLabel.text = model.rate.description
+        }
     }
 
 }

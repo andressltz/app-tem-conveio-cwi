@@ -84,6 +84,8 @@ extension EstablishmentRecommendationPresenter: EstablishmentRecommendationPrese
                 params["image"] = imageURL
                 self.saveRecommendation(establishmentParams: params)
             }
+        } else {
+            self.saveRecommendation(establishmentParams: params)
         }
     }
         

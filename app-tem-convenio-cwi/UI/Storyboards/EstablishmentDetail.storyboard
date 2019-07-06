@@ -14,7 +14,7 @@
         <!--Establishment Details View Controller-->
         <scene sceneID="O3Q-8y-5VZ">
             <objects>
-                <viewController id="4aY-ZM-kZJ" customClass="EstablishmentDetailsViewController" customModule="app_tem_convenio_cwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EstablishmentDetailsViewController" id="4aY-ZM-kZJ" customClass="EstablishmentDetailsViewController" customModule="app_tem_convenio_cwi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yP5-tx-i9d" customClass="GradientView" customModule="app_tem_convenio_cwi" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,8 +26,11 @@
                                     <constraint firstAttribute="width" constant="44" id="VWx-VG-dfW"/>
                                 </constraints>
                                 <state key="normal" image="ic_arrow"/>
+                                <connections>
+                                    <action selector="goBack:" destination="4aY-ZM-kZJ" eventType="touchUpInside" id="wOD-6i-r0Y"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h23-kk-2dT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h23-kk-2dT">
                                 <rect key="frame" x="0.0" y="79" width="375" height="588"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -239,10 +242,10 @@ Extensão 10% de desconto;</string>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="fH0-2A-5qF" secondAttribute="bottom" id="Cbb-It-Hmb"/>
                                                 <constraint firstItem="qJ9-2z-KD5" firstAttribute="top" secondItem="cAJ-eh-lGY" secondAttribute="topMargin" id="LcR-bx-iza"/>
                                                 <constraint firstItem="fH0-2A-5qF" firstAttribute="leading" secondItem="cAJ-eh-lGY" secondAttribute="leadingMargin" id="afc-XN-CQR"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qJ9-2z-KD5" secondAttribute="bottom" id="iNG-Ib-Lyg"/>
+                                                <constraint firstItem="fH0-2A-5qF" firstAttribute="centerY" secondItem="cAJ-eh-lGY" secondAttribute="centerY" id="jr1-m4-aTy"/>
                                                 <constraint firstItem="fH0-2A-5qF" firstAttribute="top" secondItem="cAJ-eh-lGY" secondAttribute="topMargin" id="mSO-bI-nZf"/>
                                                 <constraint firstItem="qJ9-2z-KD5" firstAttribute="trailing" secondItem="cAJ-eh-lGY" secondAttribute="trailingMargin" id="z7x-yx-bJG"/>
                                             </constraints>
@@ -261,23 +264,23 @@ Extensão 10% de desconto;</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjw-Zj-IL4">
                                                     <rect key="frame" x="8" y="8" width="359" height="148.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="V8t-MA-lIH">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" axis="vertical" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="V8t-MA-lIH">
                                                             <rect key="frame" x="8" y="8" width="343" height="132.5"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-iF-lPM">
-                                                                    <rect key="frame" x="11" y="0.0" width="332" height="36"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-iF-lPM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rI2-aF-1Vl">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="36"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="43.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus maravilhoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXJ-n4-HlD">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="16"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="23.5"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-41-UwG">
-                                                                                    <rect key="frame" x="0.0" y="21" width="107" height="15"/>
+                                                                                    <rect key="frame" x="0.0" y="28.5" width="107" height="15"/>
                                                                                     <subviews>
                                                                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="7gN-5e-S8b">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -318,17 +321,21 @@ Extensão 10% de desconto;</string>
                                                                                 </stackView>
                                                                             </subviews>
                                                                         </stackView>
+                                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="iR9-dg-y2m">
+                                                                            <rect key="frame" x="166" y="0.0" width="77.5" height="43.5"/>
+                                                                            <color key="backgroundColor" name="feedback-backgroud"/>
+                                                                        </view>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="F2A-x3-uyU">
-                                                                            <rect key="frame" x="166" y="0.0" width="166" height="36"/>
+                                                                            <rect key="frame" x="243.5" y="0.0" width="99.5" height="43.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luciane Brisotto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gks-RW-zi5">
-                                                                                    <rect key="frame" x="66.5" y="0.0" width="99.5" height="18"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="99.5" height="25.5"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junho de 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-R9-ev0">
-                                                                                    <rect key="frame" x="75" y="18" width="91" height="18"/>
+                                                                                    <rect key="frame" x="8.5" y="25.5" width="91" height="18"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -337,8 +344,8 @@ Extensão 10% de desconto;</string>
                                                                         </stackView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LA1-RW-0SG">
-                                                                    <rect key="frame" x="0.0" y="51" width="343" height="81.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LA1-RW-0SG">
+                                                                    <rect key="frame" x="0.0" y="58.5" width="343" height="74"/>
                                                                     <string key="text">Este campus é maravilhoso, com seu laguinho, patos, marrecos e muitas árvores. Espaços verdes, longos caminhos, biblioteca gigantesca...  Faz muita falta ter ar condicionado, já que o campus é muito frio no inverno e bem quente no verão. </string>
                                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                                                     <nil key="textColor"/>
@@ -432,6 +439,12 @@ Extensão 10% de desconto;</string>
                         <viewLayoutGuide key="safeArea" id="3z2-wM-OFZ"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" name="disable"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" name="disable"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
@@ -459,6 +472,9 @@ Extensão 10% de desconto;</string>
         </namedColor>
         <namedColor name="blue-ligth-ios">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disable">
+            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="favorites">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

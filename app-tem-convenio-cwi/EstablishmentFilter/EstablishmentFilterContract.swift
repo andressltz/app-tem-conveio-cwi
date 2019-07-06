@@ -9,5 +9,5 @@
 import UIKit
 
 protocol EstablishmentFilterViewControllerDelegate: AnyObject {
-    func filterList(_ category: Category)
+    func filterList(_ category: Category?)
 }

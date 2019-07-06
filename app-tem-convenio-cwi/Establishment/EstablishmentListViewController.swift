@@ -98,7 +98,7 @@ extension EstablishmentListViewController: UISearchResultsUpdating {
 
 extension EstablishmentListViewController: EstablishmentFilterViewControllerDelegate {
 
-    func filterList(_ category: Category) {
+    func filterList(_ category: Category?) {
         presenter.filterCategory(with: category)
     }
 }

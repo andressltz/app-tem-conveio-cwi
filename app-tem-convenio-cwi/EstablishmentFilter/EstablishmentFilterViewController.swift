@@ -10,6 +10,7 @@ import UIKit
 
 class EstablishmentFilterViewController: UIViewController {
     
+    @IBOutlet weak var allButton: DesignableButton!
     @IBOutlet weak var favoriteButton: DesignableButton!
     @IBOutlet weak var teachingButton: DesignableButton!
     @IBOutlet weak var trainingButton: DesignableButton!
@@ -26,6 +27,11 @@ class EstablishmentFilterViewController: UIViewController {
     }
     
     @IBAction func backgroundClick(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func alFilterClick(_ sender: Any) {
+        delegate.filterList(nil)
         dismiss(animated: true)
     }
     

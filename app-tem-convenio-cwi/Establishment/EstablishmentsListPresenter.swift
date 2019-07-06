@@ -66,6 +66,9 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
                 return establishment.category?.name == category.name
             })
             self.view?.reloadData()
+        } else {
+            self.filterEstablishmentsList = establishmentsList
+            self.view?.reloadData()
         }
     }
 }

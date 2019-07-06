@@ -53,6 +53,7 @@ class RecommendationDetailsViewController: BaseImagePickerViewController {
         self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.imageButton)
         self.loadRecommendation()
+        self.aboutField.placeholder = "Sobre o Estabelecimento"
     }
     
     private func loadRecommendation() {

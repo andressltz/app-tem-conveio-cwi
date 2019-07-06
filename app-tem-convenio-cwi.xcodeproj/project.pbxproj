@@ -12,6 +12,8 @@
 		4164CB9822CD72C0004C9042 /* EstablishmentFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */; };
 		4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */; };
 		4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */; };
+		416F6D5522D056C200CF636E /* EstablishmentRecommendationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */; };
+		416F6D5722D058D600CF636E /* EstablishmentRecommendationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
 		41B199B322D00F110024FFFF /* EstablishmentFilterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B199B222D00F110024FFFF /* EstablishmentFilterContract.swift */; };
 		41B24C8322CEB6FA007B3224 /* EstablishmentFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */; };
@@ -91,6 +93,8 @@
 		4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterViewController.swift; sourceTree = "<group>"; };
 		4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListPresenter.swift; sourceTree = "<group>"; };
 		4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListContract.swift; sourceTree = "<group>"; };
+		416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationPresenter.swift; sourceTree = "<group>"; };
+		416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationContract.swift; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B199B222D00F110024FFFF /* EstablishmentFilterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterContract.swift; sourceTree = "<group>"; };
 		41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterPresenter.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */,
+				416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */,
+				416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */,
 			);
 			path = EstablishmentRecommendation;
 			sourceTree = "<group>";
@@ -607,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416F6D5722D058D600CF636E /* EstablishmentRecommendationContract.swift in Sources */,
 				A0D19E5F22CF523D005391E9 /* EstablishmentDetailsContract.swift in Sources */,
 				A006CF2522CFF5B300A374AA /* FeedbackHeaderTableViewCell.swift in Sources */,
 				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
@@ -628,6 +635,7 @@
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
 				4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */,
 				410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */,
+				416F6D5522D056C200CF636E /* EstablishmentRecommendationPresenter.swift in Sources */,
 				D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
 				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,

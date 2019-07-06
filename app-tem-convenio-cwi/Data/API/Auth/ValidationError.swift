@@ -13,6 +13,8 @@ enum ValidationError: BaseError {
     case invalidName
     case invalidEmail
     case invalidPassword
+    case invalidEstablishmentName
+    case invalidCategory
     
     var title: String {
         switch self {
@@ -22,6 +24,10 @@ enum ValidationError: BaseError {
             return "Email Inválido"
         case .invalidPassword:
             return "Senha Inválido"
+        case .invalidEstablishmentName:
+            return "Nome inválido"
+        case .invalidCategory:
+            return "Categoria não selecionada"
         }
     }
     
@@ -33,6 +39,10 @@ enum ValidationError: BaseError {
             return "Por favor informe um e-mail válido com domínio da CWI."
         case .invalidPassword:
             return "Por favor, informe a senha com no mínimo 6 dígitos."
+        case .invalidEstablishmentName:
+            return "Por favor informe um nome válido."
+        case .invalidCategory:
+            return "Por favor selecione uma categoria."
         }
     }
     

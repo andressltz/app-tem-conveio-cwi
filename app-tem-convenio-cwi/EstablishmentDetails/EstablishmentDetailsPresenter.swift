@@ -84,7 +84,9 @@ extension EstablishmentDetailsPresenter: EstablishmentDetailsPresenterType {
                 return
             }
             if let json = json {
-                self.view?.onEstablishmentLoaded(establishment: Establishment(withJson: json))
+                let establishment = Establishment(withJson: json)
+                self.establishment = establishment
+                self.view?.onEstablishmentLoaded(establishment: establishment)
             } else {
                 self.view?.onFailure(error: APIError.invalidData)
             }

@@ -14,13 +14,23 @@ class EstablishmentDetailsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loaderView: UIView!
     
+    @IBAction func goBack(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     private let presenter = EstablishmentDetailsPresenter()
     var establishment: Establishment?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter.view = self
+        self.configTable()
         self.presenter.fetchData(establishmentUID: establishment?.uid ?? "")
+    }
+    
+    func configTable() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self.presenter
     }
     
 
@@ -39,6 +49,14 @@ extension EstablishmentDetailsViewController: UITableViewDelegate {
         return nil
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        if section == 2 {
+            return 55
+        } else {
+            return 0
+        }
+    }
+    
 }
 
 extension EstablishmentDetailsViewController: EstablishmentDetailsViewType {
@@ -47,6 +65,8 @@ extension EstablishmentDetailsViewController: EstablishmentDetailsViewType {
     }
     
     func onEstablishmentLoaded(establishment: Establishment) {
+        self.gradientView.startColor = establishment.category?.primaryColor ?? .white
+        self.gradientView.endColor = establishment.category?.secondaryColor ?? .white
         self.tableView.reloadData()
     }
     

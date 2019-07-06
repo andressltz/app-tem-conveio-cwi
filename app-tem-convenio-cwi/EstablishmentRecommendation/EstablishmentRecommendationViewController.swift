@@ -12,6 +12,7 @@ class EstablishmentRecommendationViewController: BaseImagePickerViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var establishmentImageView: UIImageView!
+    @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet var categoryButtonColection: [UIButton]!
     
@@ -34,6 +35,7 @@ class EstablishmentRecommendationViewController: BaseImagePickerViewController {
     }
     
     @IBAction func recommendClickButton(_ sender: Any) {
+        self.saveButton.isDisableButton()
         self.presenter.saveRecommendation(withImage: "", withName: nameTextField.text, withCategory: nil)
     }
 }
@@ -53,6 +55,7 @@ extension EstablishmentRecommendationViewController: EstablishmentRecommendation
     
     func onRecommendationSaved() {
         DispatchQueue.main.async {
+            self.saveButton.isEnabledButton()
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -62,6 +65,7 @@ extension EstablishmentRecommendationViewController: EstablishmentRecommendation
     }
     
     func onFailure(error: BaseError) {
+        self.saveButton.isEnabledButton()
         self.showFailureAlert(withError: error)
     }
     

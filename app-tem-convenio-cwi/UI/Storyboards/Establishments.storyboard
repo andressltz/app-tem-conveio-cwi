@@ -265,6 +265,7 @@
                     <connections>
                         <outlet property="establishmentImageView" destination="QlC-mR-3Jp" id="IiJ-nu-FwS"/>
                         <outlet property="nameTextField" destination="tKb-EG-BFC" id="i4j-Zp-bBp"/>
+                        <outlet property="saveButton" destination="mR5-4X-pU1" id="YJE-SL-NDM"/>
                         <outletCollection property="categoryButtonColection" destination="HV4-1W-v40" collectionClass="NSMutableArray" id="2hZ-fn-fvV"/>
                         <outletCollection property="categoryButtonColection" destination="uDz-M6-c1t" collectionClass="NSMutableArray" id="NEV-Vp-dAV"/>
                         <outletCollection property="categoryButtonColection" destination="qBB-G0-37F" collectionClass="NSMutableArray" id="TjJ-gJ-ZBr"/>

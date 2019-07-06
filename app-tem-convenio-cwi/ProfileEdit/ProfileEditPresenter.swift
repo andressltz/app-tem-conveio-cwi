@@ -68,6 +68,7 @@ extension ProfileEditPresenter: ProfileEditPresenterType {
         var profileParams: [String: Any?] = [:]
         profileParams["uid"] = uid
         profileParams["name"] = name
+        profileParams["type"] = Session.instance.loggedUser?.type.rawValue ?? UserType.basic.rawValue
         profileParams["email"] = email
         profileParams["profession"] = profession
         profileParams["birthday"] = birthday

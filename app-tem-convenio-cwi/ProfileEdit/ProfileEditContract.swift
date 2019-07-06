@@ -13,7 +13,6 @@ protocol ProfileEditViewType: AnyObject {
     func onImageSelected(image: UIImage)
     func onProfileSaved()
     func onFailure(error: BaseError)
-    func onProfileSucess()
 }
 
 protocol ProfileEditPresenterType {

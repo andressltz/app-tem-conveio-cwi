@@ -31,15 +31,17 @@ class ProfileEditViewController: BaseImagePickerViewController {
     }
     
     @IBAction func touchSaveUser(_ sender: Any) {
-        self.presenter.saveUser(withUID: (Session.instance.loggedUser?.uid)!,
-                                withName: usernameTextField.text,
-                                withEmail: emailTextField.text,
-                                withProfession: professionTextField.text,
-                                withBirth: birthTextField.text?.toDate(),
-                                withPhone: phoneTextField.text,
-                                withAbout: aboutTextView.text,
-                                withImageURL: "")
-        //dismiss(animated: true)
+        if let uid = Session.instance.loggedUser?.uid {
+            self.presenter.saveUser(withUID: uid,
+                                    withName: usernameTextField.text,
+                                    withEmail: emailTextField.text,
+                                    withProfession: professionTextField.text,
+                                    withBirth: birthTextField.text?.toDate(),
+                                    withPhone: phoneTextField.text,
+                                    withAbout: aboutTextView.text,
+                                    withImageURL: Session.instance.loggedUser?.imageURL)
+        }
+
         
     }
 
@@ -48,25 +50,19 @@ class ProfileEditViewController: BaseImagePickerViewController {
         self.addKeyboardObservers()
         self.presenter.view = self
         self.baseImagePickerCallback = self
-        //self.addGestureToImageView(imageView: self.imageButton)
-        presenter.fetchData()
-        aboutTextView.placeholder = "Resumo do Usuário"
+        self.addGestureToImageView(imageView: self.userImageView)
+        self.aboutTextView.placeholder = "Resumo do Usuário"
+        self.presenter.fetchData()
     }
     
     func onFieldsInvalid(error: ValidationError) {
-        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
-        self.present(alert, animated: true, completion: nil)
+        self.showFailureAlert(withError: error)
     }
 
 }
 
 extension ProfileEditViewController: ProfileEditViewType {
-    
-    func onProfileSucess() {
-        
-    }
-    
+   
     func onImageSelected(image: UIImage) {
         self.userImageView.image = image
     }
@@ -81,30 +77,22 @@ extension ProfileEditViewController: ProfileEditViewType {
         self.showFailureAlert(withError: error)
     }
     
-    
     func loadData(user: User?) {
-        
         guard user != nil else {
             onFieldsInvalid(error: .notFoudUser)
             return
         }
-        
-        DispatchQueue.main.async {
-            if let imageURL = user?.imageURL {
-                self.userImageView.loadImage(from: imageURL)
-            } else {
-                self.userImageView.image = .placeholderImage
-            }
-            
+        if let imageURL = user?.imageURL {
+            self.userImageView.loadImage(from: imageURL)
+        } else {
+            self.userImageView.image = .placeholderImage
         }
-        
-        usernameTextField.text = user?.name
-        birthTextField.text = user?.birthday?.toString()
-        professionTextField.text = user?.profession
-        phoneTextField.text = user?.phone
-        emailTextField.text = user?.email
-        aboutTextView.text = user?.about
-        
+        self.usernameTextField.text = user?.name
+        self.birthTextField.text = user?.birthday?.toString()
+        self.professionTextField.text = user?.profession
+        self.phoneTextField.text = user?.phone
+        self.emailTextField.text = user?.email
+        self.aboutTextView.text = user?.about
     }
     
 }

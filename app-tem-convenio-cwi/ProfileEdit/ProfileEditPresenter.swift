@@ -25,7 +25,7 @@ class ProfileEditPresenter: NSObject {
     }
     
     func saveUser(profileParams: [String: Any?]) {
-        self.requestsHandler.make(withEndpoint: .editProfile(userUID: profileUID!), completion: { (result) in
+        self.requestsHandler.make(withEndpoint: .editProfile(userUID: self.profileUID!), withParams: profileParams) { (result) in
             guard case let .success(json) = result else {
                 if case let .failure(error) = result {
                     self.handleError(error: error)
@@ -37,7 +37,7 @@ class ProfileEditPresenter: NSObject {
                 Session.instance.loggedUser = user
             }
             self.view?.onProfileSaved()
-        })
+        }
     }
     
     private func handleError(error: BaseError) {
@@ -45,9 +45,6 @@ class ProfileEditPresenter: NSObject {
             self.view?.onFailure(error: error)
         }
     }
-    
-    
-    
 }
 
 extension ProfileEditPresenter: ProfileEditPresenterType {
@@ -62,12 +59,14 @@ extension ProfileEditPresenter: ProfileEditPresenterType {
                   withImageURL imageURL: String?) {
         
         guard let name = name, !name.isEmpty else {
+            self.view?.onFailure(error: ValidationError.invalidName)
             return
         }
         
-        profileUID = uid
+        self.profileUID = uid
         
         var profileParams: [String: Any?] = [:]
+        profileParams["uid"] = uid
         profileParams["name"] = name
         profileParams["email"] = email
         profileParams["profession"] = profession
@@ -96,7 +95,9 @@ extension ProfileEditPresenter: ProfileEditPresenterType {
     }
     
     func fetchData() {
-        self.view?.loadData(user: Session.instance.loggedUser)
+        DispatchQueue.main.async {
+            self.view?.loadData(user: Session.instance.loggedUser)
+        }
     }
     
 }

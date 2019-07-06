@@ -72,7 +72,7 @@ class EstablishmentListViewController: UIViewController {
 extension EstablishmentListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let establishmentDetailStoryboard = UIStoryboard(name: "EstablishmentDetailsStoryboard", bundle: nil)
+        let establishmentDetailStoryboard = UIStoryboard(name: "EstablishmentDetail", bundle: nil)
         if let detailViewController = establishmentDetailStoryboard.instantiateViewController(withIdentifier: "EstablishmentDetailsViewController") as? EstablishmentDetailsViewController {
             detailViewController.establishment = self.presenter.filterEstablishmentsList[indexPath.row]
             self.navigationController?.present(detailViewController, animated: true)

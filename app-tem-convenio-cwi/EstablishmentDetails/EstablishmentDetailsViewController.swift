@@ -15,11 +15,12 @@ class EstablishmentDetailsViewController: UIViewController {
     @IBOutlet weak var loaderView: UIView!
     
     private let presenter = EstablishmentDetailsPresenter()
+    var establishment: Establishment?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter.view = self
-        self.presenter.fetchData(establishmentUID: "-LiuyY_Ovo1ylX3Hl5Nb")
+        self.presenter.fetchData(establishmentUID: establishment?.uid ?? "")
     }
     
 

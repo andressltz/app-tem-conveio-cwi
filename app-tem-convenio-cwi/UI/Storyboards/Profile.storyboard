@@ -552,7 +552,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="disable"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="A1z-Fb-3vt" firstAttribute="leading" secondItem="OUW-CU-Xa6" secondAttribute="leading" id="55c-rJ-Kuj"/>
                             <constraint firstItem="U59-IV-vRg" firstAttribute="trailing" secondItem="OUW-CU-Xa6" secondAttribute="trailing" id="H6o-Dp-CPW"/>

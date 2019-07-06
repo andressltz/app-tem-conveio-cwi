@@ -18,6 +18,15 @@ class EstablishmentDetailsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func touchSendFeedback(_ sender: UIButton) {
+        let storyboard = self.storyboard
+        if let feedbackViewController = storyboard?.instantiateViewController(withIdentifier: "FeedbackViewController") as? FeedbackViewController {
+            feedbackViewController.establishment = self.establishment
+            self.navigationController?.present(feedbackViewController, animated: true)
+        }
+    }
+    
+    
     private let presenter = EstablishmentDetailsPresenter()
     var establishment: Establishment?
 

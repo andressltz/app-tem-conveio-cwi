@@ -139,7 +139,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.98371116849999996" green="0.98886148870000001" blue="0.98886148870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="tOT-Pi-Mfs" firstAttribute="leading" secondItem="ERQ-ea-jia" secondAttribute="leading" id="Fh4-yl-5Aw"/>
                                                         <constraint firstAttribute="trailing" secondItem="HwJ-JR-8TS" secondAttribute="trailing" constant="30" id="MUt-Ow-EZp"/>
@@ -218,7 +218,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qmj-tB-En3">
-                                                    <rect key="frame" x="20" y="0.0" width="326" height="249.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="326" height="250"/>
                                                     <subviews>
                                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-gY-LOu">
                                                             <rect key="frame" x="0.0" y="0.0" width="326" height="190"/>
@@ -232,7 +232,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </mapView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus em Sãp Leopoldo – Avenida Unisinos, 950 – Cristo Rei, São Leopoldo – RS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmi-01-bvg">
-                                                            <rect key="frame" x="0.0" y="200" width="326" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="200" width="326" height="50"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -252,33 +252,39 @@
                                             <outlet property="mapView" destination="8vm-gY-LOu" id="qrm-ny-tHe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="header-feedback" rowHeight="55" id="6rc-1r-Pjw" customClass="FeedbackHeaderTableViewCell" customModule="app_tem_convenio_cwi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="678" width="375" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="header-feedback" rowHeight="70" id="6rc-1r-Pjw" customClass="FeedbackHeaderTableViewCell" customModule="app_tem_convenio_cwi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="678" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6rc-1r-Pjw" id="Q6v-U6-TOp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedbacks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z5-bt-tAP">
-                                                    <rect key="frame" x="15" y="11" width="189.5" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="38"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCB-QF-eTQ">
-                                                    <rect key="frame" x="227" y="11" width="133" height="33"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
-                                                    <state key="normal" title="Dar um Feedback"/>
-                                                </button>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="4Bc-b4-tjd">
+                                                    <rect key="frame" x="20" y="20" width="335" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedbacks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z5-bt-tAP">
+                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCB-QF-eTQ">
+                                                            <rect key="frame" x="201.5" y="0.0" width="133.5" height="50"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                            <state key="normal" title="Dar um Feedback"/>
+                                                            <connections>
+                                                                <action selector="addFeedback:" destination="6rc-1r-Pjw" eventType="touchUpInside" id="nDI-zm-t3u"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="XCB-QF-eTQ" firstAttribute="trailing" secondItem="Q6v-U6-TOp" secondAttribute="trailingMargin" id="6cd-UX-yfi"/>
-                                                <constraint firstItem="0z5-bt-tAP" firstAttribute="top" secondItem="Q6v-U6-TOp" secondAttribute="topMargin" id="8d0-r3-px7"/>
-                                                <constraint firstItem="XCB-QF-eTQ" firstAttribute="top" secondItem="Q6v-U6-TOp" secondAttribute="topMargin" id="QUw-uo-Ojc"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="XCB-QF-eTQ" secondAttribute="bottom" id="aaO-7I-Aon"/>
-                                                <constraint firstItem="0z5-bt-tAP" firstAttribute="leading" secondItem="Q6v-U6-TOp" secondAttribute="leadingMargin" id="eDe-sn-6RA"/>
-                                                <constraint firstItem="0z5-bt-tAP" firstAttribute="centerY" secondItem="Q6v-U6-TOp" secondAttribute="centerY" id="jFX-mv-Zry"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Bc-b4-tjd" secondAttribute="trailing" constant="20" id="3wf-kk-BhD"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Bc-b4-tjd" secondAttribute="bottom" id="TLN-25-huH"/>
+                                                <constraint firstItem="4Bc-b4-tjd" firstAttribute="top" secondItem="Q6v-U6-TOp" secondAttribute="top" constant="20" id="X1j-nU-tzR"/>
+                                                <constraint firstItem="4Bc-b4-tjd" firstAttribute="leading" secondItem="Q6v-U6-TOp" secondAttribute="leading" constant="20" id="taM-vt-Syg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,7 +293,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedback" rowHeight="165" id="oMm-i0-Seq" customClass="FeedbackTableViewCell" customModule="app_tem_convenio_cwi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="733" width="375" height="165"/>
+                                        <rect key="frame" x="0.0" y="748" width="375" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oMm-i0-Seq" id="Pz2-mv-rAM">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
@@ -381,13 +387,19 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="8"/>
+                                                            <real key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidthView">
                                                             <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColorView">
                                                             <color key="value" name="feedback-line"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="feedback-line"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -413,7 +425,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="empty-feedback" rowHeight="270" id="l3c-FS-gKn">
-                                        <rect key="frame" x="0.0" y="898" width="375" height="270"/>
+                                        <rect key="frame" x="0.0" y="913" width="375" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l3c-FS-gKn" id="wUa-pv-InZ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
@@ -467,7 +479,7 @@
                             <constraint firstAttribute="bottom" secondItem="Yet-Hu-yQ1" secondAttribute="bottom" id="bXu-Yc-MAl"/>
                             <constraint firstItem="Yet-Hu-yQ1" firstAttribute="trailing" secondItem="rEn-lC-UvY" secondAttribute="trailing" id="lYq-vp-rSM"/>
                             <constraint firstItem="j06-Mj-G0V" firstAttribute="leading" secondItem="rEn-lC-UvY" secondAttribute="leading" id="pHr-c4-HQM"/>
-                            <constraint firstItem="rEn-lC-UvY" firstAttribute="bottom" secondItem="j06-Mj-G0V" secondAttribute="bottom" id="vnK-VQ-gst"/>
+                            <constraint firstAttribute="bottom" secondItem="j06-Mj-G0V" secondAttribute="bottom" id="vnK-VQ-gst"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rEn-lC-UvY"/>
                         <userDefinedRuntimeAttributes>

@@ -51,8 +51,7 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
     
     func filterData(with name: String?) {
         if let name = name {
-            print(establishmentsList)
-            filterEstablishmentsList = establishmentsList.filter({
+            self.filterEstablishmentsList = self.establishmentsList.filter({
                 (establishment) -> Bool in
                 return name.isEmpty || establishment.name.lowercased().contains(name.lowercased())
             })
@@ -60,6 +59,18 @@ extension EstablishmentsListPresenter: EstablishmentListPresenterType {
         }
     }
     
+    func filterCategory(with category: Category?) {
+        if let category = category {
+            self.filterEstablishmentsList = self.establishmentsList.filter({
+                (establishment) -> Bool in
+                return establishment.category?.name == category.name
+            })
+            self.view?.reloadData()
+        } else {
+            self.filterEstablishmentsList = establishmentsList
+            self.view?.reloadData()
+        }
+    }
 }
 
 extension EstablishmentsListPresenter: UITableViewDataSource {

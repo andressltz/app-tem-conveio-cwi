@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30A2D6E9BE67ADDC73779219 /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F773F97B4A3BE5428C700B30 /* Pods_app_tem_convenio_cwi.framework */; };
 		410066F322C9A72C0038CBF8 /* EstablishmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */; };
 		410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */; };
 		4164CB9822CD72C0004C9042 /* EstablishmentFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */; };
 		4168587822CABFAE0072C2A6 /* EstablishmentsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */; };
 		4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */; };
+		416F6D5522D056C200CF636E /* EstablishmentRecommendationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */; };
+		416F6D5722D058D600CF636E /* EstablishmentRecommendationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */; };
 		41AC254922B923130004B0EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC254822B923130004B0EF /* GoogleService-Info.plist */; };
+		41B199B322D00F110024FFFF /* EstablishmentFilterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B199B222D00F110024FFFF /* EstablishmentFilterContract.swift */; };
 		41B24C8322CEB6FA007B3224 /* EstablishmentFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */; };
 		41CA381622CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */; };
 		A006CF1D22CFAB2C00A374AA /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006CF1C22CFAB2C00A374AA /* MapTableViewCell.swift */; };
@@ -59,6 +61,7 @@
 		A0D19E6122CF53CC005391E9 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D19E6022CF53CC005391E9 /* DetailsTableViewCell.swift */; };
 		A0D19E6322CF54A3005391E9 /* EstablishmentDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D19E6222CF54A3005391E9 /* EstablishmentDetailsPresenter.swift */; };
 		A0D9996622CF01220091B495 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9996522CF01220091B495 /* GradientView.swift */; };
+		AE2E4D49C5FCC2FA8C9EB60D /* Pods_app_tem_convenio_cwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDF7B1AFEB30D45EEEA3710 /* Pods_app_tem_convenio_cwi.framework */; };
 		D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAA22C96F89002D37D0 /* DesinableView.swift */; };
 		D2440FAD22C970F6002D37D0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */; };
 		D26DD95722CC3BB7008B95F6 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */; };
@@ -96,15 +99,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EDF7B1AFEB30D45EEEA3710 /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		410066F222C9A72C0038CBF8 /* EstablishmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EstablishmentTableViewCell.swift; path = "app-tem-convenio-cwi/Establishment/EstablishmentTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		410066F422C9A88B0038CBF8 /* EstablishmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewController.swift; sourceTree = "<group>"; };
 		4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterViewController.swift; sourceTree = "<group>"; };
 		4168587722CABFAE0072C2A6 /* EstablishmentsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListPresenter.swift; sourceTree = "<group>"; };
 		4168587922CAC5A50072C2A6 /* EstablishmentsListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentsListContract.swift; sourceTree = "<group>"; };
+		416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationPresenter.swift; sourceTree = "<group>"; };
+		416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationContract.swift; sourceTree = "<group>"; };
 		41AC254822B923130004B0EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41B199B222D00F110024FFFF /* EstablishmentFilterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterContract.swift; sourceTree = "<group>"; };
 		41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentFilterPresenter.swift; sourceTree = "<group>"; };
 		41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentRecommendationViewController.swift; sourceTree = "<group>"; };
-		5A457D480F72F3AA5598297C /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
+		425345649FF39D272217B6A2 /* Pods-app-tem-convenio-cwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.release.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.release.xcconfig"; sourceTree = "<group>"; };
 		A006CF1C22CFAB2C00A374AA /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		A006CF1E22CFE10000A374AA /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
 		A006CF2422CFF5B300A374AA /* FeedbackHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,7 +155,6 @@
 		A0D19E6022CF53CC005391E9 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A0D19E6222CF54A3005391E9 /* EstablishmentDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentDetailsPresenter.swift; sourceTree = "<group>"; };
 		A0D9996522CF01220091B495 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		B0760103DD076F3EB369BE7D /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
 		D2440FAA22C96F89002D37D0 /* DesinableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesinableView.swift; path = "app-tem-convenio-cwi/Extensions/DesinableView.swift"; sourceTree = SOURCE_ROOT; };
 		D2440FAC22C970F6002D37D0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D26DD95622CC3BB7008B95F6 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = "app-tem-convenio-cwi/Data/API/Auth/DesignableImageView.swift"; sourceTree = SOURCE_ROOT; };
@@ -185,7 +191,7 @@
 		D2DF848722CAEA07002F429E /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
 		D2DF848922CAEBAE002F429E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		D2DF848B22CB0956002F429E /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
-		F773F97B4A3BE5428C700B30 /* Pods_app_tem_convenio_cwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_tem_convenio_cwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F439E7882450643C8223DF8C /* Pods-app-tem-convenio-cwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tem-convenio-cwi.debug.xcconfig"; path = "Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A2D6E9BE67ADDC73779219 /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
+				AE2E4D49C5FCC2FA8C9EB60D /* Pods_app_tem_convenio_cwi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +209,8 @@
 		0971102168A94484EB3DFC8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B0760103DD076F3EB369BE7D /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
-				5A457D480F72F3AA5598297C /* Pods-app-tem-convenio-cwi.release.xcconfig */,
+				F439E7882450643C8223DF8C /* Pods-app-tem-convenio-cwi.debug.xcconfig */,
+				425345649FF39D272217B6A2 /* Pods-app-tem-convenio-cwi.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			children = (
 				4164CB9722CD72C0004C9042 /* EstablishmentFilterViewController.swift */,
 				41B24C8222CEB6FA007B3224 /* EstablishmentFilterPresenter.swift */,
+				41B199B222D00F110024FFFF /* EstablishmentFilterContract.swift */,
 			);
 			path = EstablishmentFilter;
 			sourceTree = "<group>";
@@ -240,16 +247,10 @@
 			isa = PBXGroup;
 			children = (
 				41CA381522CEE8A600864AB1 /* EstablishmentRecommendationViewController.swift */,
+				416F6D5422D056C200CF636E /* EstablishmentRecommendationPresenter.swift */,
+				416F6D5622D058D600CF636E /* EstablishmentRecommendationContract.swift */,
 			);
 			path = EstablishmentRecommendation;
-			sourceTree = "<group>";
-		};
-		977F9ECAA7676C8AA6D6868D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F773F97B4A3BE5428C700B30 /* Pods_app_tem_convenio_cwi.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A006CF2222CFF58F00A374AA /* Cells */ = {
@@ -416,6 +417,14 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		BA41F9F8F384822A9EA7C606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF7B1AFEB30D45EEEA3710 /* Pods_app_tem_convenio_cwi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D26DD95822CC7097008B95F6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,7 +462,7 @@
 				D296EC8122B877F000E52DF9 /* app-tem-convenio-cwi */,
 				D296EC8022B877F000E52DF9 /* Products */,
 				0971102168A94484EB3DFC8E /* Pods */,
-				977F9ECAA7676C8AA6D6868D /* Frameworks */,
+				BA41F9F8F384822A9EA7C606 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -535,11 +544,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D296EC9122B877F100E52DF9 /* Build configuration list for PBXNativeTarget "app-tem-convenio-cwi" */;
 			buildPhases = (
-				EB7FD790F13DF87D78B9ED89 /* [CP] Check Pods Manifest.lock */,
+				C8411FD0F893300E244E91DB /* [CP] Check Pods Manifest.lock */,
 				D296EC7B22B877F000E52DF9 /* Sources */,
 				D296EC7C22B877F000E52DF9 /* Frameworks */,
 				D296EC7D22B877F000E52DF9 /* Resources */,
-				C90BB6EBCA1B09AE28396998 /* [CP] Embed Pods Frameworks */,
+				936D6CF94872DEEE4792567A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -604,7 +613,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C90BB6EBCA1B09AE28396998 /* [CP] Embed Pods Frameworks */ = {
+		936D6CF94872DEEE4792567A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -636,7 +645,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-tem-convenio-cwi/Pods-app-tem-convenio-cwi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB7FD790F13DF87D78B9ED89 /* [CP] Check Pods Manifest.lock */ = {
+		C8411FD0F893300E244E91DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -666,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D26DD96022CD80CA008B95F6 /* DateExtensions.swift in Sources */,
+				416F6D5722D058D600CF636E /* EstablishmentRecommendationContract.swift in Sources */,
 				A0D19E5F22CF523D005391E9 /* EstablishmentDetailsContract.swift in Sources */,
 				A006CF2522CFF5B300A374AA /* FeedbackHeaderTableViewCell.swift in Sources */,
 				A05DCF2F22C5A6FD00543DB5 /* Session.swift in Sources */,
@@ -689,9 +699,11 @@
 				A027C7FB22BE8D8700445DCD /* UIViewControllerExtensions.swift in Sources */,
 				4168587A22CAC5A50072C2A6 /* EstablishmentsListContract.swift in Sources */,
 				410066F522C9A88B0038CBF8 /* EstablishmentListViewController.swift in Sources */,
+				416F6D5522D056C200CF636E /* EstablishmentRecommendationPresenter.swift in Sources */,
 				D26FCE2722C5BC6900FB0870 /* LoginViewController.swift in Sources */,
 				A027C7F922BE846F00445DCD /* CharacterSetExtensions.swift in Sources */,
 				D2440FAB22C96F89002D37D0 /* DesinableView.swift in Sources */,
+				41B199B322D00F110024FFFF /* EstablishmentFilterContract.swift in Sources */,
 				A027C7EB22BE5AE100445DCD /* RequestsHandler.swift in Sources */,
 				A066BC3D22C96AD900D453F0 /* RecommendationDetailsViewController.swift in Sources */,
 				D2C934A122CFFD0400C12400 /* FeedbackContrats.swift in Sources */,
@@ -883,7 +895,7 @@
 		};
 		D296EC9222B877F100E52DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0760103DD076F3EB369BE7D /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
+			baseConfigurationReference = F439E7882450643C8223DF8C /* Pods-app-tem-convenio-cwi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -904,7 +916,7 @@
 		};
 		D296EC9322B877F100E52DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A457D480F72F3AA5598297C /* Pods-app-tem-convenio-cwi.release.xcconfig */;
+			baseConfigurationReference = 425345649FF39D272217B6A2 /* Pods-app-tem-convenio-cwi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

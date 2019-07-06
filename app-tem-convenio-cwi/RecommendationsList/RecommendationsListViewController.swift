@@ -22,6 +22,10 @@ class RecommendationsListViewController: UIViewController {
         self.presenter.view = self
         self.configSearchBar()
         self.configTableView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.presenter.fetchData()
     }
     

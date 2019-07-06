@@ -14,6 +14,8 @@ enum ValidationError: BaseError {
     case invalidEmail
     case invalidPassword
     case notFoudUser
+    case invalidEstablishmentName
+    case invalidCategory
     
     var title: String {
         switch self {
@@ -25,6 +27,10 @@ enum ValidationError: BaseError {
             return "Senha Inválido!"
         case .notFoudUser:
             return "Oops!"
+        case .invalidEstablishmentName:
+            return "Nome inválido"
+        case .invalidCategory:
+            return "Categoria não selecionada"
         }
     }
     
@@ -38,6 +44,10 @@ enum ValidationError: BaseError {
             return "Por favor, informe a senha com no mínimo 6 dígitos."
         case .notFoudUser:
             return "Não foi possível carregar os dados do usuário."
+        case .invalidEstablishmentName:
+            return "Por favor informe um nome válido."
+        case .invalidCategory:
+            return "Por favor selecione uma categoria."
         }
     }
     

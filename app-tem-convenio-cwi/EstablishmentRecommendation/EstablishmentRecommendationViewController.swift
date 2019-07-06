@@ -10,17 +10,23 @@ import UIKit
 
 class EstablishmentRecommendationViewController: BaseImagePickerViewController {
     
-    private let establishment: Establishment? = nil
-    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var establishmentImageView: UIImageView!
+    
+    @IBOutlet var categoryButtonColection: [UIButton]!
+    
+    private let presenter = EstablishmentRecommendationPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addKeyboardObservers()
-//        self.presenter.view = self
-//        self.baseImagePickerCallback = self
+        self.presenter.view = self
+        self.baseImagePickerCallback = self
         self.addGestureToImageView(imageView: self.establishmentImageView)
+    }
+    
+    @IBAction func categoryClick(_ sender: UIButton) {
+        self.presenter.selectedCategory = sender.tag
     }
     
     @IBAction func backgroundClick(_ sender: Any) {
@@ -28,36 +34,37 @@ class EstablishmentRecommendationViewController: BaseImagePickerViewController {
     }
     
     @IBAction func recommendClickButton(_ sender: Any) {
-        // TODO: fazer
-        
-//        self.presenter.saveUser(withUID: (Session.instance.loggedUser?.uid)!,
-//                                withName: usernameTextField.text,
-//                                withEmail: emailTextField.text,
-//                                withProfession: professionTextField.text,
-//                                withBirth: birthTextField.text?.toDate(),
-//                                withPhone: phoneTextField.text,
-//                                withAbout: aboutTextView.text,
-//                                withImageURL: "")
-        
-        dismiss(animated: true)
+        self.presenter.saveRecommendation(withImage: "", withName: nameTextField.text, withCategory: nil)
     }
 }
 
-extension EstablishmentRecommendationViewController { //}: ProfileEditViewType {
+extension EstablishmentRecommendationViewController: EstablishmentRecommendationViewType {
+    
+    func onCategorySelected(categoryTag: Int) {
+        let category = Category(tag: categoryTag)
+        self.categoryButtonColection.forEach { (button) in
+            if button.tag == categoryTag {
+                button.backgroundColor = category.primaryColor
+            } else {
+                button.backgroundColor = UIColor(named: "disable")
+            }
+        }
+    }
+    
+    func onRecommendationSaved() {
+        DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
     
     func onImageSelected(image: UIImage) {
         self.establishmentImageView.image = image
     }
     
-//    func onProfileSaved() {
-//        DispatchQueue.main.async {
-//            self.dismiss(animated: true, completion: nil)
-//        }
-//    }
+    func onFailure(error: BaseError) {
+        self.showFailureAlert(withError: error)
+    }
     
-//    func onFailure(error: BaseError) {
-//        self.showFailureAlert(withError: error)
-//    }
 }
 
 extension EstablishmentRecommendationViewController: BaseImagePickerProtocol {
@@ -67,8 +74,7 @@ extension EstablishmentRecommendationViewController: BaseImagePickerProtocol {
     }
     
     func onImageLoaded(image: UIImage) {
-//        self.presenter.image = image
+        self.presenter.image = image
     }
-    
     
 }

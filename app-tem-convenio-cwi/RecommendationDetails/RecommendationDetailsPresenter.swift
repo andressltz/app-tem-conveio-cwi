@@ -89,12 +89,12 @@ extension RecommendationDetailsPresenter: RecommendationDetailsPresenterType {
                             withAddress address: String?, withAbout about: String?) {
         
         guard let name = name, !name.isEmpty else {
-            self.handleError(error: ValidationError.name)
+            self.handleError(error: ValidationError.invalidEstablishmentName)
             return
         }
         
         guard let categoryTag = selectedCategory else {
-            self.handleError(error: ValidationError.category)
+            self.handleError(error: ValidationError.invalidCategory)
             return
         }
         
@@ -133,35 +133,6 @@ extension RecommendationDetailsPresenter: RecommendationDetailsPresenterType {
             }
             saveEstablishment(establishmentParams: establishentParams, establishmentDetailsParams: establishmentDetailsParams)
         }
-    }
-    
-}
-
-extension RecommendationDetailsPresenter {
-    
-    enum ValidationError: BaseError {
-    
-        case name
-        case category
-    
-        var title: String {
-            switch self {
-            case .name:
-                return "Nome inválido"
-            case .category:
-                return "Categoria não selecionada"
-            }
-        }
-        
-        var message: String {
-            switch self {
-            case .name:
-                return "Por favor informe um nome válido."
-            case .category:
-                return "Por favor selecione uma categoria."
-            }
-        }
-        
     }
     
 }
